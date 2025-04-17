@@ -89,12 +89,19 @@
     border-radius: 5rem;
     transition: .3s ease background-color;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 
     @media (hover: hover) {
       &:hover {
         background-color: #016db0;
       }
     }
+  }
+
+  &__button-ticket-icon {
+    width: 2rem;
+    height: 2rem;
   }
 
   &__button-partner {
