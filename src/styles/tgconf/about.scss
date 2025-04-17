@@ -1,0 +1,63 @@
+@use '../media';
+
+.about {
+  position: relative;
+
+  &__figure {
+    position: absolute;
+    top: -30rem;
+    right: 0;
+    width: 20rem;
+    height: 60rem;
+    object-fit: contain;
+
+    @include media.breakpoint(large-desktop) {
+      display: none;
+    }
+
+    @include media.breakpoint(medium-desktop) {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 10.2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: white;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    vertical-align: middle;
+    color: white;
+    width: 100%;
+    max-width: 54.1rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__list-tags {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+  }
+
+  &__list-tag-item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 2.4rem;
+    border: .1rem solid white;
+    border-radius: 5.6rem;
+  }
+}

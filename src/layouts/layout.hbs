@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Академия Кровли">
+  <meta property="og:description" content="Академия Кровли">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://via.placeholder.com/350x150">
+  <meta property="og:site_name" content="Академия Кровли">
+  <meta property="og:locale" content="ru_RU">
+  
+  <link rel="stylesheet" href="css/core.min.css" />
+  <script src="js/core.min.js"></script>
+  <title>TGConf</title>
+</head>
+<body>
+  <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+    {{> sprite}}
+  </div>
+
+  <div class="page-content">
+    {{>header}}
+    <main>
+      {{#block "main"}}{{/block}}
+    </main>
+    {{>footer}}
+  </div>
+</body>
+</html>

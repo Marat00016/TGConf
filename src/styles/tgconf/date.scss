@@ -1,0 +1,32 @@
+.date {
+  &__title {
+    font-weight: 700;
+    font-size: 10.2rem;
+    margin-bottom: 10rem;
+    line-height: 1;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__tape {
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100vw;
+    overflow: hidden;
+    margin-bottom: 2.4rem;
+  }
+
+  &__tape:last-child {
+    margin-bottom: 0;
+  }
+
+  &__tape img {
+    display: inline-block;
+    padding: 0 1.2rem;
+    width: 46.4rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 2.4rem;
+  }
+}

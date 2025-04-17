@@ -1,0 +1,39 @@
+@use "fonts";
+@use "media";
+@use "normalize";
+@use "layout";
+
+@use "common/header";
+
+@use "tgconf/intro";
+@use "tgconf/about";
+@use "tgconf/speakers";
+@use "tgconf/date.scss";
+
+html {
+  font-size: 10px;
+
+  @include media.breakpoint(medium-desktop) {
+    font-size: 0.53vw;
+  }
+}
+
+.orange {
+  color: #E45D22
+}
+
+.page-content {
+  background-color: #000000;
+}
+
+section {
+  margin-block: 20rem;
+}
+
+section:first-child {
+  margin-top: 0;
+}
+
+// section:last-child {
+//   margin-bottom: 0;
+// }

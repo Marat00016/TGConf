@@ -1,0 +1,233 @@
+@use '../media';
+
+.intro {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: 10rem;
+  padding-bottom: 7.2rem;
+  z-index: 0;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/images/intro.jpg');
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+
+  &__upper {
+    margin: 3.7rem 0 6.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__upper-place {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+  }
+
+  &__upper-date {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 4.8rem;
+    vertical-align: middle;
+    color: white;
+  }
+
+  &__center {
+    margin-bottom: 10rem;
+  }
+
+  &__center-tags {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+    margin-bottom: 2.6rem;
+  }
+
+  &__center-tags-item {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    padding-inline: 2.5rem;
+    height: 3.6rem;
+    border-radius: 3.6rem;
+    background-color: #5c5c5c52;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    text-transform: uppercase;
+  }
+
+  &__center-title-wrapper {
+    position: relative;
+    margin-bottom: 9.6rem;
+  }
+
+  &__center-people-list {
+    position: absolute;
+    right: 0;
+    bottom: 1.45rem;
+    display: flex;
+    align-items: center;
+    right: 39.5rem;
+  }
+
+  &__center-people-item {
+    width: 7.2rem;
+    height: 7.2rem;
+    position: relative;
+    z-index: 5;
+    border-radius: 7.2rem;
+  }
+
+  &__center-people-item:nth-child(2) {
+    left: -2rem;
+    z-index: 4;
+  }
+
+  &__center-people-item:nth-child(3) {
+    left: -4rem;
+    z-index: 3;
+  }
+
+  &__center-people-item:nth-child(4) {
+    left: -6rem;
+    z-index: 2;
+  }
+
+  &__center-people-item:nth-child(5) {
+    left: -8rem;
+    z-index: 1;
+  }
+
+  &__center-people-item:nth-child(6) {
+    left: -10rem;
+    z-index: 0;
+    background-color: #0288DB;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__center-people-item img {
+    width: 7.2rem;
+    height: 7.2rem;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__center-people-item span {
+    padding-left: .25rem;
+  }
+
+  &__center-title {
+    font-weight: 700;
+    font-size: 8rem;
+    color: white;
+    width: 100%;
+    max-width: 123.1rem;
+    line-height: 1.2;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__center-buy-ticket {
+    background-color: #E45D22;
+    padding-inline: 17.6rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    column-gap: 8px;
+    height: 5.6rem;
+    border-radius: 5.6rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: .3s ease background-color;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #be4613;
+      }
+    }
+  }
+
+  &__bottom-info-list {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 10rem;
+  }
+
+  &__bottom-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.6rem;
+  }
+
+  &__bottom-info-item:first-child {
+    flex: 1;
+  }
+
+  &__bottom-info-item:first-child &__bottom-info-item-number {
+    font-weight: 400;
+    font-size: 9.6rem;
+    letter-spacing: -.5rem;
+  }
+
+  &__bottom-info-item-number {
+    font-size: 6.4rem;
+    font-weight: 500;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__bottom-info-item-text {
+    color: #9A9A9A;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__figure {
+    position: absolute;
+    width: 28.2rem;
+    height: 28.2rem;
+    object-fit: contain;
+    bottom: 6rem;
+    left: -5.5rem;
+
+    @include media.breakpoint(large-desktop) {
+      display: none;
+    }
+
+    @include media.breakpoint(medium-desktop) {
+      display: block;
+    }
+  }
+}
