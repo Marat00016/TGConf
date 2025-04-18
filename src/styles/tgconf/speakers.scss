@@ -7,7 +7,25 @@
     display: flex;
     align-items: center;
     column-gap: 9.1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__past-conferences {
+    height: 3.6rem;
+    border-radius: 3.6rem;
+    background-color: #E45D22;
+    padding-inline: 2.4rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 6.4rem;
+    width: fit-content;
   }
 
   &__title {

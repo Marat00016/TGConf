@@ -1,0 +1,244 @@
+@use '../media';
+
+
+.tickets {
+  position: relative;
+
+  &__figure {
+    position: absolute;
+    top: -15rem;
+    left: -7rem;
+    width: 28.2rem;
+    height: 28.2rem;
+    object-fit: contain;
+
+    @include media.breakpoint(large-desktop) {
+      display: none;
+    }
+
+    @include media.breakpoint(medium-desktop) {
+      display: block;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 10.2rem;
+    margin-bottom: 10rem;
+    line-height: 1;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    column-gap: 2.4rem;
+  }
+
+  &__card {
+    padding: 2.4rem;
+    border: .1rem solid #9A9A9A;
+    border-radius: 2.4rem;
+    min-height: 71.6rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  &__card-header {
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.4rem;
+  }
+
+  &__card-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__card-header-top span {
+    height: 3.6rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 3.6rem;
+    padding-inline: 1.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &__card-header-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6.4rem;
+    width: fit-content;
+    height: 6.4rem;
+    border-radius: 6.4rem;
+    background-color: #26252A;
+  }
+
+  &__card-header-svg--blue {
+    background-color: #0288DB;
+  }
+
+  &__card-header-svg--white {
+    background-color: white;
+  }
+
+  &__card-header-svg--orange {
+    background-color: #E45D22;
+  }
+
+  &__card-header-svg svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  &__card-tariff {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__card-base-price {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: .5rem;
+  }
+
+  &__card-after-price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.4rem;
+  }
+
+  &__card-after-price-time {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__card-after-price {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__card-buy-ticket-button {
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1;
+    padding-inline: 5.5rem;
+    height: 5.6rem;
+    background-color: #E45D22;
+    border-radius: 5.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .8rem;
+    width: 100%;
+    transition: .3s ease background-color;
+    margin-bottom: 4.8rem;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #be4613;
+      }
+    }
+  }
+
+  &__card-buy-ticket-button svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &__card-list-info {
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.6rem;
+  }
+
+  &__card-list-item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1.2;
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    max-width: 23.4rem;
+  }
+
+  &__card-list-item::before {
+    content: "";
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../assets/icons/mark.svg');
+    position: absolute;
+    left: -4rem;
+    top: -.25rem;
+  }
+
+  &__card--blue::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../assets/images/ticket-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+  }
+
+  &__card--blue &__card-buy-ticket-button {
+    background-color: white;
+    color: #0288DB;
+    opacity: 1;
+    transition: .3s ease opacity;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: white;
+        opacity: .85;
+      }
+    }
+  }
+
+  &__card--blue &__card-list-item::before {
+    background-image: url('../assets/icons/mark-blue.svg');
+  }
+}

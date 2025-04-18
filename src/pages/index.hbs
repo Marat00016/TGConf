@@ -41,7 +41,7 @@
           </ul>
         </div>
         <button class="intro__center-buy-ticket" type="button">
-          <svg width="24" height="24">
+          <svg>
             <use xlink:href="#stars"></use>
           </svg>
           Приобрести билет
@@ -50,11 +50,11 @@
       <div class="intro__bottom">
         <ul class="intro__bottom-info-list">
           <li class="intro__bottom-info-item">
-            <span class="intro__bottom-info-item-number">3000</span>
+            <span class="intro__bottom-info-item-number">4000+</span>
             <span class="intro__bottom-info-item-text">участников</span>
           </li>
           <li class="intro__bottom-info-item">
-            <span class="intro__bottom-info-item-number">30+</span>
+            <span class="intro__bottom-info-item-number">70+</span>
             <span class="intro__bottom-info-item-text">спикеров</span>
           </li>
           <li class="intro__bottom-info-item">
@@ -119,6 +119,9 @@
           подтверждён программным комитетом TgConf.
         </p>
       </div>
+      <span class="speakers__past-conferences">
+        Прошлых конференций 2024-2025 годов
+      </span>
       <div class="speakers__cards">
         <div class="speakers__card">
           <div class="speakers__card-main">
@@ -204,22 +207,283 @@
       </h2>
     </div>
     <div class="date__tape js-tape-loop" data-speed=".3" >
-      <img src="./assets/images/date-one.png" alt="image"/>
-      <img src="./assets/images/date-two.png" alt="image"/>
-      <img src="./assets/images/date-three.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-one.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-two.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-three.png" alt="image"/>
     </div>
     <div class="date__tape js-tape-loop" data-speed=".3" data-reversed="true">
-      <img src="./assets/images/date-four.png" alt="image"/>
-      <img src="./assets/images/date-five.png" alt="image"/>
-      <img src="./assets/images/date-six.png" alt="image"/>
-      <img src="./assets/images/date-seven.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-four.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-five.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-six.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-seven.png" alt="image"/>
     </div>
     <div class="date__tape js-tape-loop" data-speed=".3" >
-      <img src="./assets/images/date-eight.png" alt="image"/>
-      <img src="./assets/images/date-nine.png" alt="image"/>
-      <img src="./assets/images/date-ten.png" alt="image"/>
-      <img src="./assets/images/date-eleven.png" alt="image"/>
-      <img src="./assets/images/date-twelve.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-eight.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-nine.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-ten.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-eleven.png" alt="image"/>
+      <img loading="lazy" src="./assets/images/date-twelve.png" alt="image"/>
+    </div>
+  </section>
+
+  <section class="future">
+    <div class="future__blur"></div>
+    <img class="future__figure" src="./assets/images/figure-five.png" alt="figure">
+    <div class="container">
+      <h2 class="future__title">
+        <span>
+          Что будет
+        </span>
+        <span>
+          на конференции?
+        </span>
+      </h2>
+      <div class="future__cards">
+        <div class="future__item-card">
+          <div class="future__item-card-header">
+            <svg>
+              <use xlink:href="#plus"></use>
+            </svg>
+            <span>Нетворкинг</span>
+          </div>
+          <img src="./assets/images/future-one.png" alt="image" />
+        </div>
+        <div class="future__item-card future__item-card--full">
+          <div class="future__item-card-header">
+            <svg>
+              <use xlink:href="#plus-orange"></use>
+            </svg>
+            <span>Выставка</span>
+          </div>
+          <p>
+            Самая крупная выставка среди компаний, специализирующимися в&nbsp;работе с&nbsp;Telegram: Рекламные агентства,
+            партнерские сети, сервисы, источники трафика, рекламодатели и&nbsp;крипто-проекты на&nbsp;TON
+          </p>
+            <img src="./assets/images/future-two.png" alt="image" />
+        </div>
+        <div class="future__item-card">
+          <div class="future__item-card-header">
+            <svg>
+              <use xlink:href="#plus"></use>
+            </svg>
+            <span>Невероятное Afterparty</span>
+          </div>
+          <img src="./assets/images/future-three.png" alt="image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tickets">
+    <img src="./assets/images/figure-six.png" alt="figure" class="tickets__figure"/>
+    <div class="container">
+      <div class="tickets__title">
+        БИЛЕТЫ
+      </div>
+      <div class="tickets__cards">
+        {{!-- Lite --}}
+        <div class="tickets__card">
+          <div class="tickets__card-header">
+            <div class="tickets__card-header-top">
+              <div class="tickets__card-header-svg">
+                <svg>
+                  <use xlink:href="#quill"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="tickets__card-tariff">
+              Lite
+            </div>
+          </div>
+          <div class="tickets__card-main">
+            <span class="tickets__card-base-price">
+              1 990 ₽
+            </span>
+            <div class="tickets__card-after-price-wrapper">
+              <time class="tickets__card-after-price-time">c 1 мая</time>
+              <span class="tickets__card-after-price">2 990 ₽</span>
+            </div>
+            <button type="button" class="tickets__card-buy-ticket-button">
+               <svg>
+                  <use xlink:href="#stars"></use>
+                </svg>
+              Приобрести билет
+            </button>
+            <ul class="tickets__card-list-info">
+              <li class="tickets__card-list-item">Посещение конференции</li>
+              <li class="tickets__card-list-item">Посещение выставки</li>
+              <li class="tickets__card-list-item">Доступ к официальному нетворкинг чату</li>
+            </ul>
+          </div>
+        </div>
+        {{!-- Standard --}}
+        <div class="tickets__card">
+          <div class="tickets__card-header">
+            <div class="tickets__card-header-top">
+              <div class="tickets__card-header-svg tickets__card-header-svg--blue">
+                <svg>
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="tickets__card-tariff">Standard</div>
+          </div>
+          <div class="tickets__card-main">
+            <span class="tickets__card-base-price">6 990 ₽</span>
+            <div class="tickets__card-after-price-wrapper">
+              <time class="tickets__card-after-price-time">c 1 мая</time>
+              <span class="tickets__card-after-price">7 990 ₽</span>
+            </div>
+            <button type="button" class="tickets__card-buy-ticket-button">
+              <svg>
+                <use xlink:href="#stars"></use>
+              </svg>
+              Приобрести билет
+            </button>
+            <ul class="tickets__card-list-info">
+              <li class="tickets__card-list-item">Все опции билета «Lite»</li>
+              <li class="tickets__card-list-item">Записи выступлений</li>
+              <li class="tickets__card-list-item">Доступ ко всем материалам</li>
+              <li class="tickets__card-list-item">Гарантированное место в&nbsp;залах</li>
+            </ul>
+          </div>
+        </div>
+        {{!-- Business --}}
+        <div class="tickets__card tickets__card--blue">
+          <div class="tickets__card-header">
+            <div class="tickets__card-header-top">
+              <div class="tickets__card-header-svg tickets__card-header-svg--white">
+                <svg>
+                  <use xlink:href="#bag"></use>
+                </svg>
+              </div>
+              <span>
+                самый выгодный
+              </span>
+            </div>
+            <div class="tickets__card-tariff">Business</div>
+          </div>
+          <div class="tickets__card-main">
+            <span class="tickets__card-base-price">19 990 ₽</span>
+            <div class="tickets__card-after-price-wrapper">
+              <time class="tickets__card-after-price-time">c 1 мая</time>
+              <span class="tickets__card-after-price">24 990 ₽</span>
+            </div>
+            <button type="button" class="tickets__card-buy-ticket-button">
+              <svg>
+                <use xlink:href="#stars-blue"></use>
+              </svg>
+              Приобрести билет
+            </button>
+            <ul class="tickets__card-list-info">
+              <li class="tickets__card-list-item">Все опции билета «Standard»</li>
+              <li class="tickets__card-list-item">
+                Участие в&nbsp;официальной Аfterparty 20&nbsp;октября (Включены горячие блюда, алкогольные
+                и&nbsp;безалкогольные напитки)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tickets__card">
+          <div class="tickets__card-header">
+            <div class="tickets__card-header-top">
+              <div class="tickets__card-header-svg tickets__card-header-svg--orange">
+                <svg>
+                  <use xlink:href="#crown"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="tickets__card-tariff">
+              VIP
+            </div>
+          </div>
+          <div class="tickets__card-main">
+            <span class="tickets__card-base-price">29 990 ₽</span>
+            <div class="tickets__card-after-price-wrapper">
+              <time class="tickets__card-after-price-time">c 1 мая</time>
+              <span class="tickets__card-after-price">34 990 ₽</span>
+            </div>
+            <button type="button" class="tickets__card-buy-ticket-button">
+              <svg>
+                <use xlink:href="#stars"></use>
+              </svg>
+              Приобрести билет
+            </button>
+            <ul class="tickets__card-list-info">
+              <li class="tickets__card-list-item">Все опции билета «Business»</li>
+              <li class="tickets__card-list-item">VIP-регистрация</li>
+              <li class="tickets__card-list-item">1-2 ряды в залах выступлений</li>
+              <li class="tickets__card-list-item">VIP-зона с премиум едой, напитками и нетворкингом</li>
+              <li class="tickets__card-list-item">
+                Выделенная VIP-зона
+                на&nbsp;Afterparty с&nbsp;эксклюзивной едой и&nbsp;напитками
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="organisers">
+    <div class="container">
+      <h2 class="organisers__title">
+        Организатор форума
+      </h2>
+      <p class="organisers__text">
+        Передовое агентство пополнения кабинетов Telegram Ads, выдающие людей
+      </p>
+      <div class="organisers__cards">
+        <a href="#" class="organisers__card">
+          <svg>
+            <use xlink:href="#clickise-logo"></use>
+          </svg>
+        </a>
+        <a href="#" class="organisers__card">
+          <svg>
+            <use xlink:href="#tg-boost-logo"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="partners">
+    <img class="partners__figure" src="./assets/images/figure-two.png" alt="figure-two">
+    <div class="container">
+      <h2 class="partners__title">
+        Партнеры
+      </h2>
+      <div class="partners__cards">
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link"></a>
+        <a href="#" class="partners__card-link">
+          <svg>
+            <use xlink:href="#stars"></use>
+          </svg>
+          Стать партнером
+        </a>
+      </div>
+      <button class="partners__button" type="button">
+        Все партнеры
+      </button>
     </div>
   </section>
 {{/content}}

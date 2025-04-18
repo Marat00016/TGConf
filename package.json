@@ -20,6 +20,7 @@
     "gulp-svg-sprite": "^2.0.3",
     "intl-tel-input": "^25.2.1",
     "jquery": "^3.7.1",
+    "lenis": "^1.2.3",
     "normalize.css": "^8.0.1",
     "parsleyjs": "^2.9.2",
     "swiper": "^11.2.4"
