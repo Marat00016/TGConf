@@ -486,5 +486,92 @@
       </button>
     </div>
   </section>
+
+  <section id="place" class="place">
+    <div class="container">
+      <div class="place__badge">
+        <svg>
+           <use xlink:href="#map-orange-icon"></use>
+        </svg>
+        МТС Live Hall <span class="orange">/</span> ш. Энтузиастов, 5, стр. 2, Москва
+      </div>
+      <h2 class="place__title">
+        Место проведения
+      </h2>
+      <div class="place__main">
+        <div class="map js-map"
+          id="map"
+          data-json="./assets/json/map.json"
+          data-zoom="13"
+          data-center="55.749461, 37.696446">
+        </div>
+        <div class="place__detail">
+          <div class="place__detail-overlay"></div>
+          <svg class="place__detail-decoration">
+            <use xlink:href="#decoration"></use>
+          </svg>
+          <span class="place__detail-name">
+            Конференция на 7000 м2
+          </span>
+          <ul class="place__detail-list">
+            <li class="place__detail-list-item">2 зала выступлений<br>на 3000 участников</li>
+            <li class="place__detail-list-item">зона выставки<br>на 100 стендов</li>
+            <li class="place__detail-list-item">зона для VIP-участников<br>и спикеров</li>
+            <li class="place__detail-list-item">зона нетворкинга и кофе-брейка<br>для всех участников</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="afterparty">
+    <div class="afterparty__overlay"></div>
+    <div class="container">
+      <time class="afterparty__time">
+        <span class="orange">15 октября</span> в 21:00
+      </time>
+      <h2 class="afterparty__title">
+        Легендарное<br>Telegram Afterparty
+      </h2>
+      <button type="button" class="afterparty__button">
+        <svg>
+          <use xlink:href="#stars"></use>
+        </svg>
+        Приобрести билет
+      </button>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="info__blur"></div>
+    <img src="./assets/images/figure-seven.png" alt="figure" class="info__figure" />
+    <div class="container">
+      <div class="info__cards">
+        <div class="info__card">
+          <img loading="lazy" src="./assets/images/info-one.png" alt="image" class="info__card-img">
+          <span class="info__card-text">
+            1000+<br> посетителей
+          </span>
+        </div>
+        <div class="info__card">
+          <img loading="lazy" src="./assets/images/info-two.png" alt="image" class="info__card-img">
+          <span class="info__card-text">
+            Яркое шоу<br>до утра
+          </span>
+        </div>
+        <div class="info__card">
+          <img loading="lazy" src="./assets/images/info-three.png" alt="image" class="info__card-img">
+          <span class="info__card-text">
+            Безлимитный бар<br>и вкусные закуски
+          </span>
+        </div>
+        <div class="info__card">
+          <img loading="lazy" src="./assets/images/info-four.png" alt="image" class="info__card-img">
+          <span class="info__card-text">
+            Хедлайнер, который<br>у всех на слуху
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 {{/content}}
 {{/extend}}

@@ -1,0 +1,129 @@
+.footer {
+  margin-top: 20rem;
+  position: relative;
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10.8rem;
+    margin-bottom: 9.2rem;
+  }
+
+  &__info-list-org {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.4rem;
+  }
+
+  &__info-list-org li {
+    color: #9A9A9A;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &__info-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.4rem;
+  }
+
+  &__info-contacts li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__info-contacts-header {
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  &__info-contacts-text {
+    color: #9A9A9A;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  &__info-anchors {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.4rem;
+  }
+
+  &__info-anchors a {
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-decoration: none;
+    opacity: 1;
+    transition: .3s ease opacity;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.65;
+      }
+    }
+  }
+
+  &__logo {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 142.7rem;
+    height: 23.1rem;
+  }
+
+  &__bottom {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 2.4rem;
+  }
+
+  &__bottom::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    border-top: .1rem solid white;
+    bottom: 6rem;
+  }
+
+  &__bottom span {
+    color: #9A9A9A;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  &__bottom a {
+    color: #9A9A9A;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    opacity: 1;
+    transition: .3s ease opacity;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.65;
+      }
+    }
+  }
+}

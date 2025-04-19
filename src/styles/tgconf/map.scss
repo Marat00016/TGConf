@@ -1,0 +1,20 @@
+#map {
+  width: 100%;
+  max-width: 58.6rem;
+  height: 76rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+
+  .ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+  }
+
+  .ymaps-2-1-79-copyright__wrap {
+    display: none;
+  }
+
+  [class*="ground-pane"] {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  }
+}

@@ -1,0 +1,98 @@
+.afterparty {
+  position: relative;
+  padding: 47.7rem 0 16.9rem;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #000000;
+    height: 30rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.84) 79%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    bottom: -.2rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #000000;
+    height: 10rem;
+    transform: scaleY(-1);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.84) 79%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  &__time {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 4.8rem;
+    margin-bottom: 2.4rem;
+    color: white;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 9.6rem;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 4.8rem;
+    color: white;
+    width: 100%;
+    max-width: 117.7rem;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1;
+    height: 5.6rem;
+    background-color: #E45D22;
+    border-radius: 5.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.8rem;
+    width: 100%;
+    max-width: 58.6rem;
+    transition: 0.3s ease background-color;
+    margin-bottom: 4.8rem;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #be4613;
+      }
+    }
+  }
+
+  &__button svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/images/afterparty.jpg');
+    z-index: -2;
+  }
+}
