@@ -21,6 +21,10 @@
     @include media.breakpoint(medium-desktop) {
       display: block;
     }
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__title {
@@ -34,6 +38,18 @@
     align-items: flex-start;
     color: white;
     margin-bottom: 10rem;
+
+    @include media.breakpoint(tablet) {
+      width: 100%;
+      max-width: 61rem;
+      font-size: 4.2rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+      max-width: 34rem;
+    }
   }
 
   &__title span:last-child {
@@ -45,6 +61,11 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;
     column-gap: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      align-items: stretch;
+      column-gap: 0;
+    }
   }
 
   &__item-card {
@@ -55,7 +76,7 @@
     align-items: flex-start;
     z-index: 0;
     position: relative;
-    height: 38rem;
+    min-height: 38rem;
 
     @media (hover: hover) {
       &:hover img {
@@ -76,6 +97,18 @@
         stroke: #E45D22;
       }
     }
+
+    @include media.breakpoint(tablet) {
+      height: auto !important;
+      min-height: 38rem;
+      display: flex !important;
+      max-height: none;
+    }
+
+    @include media.breakpoint(mobile) {
+      width: 100%;
+      max-width: 24.8rem;
+    }
   }
 
   &__item-card img {
@@ -90,11 +123,29 @@
     clip-path: inset(0% 0% 0% 0% round 2.4rem);
     transform-origin: bottom;
     bottom: 0;
+    left: 0;
+    right: 0;
+
+    @include media.breakpoint(tablet) {
+      position: static;
+      border-radius: 1.6rem;
+      clip-path: none;
+      margin-top: auto;
+    }
+
+    @include media.breakpoint(mobile) {
+      max-width: 24.8rem;
+      height: 14rem;
+    }
   }
 
   &__item-card svg {
     width: 2.4rem;
     height: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__item-card span {
@@ -103,6 +154,14 @@
     font-size: 2.4rem;
     line-height: 1.2;
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      font-size: 2rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__item-card-header {
@@ -110,9 +169,14 @@
     align-items: center;
     column-gap: 1.6rem;
     margin-bottom: 3.2rem;
+
+    @include media.breakpoint(tablet) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__item-card p {
+    display: inline-block;
     font-weight: 400;
     font-size: 1.6rem;
     color: white;
@@ -123,7 +187,18 @@
     margin-bottom: auto;
     transition: .3s ease opacity, .3s ease visibility;
     opacity: 0;
-    visibility: hidden
+    visibility: hidden;
+
+    @include media.breakpoint(tablet) {
+      visibility: visible;
+      opacity: 1;
+      margin-bottom: 1.6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.6rem;
+      margin-bottom: 0;
+    }
   }
 
   &__blur {
@@ -135,5 +210,9 @@
     position: absolute;
     z-index: -1;
     bottom: 12.5rem;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 }

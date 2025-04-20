@@ -3,6 +3,7 @@ import initHeaderAnimation from "./tsconf/header"
 import initAnchors from "./utils/anhors"
 import smoothScrolling from "./utils/smoothScrolling"
 import connectMap from "./utils/mapInit"
+import initFutureSlider from "./tsconf/futureSlider"
 
 document.addEventListener('DOMContentLoaded', () => {
   smoothScrolling()
@@ -10,4 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
   loopTape()
   initHeaderAnimation()
   connectMap()
+  initFutureSlider()
 })
