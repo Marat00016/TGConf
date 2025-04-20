@@ -1,3 +1,5 @@
+@use '../media';
+
 .date {
   &__title {
     font-weight: 700;
@@ -7,12 +9,30 @@
     text-align: center;
     color: white;
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      text-align: left;
+      font-size: 4.2rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__tape {
     display: inline-block;
     white-space: nowrap;
     margin-bottom: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      margin-bottom: 1.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      margin-bottom: 1.2rem;
+    }
   }
 
   &__tape:last-child {
@@ -26,5 +46,17 @@
     height: 25rem;
     object-fit: cover;
     border-radius: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      width: 28.5rem;
+      height: 16rem;
+      border-radius: 1.6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      width: 18.5rem;
+      height: 10rem;
+      border-radius: 1.6rem;
+    }
   }
 }

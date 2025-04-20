@@ -46,12 +46,16 @@ body {
 
 section {
   margin-block: 20rem;
+
+  @include media.breakpoint(tablet) {
+    margin-block: 10.2rem;
+  }
 }
 
 section:first-child {
   margin-top: 0;
 }
 
-section:last-child {
-  margin-bottom: 0;
-}
+// section:last-child {
+//   margin-bottom: 0;
+// }

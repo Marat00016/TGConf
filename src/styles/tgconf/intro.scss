@@ -11,6 +11,7 @@
 
   @include media.breakpoint(tablet) {
     padding-top: 7rem;
+    padding-bottom: 0;
   }
 
   &__overlay {

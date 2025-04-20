@@ -18,6 +18,10 @@
     @include media.breakpoint(medium-desktop) {
       display: block;
     }
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__title {
@@ -27,6 +31,15 @@
     text-transform: uppercase;
     margin-bottom: 3.2rem;
     color: white;
+
+    @include media.breakpoint(tablet) {
+      font-size: 4.2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__text {
@@ -38,12 +51,35 @@
     width: 100%;
     max-width: 54.1rem;
     margin-bottom: 3.2rem;
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.6rem;
+      max-width: 36.1rem;
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__list-tags {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 2.4rem;
+    row-gap: 2rem;
+    width: 100%;
+
+    @include media.breakpoint(tablet) {
+      gap: 1.6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      gap: 1.2rem;
+      max-width: 45.1rem;
+    }
+
+    @include media.breakpoint(small-mobile) {
+      gap: 1.2rem;
+      max-width: 40.1rem;
+    }
   }
 
   &__list-tag-item {
@@ -59,5 +95,21 @@
     padding-inline: 2.4rem;
     border: .1rem solid white;
     border-radius: 5.6rem;
+
+    @include media.breakpoint(tablet) {
+      padding-inline: 2rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.4rem;
+      height: 3.2rem;
+      padding-inline: 1.6rem;
+    }
+
+    @include media.breakpoint(small-mobile) {
+      font-size: 1.3rem;
+      height: 3.2rem;
+      padding-inline: 1.4rem;
+    }
   }
 }
