@@ -9,6 +9,10 @@
   padding-bottom: 7.2rem;
   z-index: 0;
 
+  @include media.breakpoint(tablet) {
+    padding-top: 7rem;
+  }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -26,6 +30,16 @@
     margin: 3.7rem 0 6.4rem;
     display: flex;
     flex-direction: column;
+
+    @include media.breakpoint(tablet) {
+      margin: 4.2rem 0 2.4rem;
+      justify-content: center;
+    }
+
+    @include media.breakpoint(mobile) {
+      margin: 3.2rem 0 2.4rem;
+      justify-content: center;
+    }
   }
 
   &__upper-place {
@@ -35,6 +49,20 @@
     font-weight: 500;
     margin-bottom: 1.2rem;
     line-height: 1.2;
+
+    @include media.breakpoint(tablet) {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.4rem;
+    }
+
+    @include media.breakpoint(supersmall-mobile) {
+      margin-bottom: .4rem;
+    }
   }
 
   &__upper-date {
@@ -43,10 +71,27 @@
     font-size: 4.8rem;
     vertical-align: middle;
     color: white;
+    
+    @include media.breakpoint(tablet) {
+      text-align: center;
+      font-size: 3.6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__center {
     margin-bottom: 10rem;
+
+    @include media.breakpoint(tablet) {
+      margin-bottom: 8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      margin-bottom: 6.4rem;
+    }
   }
 
   &__center-tags {
@@ -54,6 +99,16 @@
     align-items: center;
     column-gap: 2.4rem;
     margin-bottom: 2.6rem;
+
+    @include media.breakpoint(tablet) {
+      justify-content: center;
+      column-gap: 1.2rem;
+      row-gap: 1rem;
+      width: 100%;
+      max-width: 40rem;
+      flex-wrap: wrap;
+      margin: 0 auto 4.8rem;
+    }
   }
 
   &__center-tags-item {
@@ -71,11 +126,29 @@
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      font-size: 1.4rem;
+      padding-inline: 2rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.2rem;
+      padding-inline: 1.6rem;
+      height: 2.4rem;
+    }
   }
 
   &__center-title-wrapper {
     position: relative;
-    margin-bottom: 9.6rem;
+    margin-bottom: 10.4rem;
+
+    @include media.breakpoint(tablet) {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__center-people-list {
@@ -85,6 +158,17 @@
     display: flex;
     align-items: center;
     right: 39.5rem;
+
+    @include media.breakpoint(tablet) {
+      position: relative;
+      right: auto;
+      left: 5rem;
+      bottom: auto;
+    }
+
+    @include media.breakpoint(mobile) {
+      left: 3rem;
+    }
   }
 
   &__center-people-item {
@@ -93,26 +177,52 @@
     position: relative;
     z-index: 5;
     border-radius: 7.2rem;
+
+    @include media.breakpoint(tablet) {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
   }
 
   &__center-people-item:nth-child(2) {
     left: -2rem;
     z-index: 4;
+
+    @include media.breakpoint(mobile) {
+      left: -1rem;
+    }
   }
 
   &__center-people-item:nth-child(3) {
     left: -4rem;
     z-index: 3;
+
+    @include media.breakpoint(mobile) {
+      left: -2rem;
+    }
   }
 
   &__center-people-item:nth-child(4) {
     left: -6rem;
     z-index: 2;
+
+    @include media.breakpoint(mobile) {
+      left: -3rem;
+    }
   }
 
   &__center-people-item:nth-child(5) {
     left: -8rem;
     z-index: 1;
+
+    @include media.breakpoint(mobile) {
+      left: -4rem;
+    }
   }
 
   &__center-people-item:nth-child(6) {
@@ -128,6 +238,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include media.breakpoint(mobile) {
+      left: -5rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__center-people-item img {
@@ -137,10 +252,24 @@
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @include media.breakpoint(tablet) {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
   }
 
   &__center-people-item span {
     padding-left: .25rem;
+
+    @include media.breakpoint(mobile) {
+      padding-left: 0;
+    }
   }
 
   &__center-title {
@@ -152,6 +281,22 @@
     line-height: 1.2;
     margin: 0;
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      font-size: 4rem;
+      text-align: center;
+      max-width: 70.9rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.2rem;
+      max-width: 37.9rem;
+    }
+
+    @include media.breakpoint(supersmall-mobile) {
+      font-size: 1.8rem;
+    }
   }
 
   &__center-buy-ticket {
@@ -174,6 +319,20 @@
         background-color: #be4613;
       }
     }
+
+    @include media.breakpoint(tablet) {
+      font-size: 1.6rem;
+      margin: 0 auto;
+      height: 5.2rem;
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include media.breakpoint(mobile) {
+      margin: 0 auto;
+      padding-inline: 2.4rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__center-buy-ticket svg {
@@ -185,6 +344,17 @@
     display: flex;
     align-items: flex-end;
     column-gap: 10rem;
+
+    @include media.breakpoint(tablet) {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 4rem;
+      row-gap: 4.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   &__bottom-info-item {
@@ -192,16 +362,51 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 1.6rem;
+
+    @include media.breakpoint(tablet) {
+      row-gap: 1rem;
+    }
   }
 
   &__bottom-info-item:first-child {
     flex: 1;
+
+    @include media.breakpoint(tablet) {
+      flex: auto;
+    }
   }
 
   &__bottom-info-item:first-child &__bottom-info-item-number {
     font-weight: 400;
     font-size: 9.6rem;
     letter-spacing: -.5rem;
+
+    @include media.breakpoint(tablet) {
+      font-size: 6.8rem;
+      letter-spacing: -.5rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 4.8rem;
+      letter-spacing: 0;
+    }
+  }
+
+  &__bottom-info-item:last-child &__bottom-info-item-number {
+    @include media.breakpoint(tablet) {
+      font-size: 4.4rem;
+      letter-spacing: -.5rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+      letter-spacing: 0;
+    }
+
+    @include media.breakpoint(small-mobile) {
+      font-size: 2rem;
+      letter-spacing: 0;
+    }
   }
 
   &__bottom-info-item-number {
@@ -210,6 +415,16 @@
     line-height: 1;
     color: white;
     text-transform: uppercase;
+
+    @include media.breakpoint(mobile) {
+      font-size: 6.8rem;
+      letter-spacing: -.5rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 4.8rem;
+      letter-spacing: 0rem;
+    }
   }
 
   &__bottom-info-item-text {
@@ -233,6 +448,10 @@
 
     @include media.breakpoint(medium-desktop) {
       display: block;
+    }
+
+    @include media.breakpoint(tablet) {
+      display: none;
     }
   }
 }

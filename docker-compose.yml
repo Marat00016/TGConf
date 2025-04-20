@@ -1,0 +1,18 @@
+services:
+  frontend:
+    container_name: tgconf
+    image: "tgconf"
+    networks:
+      - tgconf
+    ports:
+      - 3000:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    tty: true
+
+networks:
+  tgconf:
+    driver: bridge

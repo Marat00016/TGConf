@@ -24,6 +24,10 @@ html {
   @include media.breakpoint(medium-desktop) {
     font-size: 0.53vw;
   }
+
+  @include media.breakpoint(tablet) {
+    font-size: 10px;
+  }
 }
 
 body {

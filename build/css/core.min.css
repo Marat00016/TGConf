@@ -385,6 +385,11 @@ template {
   background-color: transparent;
   transition: 0.3s ease background-color;
 }
+@media only screen and (max-width: 1024px) {
+  .header {
+    height: 7.5rem;
+  }
+}
 .header.--active {
   background: rgba(1, 1, 1, 0.5);
   backdrop-filter: blur(8px);
@@ -417,6 +422,11 @@ template {
   display: flex;
   align-items: center;
   column-gap: 2.2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .header__nav {
+    display: none;
+  }
 }
 .header__nav-link {
   font-size: 1.4rem;
@@ -459,6 +469,11 @@ template {
 @media (hover: hover) {
   .header__button-ticket:hover {
     background-color: #016db0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header__button-ticket {
+    display: none;
   }
 }
 .header__button-ticket-icon {
@@ -506,6 +521,24 @@ template {
   .header__button-partner:hover::before {
     transform: translate(-25%, -25%);
   }
+}
+@media only screen and (max-width: 1024px) {
+  .header__button-partner {
+    display: none;
+  }
+}
+.header__burger-button {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .header__burger-button {
+    display: block;
+    background-color: transparent;
+  }
+}
+.header__burger-button svg {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .footer {
@@ -631,6 +664,11 @@ template {
   padding-bottom: 7.2rem;
   z-index: 0;
 }
+@media only screen and (max-width: 1024px) {
+  .intro {
+    padding-top: 7rem;
+  }
+}
 .intro__overlay {
   position: absolute;
   top: 0;
@@ -648,6 +686,18 @@ template {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__upper {
+    margin: 4.2rem 0 2.4rem;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__upper {
+    margin: 3.2rem 0 2.4rem;
+    justify-content: center;
+  }
+}
 .intro__upper-place {
   font-size: 2rem;
   color: white;
@@ -656,6 +706,23 @@ template {
   margin-bottom: 1.2rem;
   line-height: 1.2;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__upper-place {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__upper-place {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .intro__upper-place {
+    margin-bottom: 0.4rem;
+  }
+}
 .intro__upper-date {
   line-height: 1.2;
   font-weight: 500;
@@ -663,14 +730,46 @@ template {
   vertical-align: middle;
   color: white;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__upper-date {
+    text-align: center;
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__upper-date {
+    font-size: 2.4rem;
+  }
+}
 .intro__center {
   margin-bottom: 10rem;
+}
+@media only screen and (max-width: 1024px) {
+  .intro__center {
+    margin-bottom: 8rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center {
+    margin-bottom: 6.4rem;
+  }
 }
 .intro__center-tags {
   display: flex;
   align-items: center;
   column-gap: 2.4rem;
   margin-bottom: 2.6rem;
+}
+@media only screen and (max-width: 1024px) {
+  .intro__center-tags {
+    justify-content: center;
+    column-gap: 1.2rem;
+    row-gap: 1rem;
+    width: 100%;
+    max-width: 40rem;
+    flex-wrap: wrap;
+    margin: 0 auto 4.8rem;
+  }
 }
 .intro__center-tags-item {
   font-weight: 600;
@@ -688,9 +787,30 @@ template {
   backdrop-filter: blur(5px);
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__center-tags-item {
+    font-size: 1.4rem;
+    padding-inline: 2rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-tags-item {
+    font-size: 1.2rem;
+    padding-inline: 1.6rem;
+    height: 2.4rem;
+  }
+}
 .intro__center-title-wrapper {
   position: relative;
-  margin-bottom: 9.6rem;
+  margin-bottom: 10.4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .intro__center-title-wrapper {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .intro__center-people-list {
   position: absolute;
@@ -700,6 +820,19 @@ template {
   align-items: center;
   right: 39.5rem;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__center-people-list {
+    position: relative;
+    right: auto;
+    left: 5rem;
+    bottom: auto;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-people-list {
+    left: 3rem;
+  }
+}
 .intro__center-people-item {
   width: 7.2rem;
   height: 7.2rem;
@@ -707,21 +840,53 @@ template {
   z-index: 5;
   border-radius: 7.2rem;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__center-people-item {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
 .intro__center-people-item:nth-child(2) {
   left: -2rem;
   z-index: 4;
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item:nth-child(2) {
+    left: -1rem;
+  }
 }
 .intro__center-people-item:nth-child(3) {
   left: -4rem;
   z-index: 3;
 }
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item:nth-child(3) {
+    left: -2rem;
+  }
+}
 .intro__center-people-item:nth-child(4) {
   left: -6rem;
   z-index: 2;
 }
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item:nth-child(4) {
+    left: -3rem;
+  }
+}
 .intro__center-people-item:nth-child(5) {
   left: -8rem;
   z-index: 1;
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item:nth-child(5) {
+    left: -4rem;
+  }
 }
 .intro__center-people-item:nth-child(6) {
   left: -10rem;
@@ -737,6 +902,12 @@ template {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item:nth-child(6) {
+    left: -5rem;
+    font-size: 1.4rem;
+  }
+}
 .intro__center-people-item img {
   width: 7.2rem;
   height: 7.2rem;
@@ -745,8 +916,25 @@ template {
   bottom: 0;
   left: 0;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__center-people-item img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item img {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
 .intro__center-people-item span {
   padding-left: 0.25rem;
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-people-item span {
+    padding-left: 0;
+  }
 }
 .intro__center-title {
   font-weight: 700;
@@ -757,6 +945,25 @@ template {
   line-height: 1.2;
   margin: 0;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1024px) {
+  .intro__center-title {
+    font-size: 4rem;
+    text-align: center;
+    max-width: 70.9rem;
+    margin-bottom: 2.4rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-title {
+    font-size: 2.2rem;
+    max-width: 37.9rem;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .intro__center-title {
+    font-size: 1.8rem;
+  }
 }
 .intro__center-buy-ticket {
   background-color: #E45D22;
@@ -778,6 +985,22 @@ template {
     background-color: #be4613;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .intro__center-buy-ticket {
+    font-size: 1.6rem;
+    margin: 0 auto;
+    height: 5.2rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__center-buy-ticket {
+    margin: 0 auto;
+    padding-inline: 2.4rem;
+    font-size: 1.4rem;
+  }
+}
 .intro__center-buy-ticket svg {
   width: 2.4rem;
   height: 2.4rem;
@@ -787,19 +1010,72 @@ template {
   align-items: flex-end;
   column-gap: 10rem;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__bottom-info-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 4rem;
+    row-gap: 4.8rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__bottom-info-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 .intro__bottom-info-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 1.6rem;
 }
+@media only screen and (max-width: 1024px) {
+  .intro__bottom-info-item {
+    row-gap: 1rem;
+  }
+}
 .intro__bottom-info-item:first-child {
   flex: 1;
+}
+@media only screen and (max-width: 1024px) {
+  .intro__bottom-info-item:first-child {
+    flex: auto;
+  }
 }
 .intro__bottom-info-item:first-child .intro__bottom-info-item-number {
   font-weight: 400;
   font-size: 9.6rem;
   letter-spacing: -0.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .intro__bottom-info-item:first-child .intro__bottom-info-item-number {
+    font-size: 6.8rem;
+    letter-spacing: -0.5rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__bottom-info-item:first-child .intro__bottom-info-item-number {
+    font-size: 4.8rem;
+    letter-spacing: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .intro__bottom-info-item:last-child .intro__bottom-info-item-number {
+    font-size: 4.4rem;
+    letter-spacing: -0.5rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__bottom-info-item:last-child .intro__bottom-info-item-number {
+    font-size: 2.4rem;
+    letter-spacing: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .intro__bottom-info-item:last-child .intro__bottom-info-item-number {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
 }
 .intro__bottom-info-item-number {
   font-size: 6.4rem;
@@ -807,6 +1083,18 @@ template {
   line-height: 1;
   color: white;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 640px) {
+  .intro__bottom-info-item-number {
+    font-size: 6.8rem;
+    letter-spacing: -0.5rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .intro__bottom-info-item-number {
+    font-size: 4.8rem;
+    letter-spacing: 0rem;
+  }
 }
 .intro__bottom-info-item-text {
   color: #9A9A9A;
@@ -830,6 +1118,11 @@ template {
 @media only screen and (max-width: 1540px) {
   .intro__figure {
     display: block;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .intro__figure {
+    display: none;
   }
 }
 
@@ -1893,6 +2186,11 @@ html {
 @media only screen and (max-width: 1540px) {
   html {
     font-size: 0.53vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 10px;
   }
 }
 

@@ -1,6 +1,6 @@
 {
-  "name": "tools.pixelplus.ru_frontend",
-  "version": "0.0.0",
+  "name": "tgconf",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
