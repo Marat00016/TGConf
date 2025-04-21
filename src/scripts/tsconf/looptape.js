@@ -9,18 +9,45 @@ export default function loopTape() {
 
     const reversed = Boolean(tape?.dataset?.reversed)
     const speed = Number(tape?.dataset?.speed)
-
-    const copyOfChildren = [...tape.cloneNode(true).children]
-
-    copyOfChildren.forEach((item) => { tape.appendChild(item) })
+    const modal = Boolean(tape?.dataset?.modal)
+    const duplicate = Boolean(tape?.dataset?.duplicate)
 
     const children = tape.children
 
-    horizontalLoop(children, {
+    const tl = horizontalLoop(children, {
       repeat: -1,
       speed: speed,
       paddingRight: parseFloat(gsap.getProperty(children[0], "marginRight", "px")),
       reversed: reversed,
     })
+
+    if (modal) {
+      const buttons = tape.querySelectorAll('button')
+
+      if (!buttons.length) return
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          tl.pause()
+        })
+      })
+
+      window.fancybox.bind("[data-fancybox]", {
+        on: {
+          "*": (_, eventName) => {
+            if (eventName === 'close') {
+              tl
+                .play()
+                .reversed(true)
+            }
+          },
+        },
+      })
+    }
+
+    // const copyOfChildren = [...tape.cloneNode(true).children]
+
+    // copyOfChildren.forEach((item) => { tape.appendChild(item) })
+
   })
 }

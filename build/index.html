@@ -31,14 +31,14 @@
             </svg>
           </a>
           <nav class="header__nav">
-            <a class="header__nav-link" href="#">Программа</a>
             <a class="header__nav-link" href="#to-speakers">СПикеры</a>
+            <a class="header__nav-link" href="#to-future">Программа</a>
             <a class="header__nav-link" href="#to-place">Место проведения</a>
             <a class="header__nav-link" href="#">TgConf Awards</a>
           </nav>
         </div>
         <div class="header__right-column">
-          <button data-fancybox data-src="#dialog-content" class="header__button-ticket" type="button">
+          <button class="header__button-ticket" type="button">
             <svg class="header__button-ticket-icon">
               <use xlink:href="#stars"></use>
             </svg>
@@ -177,45 +177,45 @@
       <span class="speakers__past-conferences">
         Прошлых конференций 2024-2025 годов
       </span>
-      <div class="speakers__cards js-tape-loop" data-reversed="true" data-speed="1">
-        <div class="speakers__card">
+      <div class="speakers__cards js-tape-loop" data-modal="true" data-reversed="true" data-speed="1">
+        <button type="button" data-fancybox data-src="#speaker-one" class="speakers__card">
           <div class="speakers__card-main">
-            <img src="./assets/images/speaker-one.png" alt="speaker-img"/>    
+            <img loading="lazy" src="./assets/images/speaker-one.png" alt="speaker-img" />    
             <span>
-              Марат <br> Шайхетдинов
+              Ярослав <br> Бабушкин
             </span>
           </div>
           <p>
             Основатель Clickise и TgConf
           </p>
-        </div>
-        <div class="speakers__card">
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-two" class="speakers__card">
           <div class="speakers__card-main">
-            <img src="./assets/images/speaker-two.png" alt="speaker-img"/>
+            <img loading="lazy" src="./assets/images/speaker-two.png" alt="speaker-img" />
             <span>
-              Марат <br> Шайхетдинов
+              Павел <br> Калюков
             </span>
           </div>
           <p>
             Георгий ЛобушкинБывший пресс-секретарь
             Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
           </p>
-        </div>
-        <div class="speakers__card">
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-three" class="speakers__card">
           <div class="speakers__card-main">
-            <img src="./assets/images/speaker-three.png" alt="speaker-img"/>
+            <img loading="lazy" src="./assets/images/speaker-three.png" alt="speaker-img"/>
             <span>
-              Марат <br> Шайхетдинов
+              Михаил <br> Христенко
             </span>
           </div>
           <p>
             Digital-блогер и SMM-стратег, создатель
             dnative.ru, сооснователь подкаст-платформы mave.digital
           </p>
-        </div>
-        <div class="speakers__card">
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-four" class="speakers__card">
           <div class="speakers__card-main">
-            <img src="./assets/images/speaker-four.png" alt="speaker-img"/>
+            <img loading="lazy" src="./assets/images/speaker-four.png" alt="speaker-img"/>
             <span>
               Марат <br> Шайхетдинов
             </span>
@@ -223,31 +223,79 @@
           <p>
             Основатель Clickise и TgConf
           </p>
-        </div>
-        <div class="speakers__card">
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-five" class="speakers__card">
           <div class="speakers__card-main">
-            <img src="./assets/images/speaker-five.png" alt="speaker-img"/>
+            <img loading="lazy" src="./assets/images/speaker-five.png" alt="speaker-img"/>
             <span>
-              Марат <br> Шайхетдинов
+              Кирилл <br> Сибиряк
             </span>
           </div>
           <p>
             Георгий ЛобушкинБывший пресс-секретарь 
             Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
           </p>
-        </div>
-        <div class="speakers__card">
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-six" class="speakers__card">
           <div class="speakers__card-main">
-            <img src="./assets/images/speaker-six.png" alt="speaker-img"/>
+            <img loading="lazy" src="./assets/images/speaker-six.png" alt="speaker-img"/>
             <span>
-              Марат <br> Шайхетдинов
+              Ирина <br> Хакамада
             </span>
           </div>
            <p>
             Digital-блогер и SMM-стратег, создатель
             dnative.ru, сооснователь подкаст-платформы mave.digital
           </p>
-        </div>
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-seven" class="speakers__card">
+          <div class="speakers__card-main">
+            <img loading="lazy" src="./assets/images/speaker-seven.png" alt="speaker-img"/>
+            <span>
+              Георгий <br> Лобушкин
+            </span>
+          </div>
+           <p>
+            Digital-блогер и SMM-стратег, создатель
+            dnative.ru, сооснователь подкаст-платформы mave.digital
+          </p>
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-eight" class="speakers__card">
+          <div class="speakers__card-main">
+            <img loading="lazy" src="./assets/images/speaker-eight.png" alt="speaker-img"/>
+            <span>
+              Феликс <br> Зинатуллин
+            </span>
+          </div>
+           <p>
+            Digital-блогер и SMM-стратег, создатель
+            dnative.ru, сооснователь подкаст-платформы mave.digital
+          </p>
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-nine" class="speakers__card">
+          <div class="speakers__card-main">
+            <img loading="lazy" src="./assets/images/speaker-nine.png" alt="speaker-img"/>
+            <span>
+              Дмитрий <br> Форман
+            </span>
+          </div>
+           <p>
+            Digital-блогер и SMM-стратег, создатель
+            dnative.ru, сооснователь подкаст-платформы mave.digital
+          </p>
+        </button>
+        <button type="button" data-fancybox data-src="#speaker-ten" class="speakers__card">
+          <div class="speakers__card-main">
+            <img loading="lazy" src="./assets/images/speaker-ten.png" alt="speaker-img"/>
+            <span>
+              Алексей <br> Соловьёв
+            </span>
+          </div>
+           <p>
+            Digital-блогер и SMM-стратег, создатель
+            dnative.ru, сооснователь подкаст-платформы mave.digital
+          </p>
+        </button>
       </div>
     </div>
   </section>
@@ -278,7 +326,7 @@
     </div>
   </section>
 
-  <section class="future">
+  <section class="future" id="future">
     <div class="future__blur"></div>
     <img class="future__figure" src="./assets/images/figure-five.png" alt="figure">
     <div class="container">
@@ -703,9 +751,126 @@
       </div>
     </footer>
   </div>
-  <div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;">
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-one" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-one.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-two" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-two.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-three" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-three.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-four" style="display:none;">
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-four.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-five" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-five.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-six" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-six.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-seven" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-seven.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-eight" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-eight.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-nine" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-nine.png" alt="speaker-img"/>
+      <span>
+        Марат <br> Шайхетдинов
+      </span>
+    </div>
+    <p class="tg-modal-config-user__text">
+      Георгий ЛобушкинБывший пресс-секретарь<br>
+      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+    </p>
+  </div>
+  
+  <div class="tg-modal-config tg-modal-config-user" id="speaker-ten" style="display:none;">
+    <div class="tg-modal-config-user__header">
+      <img src="./assets/images/speaker-ten.png" alt="speaker-img"/>
       <span>
         Марат <br> Шайхетдинов
       </span>

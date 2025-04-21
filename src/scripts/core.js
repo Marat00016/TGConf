@@ -9,6 +9,10 @@ import initTickets from "./tsconf/tickets"
 import './utils/validation';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const instance = Fancybox;
+  instance.bind('[data-fancybox]', {});
+  window.fancybox = instance
+  
   smoothScrolling();
   initAnchors();
   loopTape();
@@ -16,8 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFutureSlider();
   initTickets();
   connectMap();
-  
-  const instance = Fancybox;
-  instance.bind('[data-fancybox]', {});
-  window.fancybox = instance
+
 })
