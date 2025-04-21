@@ -1,3 +1,4 @@
+import { Fancybox } from "@fancyapps/ui"
 import loopTape from "./tsconf/looptape"
 import initHeaderAnimation from "./tsconf/header"
 import initAnchors from "./utils/anhors"
@@ -14,4 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initFutureSlider();
   initTickets();
   connectMap();
+  
+  const instance = Fancybox;
+  instance.bind('[data-fancybox]', {});
+  window.fancybox = instance
 })

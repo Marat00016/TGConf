@@ -20,13 +20,13 @@
     width: fit-content;
 
     @include media.breakpoint(tablet) {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin-bottom: 1.8rem;
       padding-inline: 1.2rem;
     }
 
     @include media.breakpoint(mobile) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 

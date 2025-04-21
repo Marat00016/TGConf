@@ -1,9 +1,11 @@
+@use '@fancyapps/ui/dist/fancybox/fancybox.css';
 @use "fonts";
 @use "media";
 @use "normalize";
 @use "layout";
 @use "common/header";
 @use "common/footer";
+@use "common/modal.scss";
 @use "tgconf/intro";
 @use "tgconf/about";
 @use "tgconf/speakers";
@@ -16,6 +18,7 @@
 @use "tgconf/map";
 @use "tgconf/afterparty";
 @use "tgconf/info";
+@use "tgconf/modal-user.scss";
 
 
 html {

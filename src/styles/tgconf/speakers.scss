@@ -48,21 +48,21 @@
   }
 
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    column-gap: 2.4rem;
-    row-gap: 6.4rem;
-    justify-content: center;
+    display: flex;
+    align-items: stretch;
+    white-space: nowrap;
     margin-bottom: 6.4rem;
   }
 
   &__card {
+    display: inline-block;
     position: relative;
+    padding: 0 1.2rem;
+    min-height: 36.5rem;
   }
 
   &__card-main {
-    width: 100%;
-    max-width: 46.4rem;
+    width: 46.4rem;
     height: 30.5rem;
     border-radius: 2.4rem;
     overflow: hidden;
@@ -147,26 +147,6 @@
     opacity: .65;
   }
 
-  &__button {
-    width: 100%;
-    background-color: #E45D22;
-    height: 5.6rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1;
-    text-align: center;
-    border-radius: 5.6rem;
-    color: white;
-    transition: 0.3s ease background-color;
-
-    @media (hover: hover) {
-      &:hover {
-        background-color: #be4613;
-      }
-    }
-  }
-
   &__figure {
     position: absolute;
     bottom: 3.1rem;
@@ -182,6 +162,10 @@
 
     @include media.breakpoint(medium-desktop) {
       display: block;
+    }
+
+    @include media.breakpoint(tablet) {
+      display: none;
     }
   }
 }

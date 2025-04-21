@@ -1,0 +1,23 @@
+@use '../media';
+
+.fancybox__content > .f-button.is-close-btn {
+  --f-button-border-radius: 50%;
+  --f-button-bg: rgba(0, 0, 0, 0.6);
+
+  opacity: 1 !important;
+  top: 2.4rem !important; 
+  right: 2.4rem !important; 
+
+  @include media.breakpoint(tablet) {
+    top: 1.8rem !important; 
+    right: 1.8rem !important; 
+  }
+}
+
+.fancybox__slide {
+  padding: 1rem !important;
+}
+
+.f-button svg {
+  stroke: white;
+}
