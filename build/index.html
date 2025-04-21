@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
@@ -44,7 +44,7 @@
             </svg>
             Приобрести билет
           </button>
-          <button type="button" class="header__button-partner">
+          <button data-fancybox data-src="#modal-partners" type="button" class="header__button-partner">
             Стать  партнером
           </button>
         </div>
@@ -163,7 +163,6 @@
   </section>
 
   <section class="speakers" id="speakers">
-    <img class="speakers__figure" src="./assets/images/figure-two.png" alt="figure-two">
     <div class="container">
       <div class="speakers__header">
         <h2 class="speakers__title">
@@ -178,7 +177,7 @@
       <span class="speakers__past-conferences">
         Прошлых конференций 2024-2025 годов
       </span>
-      <div class="speakers__cards js-tape-loop" data-speed="1">
+      <div class="speakers__cards js-tape-loop" data-reversed="true" data-speed="1">
         <div class="speakers__card">
           <div class="speakers__card-main">
             <img src="./assets/images/speaker-one.png" alt="speaker-img"/>    
@@ -512,12 +511,12 @@
         Передовое агентство пополнения кабинетов Telegram Ads, выдающие людей
       </p>
       <div class="organisers__cards">
-        <a href="#" class="organisers__card">
+        <a target="_blank" rel="noopener noreferrer" href="https://clickise.org" class="organisers__card">
           <svg>
             <use xlink:href="#clickise-logo"></use>
           </svg>
         </a>
-        <a href="#" class="organisers__card">
+        <a target="_blank" rel="noopener noreferrer" href="https://tgbooster.ru" class="organisers__card">
           <svg>
             <use xlink:href="#tg-boost-logo"></use>
           </svg>
@@ -581,6 +580,7 @@
           id="map"
           data-json="./assets/json/map.json"
           data-zoom="13"
+          data-icon="./assets/icons/map-icon.svg"
           data-center="55.749461, 37.696446">
         </div>
         <div class="place__detail">
@@ -703,7 +703,7 @@
       </div>
     </footer>
   </div>
-  <div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;max-width:500px;">
+  <div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;">
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-four.png" alt="speaker-img"/>
       <span>
@@ -716,17 +716,40 @@
     </p>
   </div>
   
-  <div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;max-width:500px;">
-    <div class="tg-modal-config-user__header">
-      <img src="./assets/images/speaker-four.png" alt="speaker-img"/>
-      <span>
-        Марат <br> Шайхетдинов
-      </span>
-    </div>
-    <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
-    </p>
+  <div class="tg-modal-config tg-modal-partners" id="modal-partners" style="display:none;">
+    <h2 class="tg-modal-partners__title">
+      Станьте партнером конференции
+    </h2>
+    <form novalidate data-need-validation class="tg-modal-partners__form" method="post"> 
+      <label class="tg-modal-partners__form-control" for="name">
+        <input placeholder="Ваше имя" name="name" type="text" class="tg-modal-partners__form-input" data-parsley-minlength="2" required="true"/>
+      </label>
+      
+       <label class="tg-modal-partners__form-control" for="phone">
+        <input placeholder="Номер телефона" name="name" type="text" class="js-phone-input tg-modal-partners__form-input" name="phone" type="phone" autocomplete="off" data-parsley-phone required="true"/>
+      </label>
+      
+      <label class="tg-modal-partners__form-control" for="telegram">
+        <input placeholder="telegram" name="telegram" type="text" class="tg-modal-partners__form-input" required="true"/>
+      </label>
+  
+      <label class="tg-modal-partners__form-control" for="company">
+        <input placeholder="Компания" name="company" type="text" class="tg-modal-partners__form-input"/>
+      </label>
+  
+      <label class="tg-modal-partners__form-control-checkbox" for="policy">
+        <div class="tg-modal-partners__checkmark-wrapper">
+          <input class="tg-modal-partners__checkbox" name="policy" type="checkbox" required="true"/>
+        </div>
+        <p class="tg-modal-partners__form-policy">
+          Я согласен(-на) с политикой конфиденциальности.
+        </p>
+      </label>
+  
+      <button class="tg-modal-partners__button-submit">
+        Оставить заявку
+      </button>
+    </form>
   </div>
   
   <script src="https://api-maps.yandex.ru/2.1/?apikey=428d32ed-76b6-4133-ae2e-94978ae00167&lang=ru_RU" type="text/javascript" defer="true"></script>

@@ -3,6 +3,8 @@
 .fancybox__content > .f-button.is-close-btn {
   --f-button-border-radius: 50%;
   --f-button-bg: rgba(0, 0, 0, 0.6);
+  --f-button-width: 3.2rem;
+  --f-button-height: 3.2rem;
 
   opacity: 1 !important;
   top: 2.4rem !important; 
@@ -20,4 +22,6 @@
 
 .f-button svg {
   stroke: white;
+  width: 1.8rem !important;
+  height: 1.8rem !important;
 }

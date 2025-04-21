@@ -6,6 +6,12 @@ export default {
   output: {
     filename: '[name].min.js',
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
+  ],
   module: {
     rules: [
       {

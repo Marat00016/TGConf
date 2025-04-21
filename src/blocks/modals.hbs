@@ -1,4 +1,4 @@
-<div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;max-width:500px;">
+<div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;">
   <div class="tg-modal-config-user__header">
     <img src="./assets/images/speaker-four.png" alt="speaker-img"/>
     <span>
@@ -11,16 +11,39 @@
   </p>
 </div>
 
-<div class="tg-modal-config tg-modal-config-user" id="dialog-content" style="display:none;max-width:500px;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/speaker-four.png" alt="speaker-img"/>
-    <span>
-      Марат <br> Шайхетдинов
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Георгий ЛобушкинБывший пресс-секретарь<br>
-    Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
-  </p>
+<div class="tg-modal-config tg-modal-partners" id="modal-partners" style="display:none;">
+  <h2 class="tg-modal-partners__title">
+    Станьте партнером конференции
+  </h2>
+  <form novalidate data-need-validation class="tg-modal-partners__form" method="post"> 
+    <label class="tg-modal-partners__form-control" for="name">
+      <input placeholder="Ваше имя" name="name" type="text" class="tg-modal-partners__form-input" data-parsley-minlength="2" required="true"/>
+    </label>
+    
+     <label class="tg-modal-partners__form-control" for="phone">
+      <input placeholder="Номер телефона" name="name" type="text" class="js-phone-input tg-modal-partners__form-input" name="phone" type="phone" autocomplete="off" data-parsley-phone required="true"/>
+    </label>
+    
+    <label class="tg-modal-partners__form-control" for="telegram">
+      <input placeholder="telegram" name="telegram" type="text" class="tg-modal-partners__form-input" required="true"/>
+    </label>
+
+    <label class="tg-modal-partners__form-control" for="company">
+      <input placeholder="Компания" name="company" type="text" class="tg-modal-partners__form-input"/>
+    </label>
+
+    <label class="tg-modal-partners__form-control-checkbox" for="policy">
+      <div class="tg-modal-partners__checkmark-wrapper">
+        <input class="tg-modal-partners__checkbox" name="policy" type="checkbox" required="true"/>
+      </div>
+      <p class="tg-modal-partners__form-policy">
+        Я согласен(-на) с политикой конфиденциальности.
+      </p>
+    </label>
+
+    <button class="tg-modal-partners__button-submit">
+      Оставить заявку
+    </button>
+  </form>
 </div>
 

@@ -107,7 +107,6 @@
   </section>
 
   <section class="speakers" id="speakers">
-    <img class="speakers__figure" src="./assets/images/figure-two.png" alt="figure-two">
     <div class="container">
       <div class="speakers__header">
         <h2 class="speakers__title">
@@ -122,7 +121,7 @@
       <span class="speakers__past-conferences">
         Прошлых конференций 2024-2025 годов
       </span>
-      <div class="speakers__cards js-tape-loop" data-speed="1">
+      <div class="speakers__cards js-tape-loop" data-reversed="true" data-speed="1">
         <div class="speakers__card">
           <div class="speakers__card-main">
             <img src="./assets/images/speaker-one.png" alt="speaker-img"/>    
@@ -456,12 +455,12 @@
         Передовое агентство пополнения кабинетов Telegram Ads, выдающие людей
       </p>
       <div class="organisers__cards">
-        <a href="#" class="organisers__card">
+        <a target="_blank" rel="noopener noreferrer" href="https://clickise.org" class="organisers__card">
           <svg>
             <use xlink:href="#clickise-logo"></use>
           </svg>
         </a>
-        <a href="#" class="organisers__card">
+        <a target="_blank" rel="noopener noreferrer" href="https://tgbooster.ru" class="organisers__card">
           <svg>
             <use xlink:href="#tg-boost-logo"></use>
           </svg>
@@ -525,6 +524,7 @@
           id="map"
           data-json="./assets/json/map.json"
           data-zoom="13"
+          data-icon="./assets/icons/map-icon.svg"
           data-center="55.749461, 37.696446">
         </div>
         <div class="place__detail">
