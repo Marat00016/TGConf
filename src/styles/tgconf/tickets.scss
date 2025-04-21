@@ -19,7 +19,12 @@
     @include media.breakpoint(medium-desktop) {
       display: block;
     }
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
+
   &__title {
     font-weight: 700;
     font-size: 10.2rem;
@@ -28,13 +33,28 @@
     text-align: left;
     color: white;
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      text-align: left;
+      font-size: 4.2rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__cards {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     align-items: stretch;
     column-gap: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      display: flex !important;
+      column-gap: 0;
+    }
   }
 
   &__card {
@@ -45,6 +65,15 @@
     position: relative;
     overflow: hidden;
     z-index: 0;
+    width: 100%;
+
+    @include media.breakpoint(tablet) {
+      max-width: 35rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      max-width: 30rem;
+    }
   }
 
   &__card-header {
@@ -53,6 +82,10 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2.4rem;
+
+    @include media.breakpoint(mobile) {
+      row-gap: 1.2rem;
+    }
   }
 
   &__card-header-top {
@@ -75,6 +108,10 @@
     text-transform: uppercase;
     color: white;
     background-color: rgba(255, 255, 255, 0.4);
+
+    @include media.breakpoint(mobile) {
+      row-gap: 1.2rem;
+    }
   }
 
   &__card-header-svg {
@@ -86,6 +123,11 @@
     height: 6.4rem;
     border-radius: 6.4rem;
     background-color: #26252A;
+
+    @include media.breakpoint(mobile) {
+      min-width: 4.8rem;
+      height: 4.8rem;
+    }
   }
 
   &__card-header-svg--blue {
@@ -103,6 +145,11 @@
   &__card-header-svg svg {
     width: 2.8rem;
     height: 2.8rem;
+
+    @include media.breakpoint(mobile) {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 
   &__card-tariff {
@@ -111,6 +158,10 @@
     line-height: 1.2;
     text-transform: uppercase;
     color: white;
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__card-base-price {
@@ -121,6 +172,20 @@
     text-transform: uppercase;
     color: white;
     margin-bottom: .5rem;
+
+    @include media.breakpoint(mobile) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__card-main-price-wrapper {
+    @include media.breakpoint(mobile) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__card-after-price-wrapper {
@@ -128,6 +193,10 @@
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 2.4rem;
+
+    @include media.breakpoint(mobile) {
+      margin-bottom: 0;
+    }
   }
 
   &__card-after-price-time {

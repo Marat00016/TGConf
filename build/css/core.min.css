@@ -378,7 +378,7 @@ template {
   right: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   height: 10rem;
   display: flex;
   align-items: center;
@@ -1720,6 +1720,11 @@ template {
     display: block;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .tickets__figure {
+    display: none;
+  }
+}
 .tickets__title {
   font-weight: 700;
   font-size: 10.2rem;
@@ -1729,11 +1734,29 @@ template {
   color: white;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1024px) {
+  .tickets__title {
+    text-align: left;
+    font-size: 4.2rem;
+    margin-bottom: 4.8rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .tickets__title {
+    font-size: 2.4rem;
+  }
+}
 .tickets__cards {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   align-items: stretch;
   column-gap: 2.4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .tickets__cards {
+    display: flex !important;
+    column-gap: 0;
+  }
 }
 .tickets__card {
   padding: 2.4rem;
@@ -1743,6 +1766,17 @@ template {
   position: relative;
   overflow: hidden;
   z-index: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .tickets__card {
+    max-width: 35rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card {
+    max-width: 30rem;
+  }
 }
 .tickets__card-header {
   margin-bottom: 3.2rem;
@@ -1750,6 +1784,11 @@ template {
   flex-direction: column;
   align-items: flex-start;
   row-gap: 2.4rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card-header {
+    row-gap: 1.2rem;
+  }
 }
 .tickets__card-header-top {
   display: flex;
@@ -1771,6 +1810,11 @@ template {
   color: white;
   background-color: rgba(255, 255, 255, 0.4);
 }
+@media only screen and (max-width: 640px) {
+  .tickets__card-header-top span {
+    row-gap: 1.2rem;
+  }
+}
 .tickets__card-header-svg {
   display: flex;
   align-items: center;
@@ -1780,6 +1824,12 @@ template {
   height: 6.4rem;
   border-radius: 6.4rem;
   background-color: #26252A;
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card-header-svg {
+    min-width: 4.8rem;
+    height: 4.8rem;
+  }
 }
 .tickets__card-header-svg--blue {
   background-color: #0288DB;
@@ -1794,12 +1844,23 @@ template {
   width: 2.8rem;
   height: 2.8rem;
 }
+@media only screen and (max-width: 640px) {
+  .tickets__card-header-svg svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
 .tickets__card-tariff {
   font-weight: 500;
   font-size: 3.2rem;
   line-height: 1.2;
   text-transform: uppercase;
   color: white;
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card-tariff {
+    font-size: 2.4rem;
+  }
 }
 .tickets__card-base-price {
   display: inline-block;
@@ -1810,11 +1871,30 @@ template {
   color: white;
   margin-bottom: 0.5rem;
 }
+@media only screen and (max-width: 640px) {
+  .tickets__card-base-price {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card-main-price-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+}
 .tickets__card-after-price-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 2.4rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card-after-price-wrapper {
+    margin-bottom: 0;
+  }
 }
 .tickets__card-after-price-time {
   font-weight: 500;
