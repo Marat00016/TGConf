@@ -1,5 +1,6 @@
-.organisers {
+@use '../media';
 
+.organisers {
   &__title {
     font-weight: 700;
     font-size: 10.2rem;
@@ -9,6 +10,15 @@
     color: white;
     text-transform: uppercase;
     margin-bottom: 3.2rem;
+
+    @include media.breakpoint(tablet) {
+      font-size: 4.2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__text {
@@ -19,6 +29,12 @@
     width: 100%;
     max-width: 54rem;
     margin-bottom: 6.4rem;
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.6rem;
+      max-width: 36.1rem;
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__cards {
@@ -26,6 +42,11 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
     column-gap: 2.4rem;
+
+    @include media.breakpoint(mobile) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      row-gap: 1.2rem;
+    }
   }
 
   &__card {
@@ -46,6 +67,10 @@
         background-color: #302f32;
       }
     }
+
+    @include media.breakpoint(tablet) {
+      height: 15.5rem;
+    }
   }
 
   &__card svg {
@@ -56,9 +81,17 @@
 
   &__card:first-child svg {
     max-width: 29.2rem;
+
+    @include media.breakpoint(tablet) {
+      max-width: 16.2rem;
+    }
   }
 
   &__card:last-child svg {
     max-width: 37.5rem;
+    
+    @include media.breakpoint(tablet) {
+      max-width: 20.2rem;
+    }
   }
 }

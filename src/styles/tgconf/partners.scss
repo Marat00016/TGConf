@@ -18,6 +18,10 @@
     @include media.breakpoint(medium-desktop) {
       display: block;
     }
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__title {
@@ -31,6 +35,16 @@
     align-items: flex-start;
     color: white;
     margin-bottom: 10rem;
+
+    @include media.breakpoint(tablet) {
+      text-align: left;
+      font-size: 4.2rem;
+      margin-bottom: 4.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__cards {
@@ -39,6 +53,16 @@
     gap: 2.4rem;
     align-items: stretch;
     margin-bottom: 6.4rem;
+
+    @include media.breakpoint(tablet) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include media.breakpoint(mobile) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__card-link {
@@ -51,6 +75,15 @@
     overflow: hidden;
     position: relative;
     z-index: 0;
+
+    @include media.breakpoint(tablet) {
+      height: 12rem;
+      border-radius: 1.6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      height: 8rem;
+    }
   }
 
   &__card-link:last-child {
@@ -71,11 +104,23 @@
         opacity: .85;
       }
     }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.4rem;
+    }
+
+    @include media.breakpoint(small-mobile) {
+      font-size: 1.2rem;
+    }
   }
 
   &__card-link:last-child svg {
     width: 2.4rem;
     height: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__card-link:last-child:before {
@@ -112,6 +157,10 @@
       &:hover {
         background-color: #be4613;
       }
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.4rem;
     }
   }
 }

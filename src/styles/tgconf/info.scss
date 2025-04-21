@@ -19,6 +19,10 @@
     @include media.breakpoint(medium-desktop) {
       display: block;
     }
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__cards {
@@ -28,6 +32,12 @@
     column-gap: 2.4rem;
     row-gap: 4.8rem;
     counter-reset: info-card;
+
+    @include media.breakpoint(tablet) {
+      grid-template-columns: minmax(0, 1fr);
+      column-gap: 0;
+      row-gap: 2.4rem;
+    }
   }
 
   &__blur {
@@ -41,6 +51,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__card {
@@ -55,6 +69,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include media.breakpoint(mobile) {
+      height: 23.7rem;
+      padding: 1.6rem;
+      border-radius: 1.6rem;
+    }
   }
   
   &__card::before {
@@ -64,26 +84,50 @@
     color: #E45D22;
     font-size: 4rem;
     font-weight: 600;
+
+    @include media.breakpoint(tablet) {
+      font-size: 3.2rem;
+    }
   }
 
   &__card:nth-child(1) {
     grid-row: 1/1;
     grid-column: 1/6;
+
+    @include media.breakpoint(tablet) {
+      grid-row: auto;
+      grid-column: auto;
+    }
   }
 
   &__card:nth-child(2) {
     grid-row: 1/1;
     grid-column: 6/13;
+
+    @include media.breakpoint(tablet) {
+      grid-row: auto;
+      grid-column: auto;
+    }
   }
 
   &__card:nth-child(3) {
     grid-row: 2/2;
     grid-column: 1/8;
+
+    @include media.breakpoint(tablet) {
+      grid-row: auto;
+      grid-column: auto;
+    }
   }
 
   &__card:nth-child(4) {
     grid-row: 2/2;
     grid-column: 8/13;
+
+    @include media.breakpoint(tablet) {
+      grid-row: auto;
+      grid-column: auto;
+    }
   }
 
   &__card-img {
@@ -104,5 +148,13 @@
     color: white;
     text-transform: uppercase;
     line-height: 1.2;
+
+    @include media.breakpoint(tablet) {
+      font-size: 2.4rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2rem;
+    }
   }
 }

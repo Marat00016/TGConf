@@ -1,9 +1,19 @@
+@use '../media';
+
 #map {
   width: 100%;
   max-width: 58.6rem;
   height: 76rem;
   border-radius: 2.4rem;
   overflow: hidden;
+
+  @include media.breakpoint(tablet) {
+    max-width: none;
+  }
+
+  @include media.breakpoint(tablet) {
+    height: 46.8rem;
+  }
 
   .ymaps-2-1-79-map-copyrights-promo {
     display: none;

@@ -1,7 +1,13 @@
+@use '../media';
+
 .afterparty {
   position: relative;
   padding: 47.7rem 0 16.9rem;
   z-index: 0;
+
+  @include media.breakpoint(tablet) {
+    padding: 14.8rem 0 5rem;
+  }
 
   &::before {
     content: "";
@@ -40,6 +46,17 @@
     color: white;
     line-height: 1.2;
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      width: 100%;
+      text-align: center;
+      font-size: 4.2rem;
+      margin: 0 auto 3.2rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__title {
@@ -51,6 +68,19 @@
     width: 100%;
     max-width: 117.7rem;
     text-transform: uppercase;
+
+    @include media.breakpoint(tablet) {
+      width: 100%;
+      text-align: center;
+      font-size: 4.2rem;
+      max-width: 52rem;
+      margin: 0 auto 34.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+      max-width: 30rem;
+    }
   }
 
   &__button {
@@ -73,6 +103,12 @@
       &:hover {
         background-color: #be4613;
       }
+    }
+    
+    @include media.breakpoint(tablet) {
+      font-size: 1.4rem;
+      height: 5.4rem ;
+      margin: 0 auto;
     }
   }
 

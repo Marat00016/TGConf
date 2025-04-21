@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnchors();
   loopTape();
   initHeaderAnimation();
-  connectMap();
   initFutureSlider();
   initTickets();
+  connectMap();
 })

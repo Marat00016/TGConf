@@ -1,3 +1,5 @@
+@use "media";
+
 .page-content {
   min-height: 100vh;
   min-height: 100dvh;
@@ -16,4 +18,8 @@
   max-width: 148rem;
   margin: 0 auto;
   padding-inline: 2rem;
+
+  @include media.breakpoint(mobile) {
+    padding-inline: 1.6rem;
+  }
 }

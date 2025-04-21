@@ -1,12 +1,22 @@
+@use '../media';
+
 .footer {
   margin-top: 20rem;
   position: relative;
+
+  @include media.breakpoint(tablet) {
+    margin-top: 10rem;
+  }
 
   &__info {
     display: flex;
     align-items: flex-start;
     column-gap: 10.8rem;
     margin-bottom: 9.2rem;
+
+    @include media.breakpoint(tablet) {
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__info-list-org {
@@ -15,6 +25,11 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      align-items: center;
+      row-gap: 1.6rem;
+    }
   }
 
   &__info-list-org li {
@@ -23,6 +38,15 @@
     font-size: 2rem;
     line-height: 1.1;
     text-transform: uppercase;
+    list-style: none;
+
+    @include media.breakpoint(tablet) {
+      font-size: 1.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__info-contacts {
@@ -30,6 +54,10 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__info-contacts li {
@@ -60,6 +88,10 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__info-anchors a {
@@ -83,6 +115,11 @@
     width: 100%;
     max-width: 142.7rem;
     height: 23.1rem;
+
+    @include media.breakpoint(tablet) {
+      max-width: none;
+      height: auto;
+    }
   }
 
   &__bottom {
@@ -91,6 +128,10 @@
     align-items: center;
     justify-content: space-between;
     padding-block: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
   }
 
   &__bottom::before {

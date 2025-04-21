@@ -73,6 +73,7 @@
 
     @include media.breakpoint(mobile) {
       max-width: 30rem;
+      min-height: 54rem;
     }
   }
 
@@ -111,6 +112,9 @@
 
     @include media.breakpoint(mobile) {
       row-gap: 1.2rem;
+      font-size: 1.2rem;
+      height: 2.8rem;
+      padding-inline: 1.2rem;
     }
   }
 
@@ -182,7 +186,7 @@
     @include media.breakpoint(mobile) {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      column-gap: 2.4rem;
       align-items: center;
       margin-bottom: 2.4rem;
     }
@@ -205,6 +209,10 @@
     line-height: 1.4;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7);
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
   }
 
   &__card-after-price {
@@ -213,6 +221,10 @@
     line-height: 1.4;
     text-transform: uppercase;
     color: white;
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__card-buy-ticket-button {
@@ -236,11 +248,23 @@
         background-color: #be4613;
       }
     }
+
+    @include media.breakpoint(mobile) {
+      height: 4.2rem;
+      padding-inline: 0;
+      font-size: 1.4rem;
+      margin-bottom: 3.2rem;
+    }
   }
 
   &__card-buy-ticket-button svg {
     width: 2.4rem;
     height: 2.4rem;
+
+    @include media.breakpoint(mobile) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   &__card-list-info {
@@ -249,6 +273,10 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 1.6rem;
+
+    @include media.breakpoint(mobile) {
+      padding-left: 2.8rem;
+    }
   }
 
   &__card-list-item {
@@ -260,6 +288,10 @@
     position: relative;
     width: 100%;
     max-width: 23.4rem;
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
   }
 
   &__card-list-item::before {
@@ -274,6 +306,16 @@
     position: absolute;
     left: -4rem;
     top: -.25rem;
+
+    @include media.breakpoint(mobile) {
+      width: 2rem;
+      height: 2rem;
+      left: -2.8rem;
+    }
+  }
+
+  &__card--blue {
+    border: none;
   }
 
   &__card--blue::before {

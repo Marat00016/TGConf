@@ -1,3 +1,5 @@
+@use '../media';
+
 .place {
   &__badge {
     margin-bottom: 3.2rem;
@@ -16,11 +18,26 @@
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(.8rem);
     width: fit-content;
+
+    @include media.breakpoint(tablet) {
+      font-size: 1.4rem;
+      margin-bottom: 1.8rem;
+      padding-inline: 1.2rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
   }
 
   &__badge svg {
     width: 2.2rem;
     height: 2.2rem;
+
+    @include media.breakpoint(tablet) {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
   }
 
   &__title {
@@ -30,6 +47,15 @@
     text-transform: uppercase;
     color: white;
     margin-bottom: 10rem;
+
+    @include media.breakpoint(tablet) {
+      font-size: 4.2rem;
+      margin-bottom: 4.6rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__main {
@@ -37,6 +63,13 @@
     align-items: stretch;
     column-gap: 2.4rem;
     width: 100%;
+
+    @include media.breakpoint(tablet) {
+      align-items: flex-start;
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 4.8rem;
+    }
   }
 
   &__detail {
@@ -49,6 +82,15 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: 6.4rem 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 0;
+      height: max-content;
+    }
   }
 
   &__detail-overlay {
@@ -65,12 +107,22 @@
     bottom: 0;
     border-radius: 2.4rem 0 0 2.4rem;
     z-index: -1;
+
+    @include media.breakpoint(tablet) {
+      border-radius: 0;
+      left: -30rem;
+    }
   }
 
   &__detail-decoration {
     width: 7.6rem;
     height: 7.6rem;
     margin-bottom: 2.4rem;
+
+    @include media.breakpoint(tablet) {
+      width: 5.8rem;
+      height: 5.8rem;
+    }
   }
 
   &__detail-name {
@@ -80,6 +132,11 @@
     text-transform: uppercase;
     color: white;
     margin-bottom: 6.4rem;
+
+    @include media.breakpoint(tablet) {
+      font-size: 2.4rem;
+      text-align: center;
+    }
   }
 
   &__detail-list {
@@ -88,6 +145,12 @@
     row-gap: 8.9rem;
     column-gap: 12.4rem;
     list-style: none;
+
+    @include media.breakpoint(tablet) {
+      grid-template-columns: minmax(0, 1fr);
+      column-gap: 0;
+      row-gap: 4.8rem;
+    }
   }
 
   &__detail-list-item {
@@ -98,6 +161,18 @@
     text-transform: uppercase;
     color: white;
     position: relative;
+
+    @include media.breakpoint(tablet) {
+      text-align: center;
+      padding: 0;
+      font-size: 1.8rem;
+    }
+
+    @include media.breakpoint(mobile) {
+      text-align: center;
+      padding: 0;
+      font-size: 1.4rem;
+    }
   }
 
   &__detail-list-item::before {
@@ -109,5 +184,11 @@
     background-color: #E45D22;
     left: 0;
     top: .5rem;
+
+    @include media.breakpoint(tablet) {
+      top: -1.5rem;
+      left: 48%;
+      transform: translateY(-50%);
+    }
   }
 }
