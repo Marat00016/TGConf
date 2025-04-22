@@ -6,6 +6,7 @@ import smoothScrolling from "./utils/smoothScrolling"
 import connectMap from "./utils/mapInit"
 import initFutureSlider from "./tsconf/futureSlider"
 import initTickets from "./tsconf/tickets"
+import initBurgerModal from "./tsconf/menu"
 import './utils/validation';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFutureSlider();
   initTickets();
   connectMap();
-
+  initBurgerModal()
 })

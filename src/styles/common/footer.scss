@@ -83,6 +83,19 @@
     text-transform: uppercase;
   }
 
+  &__info-contacts-text a {
+    text-decoration: none;
+    opacity: 1;
+    transition: .3s ease opacity;
+    color: #9A9A9A;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: .65;
+      }
+    }
+  }
+
   &__info-anchors {
     display: flex;
     flex-direction: column;

@@ -34,34 +34,59 @@
             <a class="header__nav-link" href="#to-speakers">СПикеры</a>
             <a class="header__nav-link" href="#to-future">Программа</a>
             <a class="header__nav-link" href="#to-place">Место проведения</a>
-            <a class="header__nav-link" href="#">TgConf Awards</a>
           </nav>
         </div>
         <div class="header__right-column">
-          <button class="header__button-ticket" type="button">
+          <a href="#to-tickets" class="header__button-ticket">
             <svg class="header__button-ticket-icon">
               <use xlink:href="#stars"></use>
             </svg>
             Приобрести билет
-          </button>
+          </a>
           <button data-fancybox data-src="#modal-partners" type="button" class="header__button-partner">
             Стать  партнером
           </button>
         </div>
-        <button class="header__burger-button" type="button">
+        <button class="header__burger-button js-open" type="button">
           <svg class="header__button-ticket-icon">
             <use xlink:href="#burger"></use>
           </svg>
         </button>
       </div>
     </header>
+    <div class="burger-menu js-burger-menu">
+      <div class="container">
+        <button type="button" class="burger-menu__close-btn js-close">
+          <svg>
+            <use xlink:href="#plus"></use>
+          </svg>
+        </button>
+        <svg class="burger-menu__logo">
+          <use xlink:href="#tgconf-logo"></use>
+        </svg>
+        <nav class="burger-menu__nav">
+          <a class="js-close burger-menu__nav-link " href="#to-speakers">СПикеры</a>
+          <a class="js-close burger-menu__nav-link" href="#to-future">Программа</a>
+          <a class="js-close burger-menu__nav-link" href="#to-place">Место проведения</a>
+        </nav>
+        <a href="#to-tickets" class="js-close burger-menu__button-ticket">
+          <svg class="burger-menu__button-ticket-icon">
+            <use xlink:href="#stars"></use>
+          </svg>
+          Приобрести билет
+        </a>
+        <button data-fancybox data-src="#modal-partners" type="button" class="js-close burger-menu__button-partner">
+          Стать  партнером
+        </button>
+      </div>
+    </div>
     <main>
         <section class="intro">
     <div class="intro__overlay"></div>
     <div class="container">
       <div class="intro__upper">
         <span class="intro__upper-place">МОСКВА, МТС Live Hall</span>
-        <time datetime="20025-10-20" class="intro__upper-date">20 ОКТЯБРЯ <span class="orange">2025</span></time>
+        <time datetime="20025-10-20" class="intro__upper-date">15-16 октября <span class="orange">2025</span></time>
       </div>
       <div class="intro__center">
         <ul class="intro__center-tags">
@@ -92,16 +117,16 @@
               <img src="./assets/images/circle-five.png" alt="person" />
             </li>
             <li class="intro__center-people-item">
-              <span>35+</span>
+              <span>70+</span>
             </li>
           </ul>
         </div>
-        <button class="intro__center-buy-ticket" type="button">
+        <a href="#to-tickets" class="intro__center-buy-ticket">
           <svg>
             <use xlink:href="#stars"></use>
           </svg>
           Приобрести билет
-        </button>
+        </a>
       </div>
       <div class="intro__bottom">
         <ul class="intro__bottom-info-list">
@@ -186,33 +211,34 @@
             </span>
           </div>
           <p>
-            Основатель Clickise и TgConf
+            Журналист Forbes Russia и автор подкаста «Респиратор Бабушкина» на RTVI
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-two" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-two.png" alt="speaker-img" />
             <span>
-              Павел <br> Калюков
+              Павел <br> Калюканов
             </span>
           </div>
           <p>
-            Георгий ЛобушкинБывший пресс-секретарь
-            Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
+            Продакт-менеджер TgStat
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-three" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-three.png" alt="speaker-img"/>
             <span>
-              Михаил <br> Христенко
+              Михаил <br> Христосенко
             </span>
           </div>
           <p>
-            Digital-блогер и SMM-стратег, создатель
-            dnative.ru, сооснователь подкаст-платформы mave.digital
+            Основатель онлайн-школы «SMM Академия»
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-four" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-four.png" alt="speaker-img"/>
@@ -221,9 +247,10 @@
             </span>
           </div>
           <p>
-            Основатель Clickise и TgConf
+            Основатель TgConf, Clickise и TgBooster
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-five" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-five.png" alt="speaker-img"/>
@@ -232,10 +259,10 @@
             </span>
           </div>
           <p>
-            Георгий ЛобушкинБывший пресс-секретарь 
-            Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
+            Владелец 4 онлайн-школ лидеров в своих нишах
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-six" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-six.png" alt="speaker-img"/>
@@ -244,10 +271,10 @@
             </span>
           </div>
            <p>
-            Digital-блогер и SMM-стратег, создатель
-            dnative.ru, сооснователь подкаст-платформы mave.digital
+            Одна из 10 лучших бизнес-спикеров России, автор бестселлеров о самореализации, кандидат экономических наук, доцент, номинант Нобелевской премии Мира
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-seven" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-seven.png" alt="speaker-img"/>
@@ -256,10 +283,10 @@
             </span>
           </div>
            <p>
-            Digital-блогер и SMM-стратег, создатель
-            dnative.ru, сооснователь подкаст-платформы mave.digital
+            Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-eight" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-eight.png" alt="speaker-img"/>
@@ -267,11 +294,11 @@
               Феликс <br> Зинатуллин
             </span>
           </div>
-           <p>
-            Digital-блогер и SMM-стратег, создатель
-            dnative.ru, сооснователь подкаст-платформы mave.digital
+          <p>
+            Основатель «Церебро»
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-nine" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-nine.png" alt="speaker-img"/>
@@ -280,10 +307,10 @@
             </span>
           </div>
            <p>
-            Digital-блогер и SMM-стратег, создатель
-            dnative.ru, сооснователь подкаст-платформы mave.digital
+            Digital-директор «Самолет»
           </p>
         </button>
+
         <button type="button" data-fancybox data-src="#speaker-ten" class="speakers__card">
           <div class="speakers__card-main">
             <img loading="lazy" src="./assets/images/speaker-ten.png" alt="speaker-img"/>
@@ -292,8 +319,7 @@
             </span>
           </div>
            <p>
-            Digital-блогер и SMM-стратег, создатель
-            dnative.ru, сооснователь подкаст-платформы mave.digital
+           Лидер TON Society в СНГ
           </p>
         </button>
       </div>
@@ -378,8 +404,7 @@
               <span>Невероятное Afterparty</span>
             </div>
             <p>
-              Самая крупная выставка среди компаний, специализирующимися в&nbsp;работе с&nbsp;Telegram: Рекламные агентства,
-              партнерские сети, сервисы, источники трафика, рекламодатели и&nbsp;крипто-проекты на&nbsp;TON
+              Мы&nbsp;устроим невероятную вечеринку для всех представителей VIP-билетов в&nbsp;популярном клубе Москвы до&nbsp;самого утра со&nbsp;звездным выступлением
             </p>
             <img src="./assets/images/future-three.png" alt="image" />
           </div>
@@ -388,7 +413,7 @@
     </div>
   </section>
 
-  <section class="tickets">
+  <section id="tickets" class="tickets">
     <img src="./assets/images/figure-six.png" alt="figure" class="tickets__figure"/>
     <div class="container">
       <div class="tickets__title">
@@ -498,7 +523,7 @@
               <ul class="tickets__card-list-info">
                 <li class="tickets__card-list-item">Все опции билета «Standard»</li>
                 <li class="tickets__card-list-item">
-                  Участие в&nbsp;официальной Аfterparty 20&nbsp;октября (Включены горячие блюда, алкогольные
+                  Участие в&nbsp;официальной Аfterparty 15-16&nbsp;октября (Включены горячие блюда, алкогольные
                   и&nbsp;безалкогольные напитки)
                 </li>
               </ul>
@@ -589,7 +614,7 @@
         <div class="map js-map"
           id="map"
           data-json="./assets/json/map.json"
-          data-zoom="13"
+          data-zoom="16"
           data-icon="./assets/icons/map-icon.svg"
           data-center="55.749461, 37.696446">
         </div>
@@ -620,12 +645,12 @@
       <h2 class="afterparty__title">
         Легендарное<br>Telegram Afterparty
       </h2>
-      <button type="button" class="afterparty__button">
+      <a href="#to-tickets" class="afterparty__button">
         <svg>
           <use xlink:href="#stars"></use>
         </svg>
         Купить билет
-      </button>
+      </a>
     </div>
   </section>
 
@@ -683,7 +708,7 @@
                 Контакты
               </span>
               <span class="footer__info-contacts-text">
-                Telegram: @gexos
+                Telegram: <a href="https://t.me/gexos" target="_blank" rel="noopener">@gexos</a>
               </span>
             </li>
             <li>
@@ -691,14 +716,14 @@
                 По вопросам<br>информационного партнерства:
               </span>
               <span class="footer__info-contacts-text">
-                Telegram: @info_tgconf
+                Telegram: <a href="https://t.me/info_tgconf" target="_blank" rel="noopener">@info_tgconf</a>
               </span>
             </li>
           </ul>
           <nav class="footer__info-anchors">
-            <a href="#">Расписание</a>
-            <a href="#">Спикеры</a>
-            <a href="#">Место проведения</a>
+            <a href="#to-speakers">Спикеры</a>
+            <a href="#to-future">Программа</a>
+            <a href="#to-place">Место проведения</a>
           </nav>
         </div>
         <svg class="footer__logo">
@@ -706,7 +731,7 @@
         </svg>
         <div class="footer__bottom">
           <span>© 2023–2025  TGCONF</span>
-          <a href="#">
+          <a href="./assets/docs/oferta.docx">
             Договор оферты
           </a>
         </div>
@@ -717,12 +742,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-one.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Ярослав <br> Бабушкин
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Журналист Forbes Russia и автор подкаста «Респиратор Бабушкина» на RTVI
     </p>
   </div>
   
@@ -730,12 +754,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-two.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Павел <br> Калюканов
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Продакт-менеджер TgStat
     </p>
   </div>
   
@@ -743,12 +766,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-three.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Михаил <br> Христосенко
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+       Основатель онлайн-школы «SMM Академия»
     </p>
   </div>
   
@@ -760,8 +782,7 @@
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Основатель TgConf, Clickise и TgBooster
     </p>
   </div>
   
@@ -769,12 +790,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-five.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Кирилл <br> Сибиряк
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Владелец 4 онлайн-школ лидеров в своих нишах
     </p>
   </div>
   
@@ -782,12 +802,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-six.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Ирина <br> Хакамада
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Одна из 10 лучших бизнес-спикеров России, автор бестселлеров о самореализации, кандидат экономических наук, доцент, номинант Нобелевской премии Мира
     </p>
   </div>
   
@@ -799,8 +818,7 @@
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
     </p>
   </div>
   
@@ -808,12 +826,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-eight.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Феликс <br> Зинатуллин
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Основатель «Церебро»
     </p>
   </div>
   
@@ -821,12 +838,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-nine.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+           Дмитрий <br> Форман
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+      Digital-директор «Самолет»
     </p>
   </div>
   
@@ -834,12 +850,11 @@
     <div class="tg-modal-config-user__header">
       <img src="./assets/images/speaker-ten.png" alt="speaker-img"/>
       <span>
-        Марат <br> Шайхетдинов
+        Алексей <br> Соловьёв
       </span>
     </div>
     <p class="tg-modal-config-user__text">
-      Георгий ЛобушкинБывший пресс-секретарь<br>
-      Павла Дурова. Медиаменеджер, блогер, партнёр<br>агентства К2
+       Лидер TON Society в СНГ
     </p>
   </div>
   

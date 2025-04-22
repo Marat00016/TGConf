@@ -170,7 +170,6 @@
       font-size: 1.2rem;
       bottom: .8rem;
       left: .8rem;
-      font-size: 1.2rem;
     }
   }
 
@@ -207,7 +206,7 @@
     width: 32.5rem;
 
     @include media.breakpoint(mobile) {
-      width: 14.5rem;
+      width: 22.5rem;
     }
   }
 
@@ -218,6 +217,7 @@
 
     @include media.breakpoint(mobile) {
       width: 22.5rem;
+      bottom: -9rem;
     }
   }
 
@@ -227,7 +227,7 @@
     width: 32.5rem;
 
     @include media.breakpoint(mobile) {
-      width: 14.5rem;
+      width: 20.5rem;
     }
   }
 
@@ -237,7 +237,8 @@
     width: 24.5rem;
 
     @include media.breakpoint(mobile) {
-      width: 14.5rem;
+      width: 17.5rem;
+      bottom: -3rem;
     }
   }
 
@@ -247,7 +248,8 @@
     width: 18.5rem;
 
     @include media.breakpoint(mobile) {
-      width: 10.5rem;
+      width: 13.5rem;
+      bottom: -3rem;
     }
   }
 
@@ -287,7 +289,8 @@
     width: 25.5rem;
 
     @include media.breakpoint(mobile) {
-      width: 17.5rem;
+      width: 22.5rem;
+      bottom: -12rem;
     }
   }
 

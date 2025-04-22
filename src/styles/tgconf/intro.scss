@@ -314,6 +314,8 @@
     text-transform: uppercase;
     line-height: 1;
     transition: .3s ease background-color;
+    width: fit-content;
+    text-decoration: none;
 
     @media (hover: hover) {
       &:hover {

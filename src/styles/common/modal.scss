@@ -18,6 +18,10 @@
 
 .fancybox__slide {
   padding: 1rem !important;
+
+  @include media.breakpoint(mobile) {
+    padding: 3.6rem
+  }
 }
 
 .f-button svg {

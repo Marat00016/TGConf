@@ -9,7 +9,8 @@
   background-color: #26252A;
 
   @include media.breakpoint(tablet) {
-    min-height: 46.2rem;
+    min-height: 36.7rem;
+    max-width: 31.8rem !important;
   }
 
   &__header {
@@ -21,7 +22,8 @@
     margin-bottom: 3.2rem;
 
     @include media.breakpoint(tablet) {
-      margin-bottom: 2.5rem;
+      margin-bottom: 2.4rem;
+      height: 20.1rem;
     }
   }
 
@@ -49,97 +51,6 @@
     object-fit: cover;
   }
 
-
-  &:nth-child(2) img {
-    bottom: -4rem;
-    right: -2rem;
-    width: 32.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 14.5rem;
-    }
-  }
-
-  &:nth-child(3) img {
-    bottom: -7rem;
-    right: -4rem;
-    width: 30.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 22.5rem;
-    }
-  }
-
-  &:nth-child(4) img {
-    bottom: 0;
-    right: -2rem;
-    width: 32.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 14.5rem;
-    }
-  }
-
-  &:nth-child(5) img {
-    bottom: 0;
-    right: 0;
-    width: 24.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 14.5rem;
-    }
-  }
-
-  &:nth-child(6) img {
-    bottom: 0;
-    right: 0;
-    width: 18.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 10.5rem;
-    }
-  }
-
-  &:nth-child(7) img {
-    bottom: 0;
-    right: 0;
-    width: 19.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 11.5rem;
-    }
-  }
-  
-  &:nth-child(8) img {
-    bottom: 0;
-    right: 0;
-    width: 21.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 13.5rem;
-    }
-  }
-
-  &:nth-child(9) img {
-    bottom: -4rem;
-    right: 0;
-    width: 23.5rem;
-    
-    @include media.breakpoint(mobile) {
-      width: 15.5rem;
-    }
-  }
-
-  &:nth-child(10) img {
-    bottom: -5rem;
-    right: 0;
-    width: 25.5rem;
-
-    @include media.breakpoint(mobile) {
-      width: 17.5rem;
-    }
-  }
-
   &__header span {
     font-weight: 500;
     font-size: 2.4rem;
@@ -150,6 +61,12 @@
     bottom: 2.4rem;
     left: 2.4rem;
     z-index: 1;
+
+    @include media.breakpoint(mobile) {
+      font-size: 2rem;
+      bottom: 1.2rem;
+      left: 1.2rem;
+    }
   }
 
   &__text {
@@ -182,7 +99,7 @@
   width: 32.5rem;
 
   @include media.breakpoint(mobile) {
-    width: 14.5rem;
+    width: 22.5rem;
   }
 }
 
@@ -193,6 +110,7 @@
 
   @include media.breakpoint(mobile) {
     width: 22.5rem;
+    bottom: -9rem;
   }
 }
 
@@ -202,7 +120,7 @@
   width: 32.5rem;
 
   @include media.breakpoint(mobile) {
-    width: 14.5rem;
+    width: 20.5rem;
   }
 }
 
@@ -212,7 +130,8 @@
   width: 24.5rem;
 
   @include media.breakpoint(mobile) {
-    width: 14.5rem;
+    width: 17.5rem;
+    bottom: -3rem;
   }
 }
 
@@ -220,10 +139,6 @@
   bottom: 0;
   right: 0;
   width: 18.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 10.5rem;
-  }
 }
 
 #speaker-seven img {
@@ -261,6 +176,7 @@
   width: 25.5rem;
 
   @include media.breakpoint(mobile) {
-    width: 17.5rem;
+    width: 22.5rem;
+    bottom: -12rem;
   }
 }

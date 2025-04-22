@@ -242,6 +242,8 @@
     width: 100%;
     transition: .3s ease background-color;
     margin-bottom: 4.8rem;
+    cursor: pointer;
+    text-decoration: none;
 
     @media (hover: hover) {
       &:hover {

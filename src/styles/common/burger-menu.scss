@@ -1,69 +1,66 @@
-@use '../media';
-
-.header {
+.burger-menu {
   position: fixed;
   top: 0;
-  right: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
-  z-index: 10;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  transition: .3s ease background-color;
+  height: 100%;
+  background-color: #01010d;
+  z-index: 999;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: .3s ease opacity;
 
-  @include media.breakpoint(tablet) {
-    height: 7.5rem; 
-  }
-
-  &.--active {
-    background: rgba(1, 1, 1, .5);
-    backdrop-filter: blur(8px);
+  &.--is-active {
+    opacity: 1;
+    overflow: visible;
+    visibility: visible;
   }
 
   .container {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
+    padding-bottom: 6rem;
   }
 
-  &__left-column {
-    display: flex;
-    align-items: center;
-    column-gap: 3.5rem;
+  &__close-btn {
+    background-color: transparent;
+    position: absolute;
+    right: 1.25rem;
+    top: 2.5rem;
+  }
+
+  &__close-btn svg { 
+    width: 3rem;
+    height: 3rem;
+    transform: rotate(45deg);
   }
 
   &__logo {
     width: 14.2rem;
     height: 2.3rem;
     object-fit: cover;
-  }
-
-  &__logo-link {
-    opacity: 1;
-    transition: .3s ease opacity;
-
-    @media (hover: hover) {
-      &:hover {
-        opacity: .65;
-      }
-    }
+    margin-top: 4rem;
   }
 
   &__nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    column-gap: 2.2rem;
-
-    @include media.breakpoint(tablet) {
-      display: none;   
-    }
+    row-gap: 2rem;
+    margin-top: 10rem;
+    margin-bottom: auto;
   }
 
   &__nav-link {
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     color: white;
     transition: .3s ease opacity;
     opacity: 1;
@@ -76,12 +73,6 @@
         opacity: .65;
       }
     }
-  }
-
-  &__right-column {
-    display: flex;
-    align-items: center;
-    column-gap: 2.4rem;
   }
 
   &__button-ticket {
@@ -102,16 +93,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-
-    @media (hover: hover) {
-      &:hover {
-        background-color: #016db0;
-      }
-    }
-
-    @include media.breakpoint(tablet) {
-      display: none;   
-    }
+    margin-bottom: 2rem;
   }
 
   &__button-ticket-icon {
@@ -153,33 +135,5 @@
       transform: translate(-25%, 100%);
       z-index: -2;
     }
-
-    @media (hover: hover) {
-      &:hover {
-        color: #016db0;
-      }
-      &:hover::before  {
-        transform: translate(-25%, -25%);
-      }
-    }
-
-    @include media.breakpoint(tablet) {
-      display: none;   
-    }
-  }
-
-  &__burger-button {
-    display: none;
-
-    @include media.breakpoint(tablet) {
-      display: block;
-      background-color: transparent;   
-    }
-  }
-
-  &__burger-button svg {
-    width: 2.4rem;
-    height: 2.4rem;
   }
 }
-

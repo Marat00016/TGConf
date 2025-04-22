@@ -5,7 +5,8 @@
 @use "layout";
 @use "common/header";
 @use "common/footer";
-@use "common/modal.scss";
+@use "common/modal";
+@use "common/burger-menu";
 @use "tgconf/intro";
 @use "tgconf/about";
 @use "tgconf/speakers";
