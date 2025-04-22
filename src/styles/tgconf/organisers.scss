@@ -80,18 +80,18 @@
   }
 
   &__card:first-child svg {
-    max-width: 29.2rem;
+    width: 29.2rem;
 
     @include media.breakpoint(tablet) {
-      max-width: 16.2rem;
+      width: 16.2rem;
     }
   }
 
   &__card:last-child svg {
-    max-width: 37.5rem;
+    width: 37.5rem;
     
     @include media.breakpoint(tablet) {
-      max-width: 20.2rem;
+      width: 20.2rem;
     }
   }
 }
