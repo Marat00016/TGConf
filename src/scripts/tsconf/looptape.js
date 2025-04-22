@@ -12,6 +12,11 @@ export default function loopTape() {
     const modal = Boolean(tape?.dataset?.modal)
     const duplicate = Boolean(tape?.dataset?.duplicate)
 
+    if (duplicate) {
+      const copyOfChildren = [...tape.cloneNode(true).children]
+      copyOfChildren.forEach((item) => { tape.appendChild(item) })
+    }
+
     const children = tape.children
 
     const tl = horizontalLoop(children, {
@@ -44,10 +49,5 @@ export default function loopTape() {
         },
       })
     }
-
-    // const copyOfChildren = [...tape.cloneNode(true).children]
-
-    // copyOfChildren.forEach((item) => { tape.appendChild(item) })
-
   })
 }

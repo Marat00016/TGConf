@@ -42,14 +42,101 @@
 
   &__header img {
     position: absolute;
-    right: -2rem;
-    bottom: -2rem;
-    width: 100%;
-    height: 30.5rem;
-    object-fit: contain;
+    right: 0;
+    bottom: 0;
+    width: 20.5rem;
+    height: auto;
+    object-fit: cover;
+  }
 
-    @include media.breakpoint(tablet) {
-      object-fit: cover;
+
+  &:nth-child(2) img {
+    bottom: -4rem;
+    right: -2rem;
+    width: 32.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 14.5rem;
+    }
+  }
+
+  &:nth-child(3) img {
+    bottom: -7rem;
+    right: -4rem;
+    width: 30.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 22.5rem;
+    }
+  }
+
+  &:nth-child(4) img {
+    bottom: 0;
+    right: -2rem;
+    width: 32.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 14.5rem;
+    }
+  }
+
+  &:nth-child(5) img {
+    bottom: 0;
+    right: 0;
+    width: 24.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 14.5rem;
+    }
+  }
+
+  &:nth-child(6) img {
+    bottom: 0;
+    right: 0;
+    width: 18.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 10.5rem;
+    }
+  }
+
+  &:nth-child(7) img {
+    bottom: 0;
+    right: 0;
+    width: 19.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 11.5rem;
+    }
+  }
+  
+  &:nth-child(8) img {
+    bottom: 0;
+    right: 0;
+    width: 21.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 13.5rem;
+    }
+  }
+
+  &:nth-child(9) img {
+    bottom: -4rem;
+    right: 0;
+    width: 23.5rem;
+    
+    @include media.breakpoint(mobile) {
+      width: 15.5rem;
+    }
+  }
+
+  &:nth-child(10) img {
+    bottom: -5rem;
+    right: 0;
+    width: 25.5rem;
+
+    @include media.breakpoint(mobile) {
+      width: 17.5rem;
     }
   }
 
@@ -77,5 +164,103 @@
     @include media.breakpoint(tablet) {
       font-size: 1.4rem;
     }
+  }
+}
+
+#speaker-one img {
+  bottom: -5rem;
+  width: 22.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 14.5rem;
+  }
+}
+
+#speaker-two img {
+  bottom: -5rem;
+  right: -6rem;
+  width: 32.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 14.5rem;
+  }
+}
+
+#speaker-three img {
+  bottom: -8rem;
+  right: -6rem;
+  width: 30.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 22.5rem;
+  }
+}
+
+#speaker-four img {
+  bottom: 0;
+  right: -2rem;
+  width: 32.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 14.5rem;
+  }
+}
+
+#speaker-five img {
+  bottom: -2rem;
+  right: 0;
+  width: 24.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 14.5rem;
+  }
+}
+
+#speaker-six img {
+  bottom: 0;
+  right: 0;
+  width: 18.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 10.5rem;
+  }
+}
+
+#speaker-seven img {
+  bottom: 0;
+  right: 0;
+  width: 19.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 11.5rem;
+  }
+}
+#speaker-eight img {
+  bottom: -2rem;
+  right: 0;
+  width: 21.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 13.5rem;
+  }
+}
+
+#speaker-nine img {
+  bottom: -5rem;
+  right: 0;
+  width: 23.5rem;
+  
+  @include media.breakpoint(mobile) {
+    width: 15.5rem;
+  }
+}
+
+#speaker-ten img {
+  bottom: -7rem;
+  right: 0;
+  width: 25.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 17.5rem;
   }
 }
