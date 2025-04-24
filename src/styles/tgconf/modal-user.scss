@@ -152,6 +152,11 @@
   bottom: 0;
   right: 0;
   width: 18.5rem;
+
+  @include media.breakpoint(mobile) {
+    width: 15.5rem;
+    bottom: -2.5rem;
+  }
 }
 
 #speaker-seven img {
