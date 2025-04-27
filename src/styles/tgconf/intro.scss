@@ -178,6 +178,11 @@
     position: relative;
     z-index: 5;
     border-radius: 7.2rem;
+    overflow: hidden;
+    box-shadow: 0 0 0 .2rem #0288DB;
+    background-color: rgba(137, 137, 137, 0.3);
+    backdrop-filter: blur(8px);
+    transition: box-shadow 0.4s ease-out;
 
     @include media.breakpoint(tablet) {
       width: 6rem;
@@ -190,9 +195,14 @@
     }
   }
 
+  &__center-people-item:nth-child(1) {
+    animation: shadowPulse 2s infinite ease-in-out;
+  }
+
   &__center-people-item:nth-child(2) {
     left: -2rem;
     z-index: 4;
+    animation: shadowPulse 2s infinite ease-in-out 0.4s;
 
     @include media.breakpoint(mobile) {
       left: -1rem;
@@ -202,6 +212,7 @@
   &__center-people-item:nth-child(3) {
     left: -4rem;
     z-index: 3;
+    animation: shadowPulse 2s infinite ease-in-out 0.8s;
 
     @include media.breakpoint(mobile) {
       left: -2rem;
@@ -211,6 +222,7 @@
   &__center-people-item:nth-child(4) {
     left: -6rem;
     z-index: 2;
+    animation: shadowPulse 2s infinite ease-in-out 1.2s;
 
     @include media.breakpoint(mobile) {
       left: -3rem;
@@ -220,6 +232,7 @@
   &__center-people-item:nth-child(5) {
     left: -8rem;
     z-index: 1;
+    animation: shadowPulse 2s infinite ease-in-out 1.6s;
 
     @include media.breakpoint(mobile) {
       left: -4rem;
@@ -239,6 +252,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: shadowPulse 2s infinite ease-in-out 2s;
 
     @include media.breakpoint(mobile) {
       left: -5rem;
@@ -247,26 +261,33 @@
   }
 
   &__center-people-item img {
-    width: 7.2rem;
-    height: 7.2rem;
-    object-fit: cover;
+    width: 10rem;
+    height: auto;
+    object-fit: contain;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0rem;
+    left: -3.25rem;
 
     @include media.breakpoint(tablet) {
-      width: 6rem;
-      height: 6rem;
+      width: 9rem;
     }
 
     @include media.breakpoint(mobile) {
-      width: 4.8rem;
-      height: 4.8rem;
+      width: 7rem;
+      left: -2.75rem;
+    }
+  }
+
+  &__center-people-item:nth-child(5) img {
+    left: -3.75rem;
+
+    @include media.breakpoint(mobile) {
+      left: -2.75rem;
     }
   }
 
   &__center-people-item span {
-    padding-left: .25rem;
+    padding-left: .75rem;
 
     @include media.breakpoint(mobile) {
       padding-left: 0;
@@ -456,5 +477,14 @@
     @include media.breakpoint(tablet) {
       display: none;
     }
+  }
+}
+
+@keyframes shadowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 .2rem #0288DB;
+  }
+  50% {
+    box-shadow: 0 0 0 .425rem #0288DB;
   }
 }
