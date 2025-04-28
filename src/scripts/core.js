@@ -7,6 +7,7 @@ import connectMap from "./utils/mapInit"
 import initFutureSlider from "./tsconf/futureSlider"
 import initTickets from "./tsconf/tickets"
 import initBurgerModal from "./tsconf/menu"
+import loadVideoModal from "./tsconf/loadVideoModal"
 import './utils/validation';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initTickets();
   connectMap();
   initBurgerModal()
+  loadVideoModal()
 })
