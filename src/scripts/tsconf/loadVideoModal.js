@@ -7,8 +7,14 @@ export default function loadVideoModal() {
     const videoSrc = slide.triggerEl.dataset?.video;
     if (!videoSrc) return;
     
-    videoTag = slide.contentEl.querySelector('video');
-    videoTag.innerHTML = '';
+    const container = slide.contentEl.querySelector('.video-container');
+    videoTag = Object.assign(document.createElement('video'), {
+      controls: true,
+      width: 500,
+      height: 350
+    })
+
+    container.appendChild(videoTag)
     
     const sourceTag = document.createElement('source');
     sourceTag.src = ''
