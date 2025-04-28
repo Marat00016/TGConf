@@ -39,7 +39,8 @@ export default function loopTape() {
 
       window.fancybox.bind("[data-fancybox]", {
         on: {
-          "*": (_, eventName) => {
+          "*": (value, eventName) => {
+            console.log(eventName, value)
             if (eventName === 'close') {
               tl
                 .play()

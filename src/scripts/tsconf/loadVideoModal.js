@@ -37,7 +37,7 @@ export default function loadVideoModal() {
     }
   };
 
-  window.fancybox.bind("[data-fancybox]", {
+  window.fancybox.bind("[data-fancyspeaker]", {
     on: {
       done: onDone,
       close: onClose,

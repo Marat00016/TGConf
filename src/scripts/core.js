@@ -12,7 +12,6 @@ import './utils/validation';
 
 document.addEventListener('DOMContentLoaded', () => {
   const instance = Fancybox;
-  instance.bind('[data-fancybox]', {});
   window.fancybox = instance
   
   smoothScrolling();
