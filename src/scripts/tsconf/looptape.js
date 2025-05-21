@@ -9,7 +9,6 @@ export default function loopTape() {
 
     const reversed = Boolean(tape?.dataset?.reversed)
     const speed = Number(tape?.dataset?.speed)
-    const modal = Boolean(tape?.dataset?.modal)
     const duplicate = Boolean(tape?.dataset?.duplicate)
 
     if (duplicate) {
@@ -19,36 +18,11 @@ export default function loopTape() {
 
     const children = tape.children
 
-    const tl = horizontalLoop(children, {
+    horizontalLoop(children, {
       repeat: -1,
       speed: speed,
       paddingRight: parseFloat(gsap.getProperty(children[0], "marginRight", "px")),
       reversed: reversed,
     })
-
-    if (modal) {
-      const buttons = tape.querySelectorAll('button')
-
-      if (!buttons.length) return
-
-      buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-          tl.pause()
-        })
-      })
-
-      window.fancybox.bind("[data-fancybox]", {
-        on: {
-          "*": (value, eventName) => {
-            console.log(eventName, value)
-            if (eventName === 'close') {
-              tl
-                .play()
-                .reversed(true)
-            }
-          },
-        },
-      })
-    }
   })
 }

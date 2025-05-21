@@ -117,127 +117,140 @@
       <span class="speakers__past-conferences">
         Прошлых конференций 2024-2025 годов
       </span>
-      <div class="speakers__cards js-tape-loop" data-modal="true" data-reversed="true" data-speed="1">
-        <button type="button" data-fancybox data-src="#speaker-one" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-one.png" alt="speaker-img" />    
-            <span>
-              Ярослав <br> Бабушкин
-            </span>
-          </div>
-          <p>
-            Журналист Forbes Russia и автор подкаста «Респиратор Бабушкина» на RTVI
-          </p>
-        </button>
+      <button class="speakers__button-navigation speakers__button-navigation--to-left" type="button">
+        <svg>
+          <use xlink:href="#left-icon"></use>
+        </svg>
+      </button>
+       <button class="speakers__button-navigation speakers__button-navigation--to-right" type="button">
+        <svg>
+          <use xlink:href="#right-icon"></use>
+        </svg>
+      </button>
+      <div class="swiper speakers__slider">
+        <div class="swiper-wrapper speakers__cards">
+          <button type="button" data-fancybox data-src="#speaker-one" class="swiper-slide speakers__card one">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-one.png" alt="speaker-img" />    
+              <span>
+                Ярослав <br> Бабушкин
+              </span>
+            </div>
+            <p>
+              Журналист Forbes Russia и автор подкаста «Респиратор Бабушкина» на RTVI
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-two" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-two.png" alt="speaker-img" />
-            <span>
-              Павел <br> Калюканов
-            </span>
-          </div>
-          <p>
-            Продакт-менеджер TgStat
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-two" class="swiper-slide speakers__card two">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-two.png" alt="speaker-img" />
+              <span>
+                Павел <br> Калюканов
+              </span>
+            </div>
+            <p>
+              Продакт-менеджер TgStat
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-three" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-three.png" alt="speaker-img"/>
-            <span>
-              Михаил <br> Христосенко
-            </span>
-          </div>
-          <p>
-            Основатель онлайн-школы «SMM Академия»
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-three" class="swiper-slide speakers__card three">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-three.png" alt="speaker-img"/>
+              <span>
+                Михаил <br> Христосенко
+              </span>
+            </div>
+            <p>
+              Основатель онлайн-школы «SMM Академия»
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-four" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-four.png" alt="speaker-img"/>
-            <span>
-              Марат <br> Шайхетдинов
-            </span>
-          </div>
-          <p>
-            Основатель TgConf, Clickise и TgBooster
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-four" class="swiper-slide speakers__card four">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-four.png" alt="speaker-img"/>
+              <span>
+                Марат <br> Шайхетдинов
+              </span>
+            </div>
+            <p>
+              Основатель TgConf, Clickise и TgBooster
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-five" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-five.png" alt="speaker-img"/>
-            <span>
-              Кирилл <br> Сибиряк
-            </span>
-          </div>
-          <p>
-            Владелец 4 онлайн-школ лидеров в своих нишах
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-five" class="swiper-slide speakers__card five">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-five.png" alt="speaker-img"/>
+              <span>
+                Кирилл <br> Сибиряк
+              </span>
+            </div>
+            <p>
+              Владелец 4 онлайн-школ лидеров в своих нишах
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-six" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-six.png" alt="speaker-img"/>
-            <span>
-              Ирина <br> Хакамада
-            </span>
-          </div>
-           <p>
-            Одна из 10 лучших бизнес-спикеров России, автор бестселлеров о самореализации, кандидат экономических наук, доцент, номинант Нобелевской премии Мира
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-six" class="swiper-slide speakers__card six">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-six.png" alt="speaker-img"/>
+              <span>
+                Ирина <br> Хакамада
+              </span>
+            </div>
+            <p>
+              Одна из 10 лучших бизнес-спикеров России, автор бестселлеров о самореализации, кандидат экономических наук, доцент, номинант Нобелевской премии Мира
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-seven" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-seven.png" alt="speaker-img"/>
-            <span>
-              Георгий <br> Лобушкин
-            </span>
-          </div>
-           <p>
-            Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-seven" class="swiper-slide speakers__card seven">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-seven.png" alt="speaker-img"/>
+              <span>
+                Георгий <br> Лобушкин
+              </span>
+            </div>
+            <p>
+              Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнёр агентства К2
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-eight" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-eight.png" alt="speaker-img"/>
-            <span>
-              Феликс <br> Зинатуллин
-            </span>
-          </div>
-          <p>
-            Основатель «Церебро»
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-eight" class="swiper-slide speakers__card eight">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-eight.png" alt="speaker-img"/>
+              <span>
+                Феликс <br> Зинатуллин
+              </span>
+            </div>
+            <p>
+              Основатель «Церебро»
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-nine" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-nine.png" alt="speaker-img"/>
-            <span>
-              Дмитрий <br> Форман
-            </span>
-          </div>
-           <p>
-            Digital-директор «Самолет»
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-nine" class="swiper-slide speakers__card nine">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-nine.png" alt="speaker-img"/>
+              <span>
+                Дмитрий <br> Форман
+              </span>
+            </div>
+            <p>
+              Digital-директор «Самолет»
+            </p>
+          </button>
 
-        <button type="button" data-fancybox data-src="#speaker-ten" class="speakers__card">
-          <div class="speakers__card-main">
-            <img loading="lazy" src="./assets/images/speaker-ten.png" alt="speaker-img"/>
-            <span>
-              Алексей <br> Соловьёв
-            </span>
-          </div>
-           <p>
-           Лидер TON Society в СНГ
-          </p>
-        </button>
+          <button type="button" data-fancybox data-src="#speaker-ten" class="swiper-slide speakers__card ten">
+            <div class="speakers__card-main">
+              <img loading="lazy" src="./assets/images/speaker-ten.png" alt="speaker-img"/>
+              <span>
+                Алексей <br> Соловьёв
+              </span>
+            </div>
+            <p>
+            Лидер TON Society в СНГ
+            </p>
+          </button>
+        </div>
       </div>
+      <div class="speakers__pagination"></div>
     </div>
   </section>
 

@@ -2,6 +2,10 @@
 
 .speakers {
   position: relative;
+
+  .container {
+    position: relative;
+  }
   
   &__header {
     display: flex;
@@ -75,12 +79,71 @@
     }
   }
 
+  .swiper {
+    width: calc(100% + 4rem);
+  }
+
+  .swiper-pagination-bullet {
+    background-color: rgb(134, 134, 134);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+  }
+
   &__cards {
+    margin-bottom: 6.4rem;
+  }
+
+  &__pagination {
+    width: 100%;
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: 1.75rem !important;
+    z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    white-space: nowrap;
-    margin-bottom: 6.4rem;
+  }
+
+  &__button-navigation {
+    background-color: transparent;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background-color: #0288DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    transition: .3s ease background-color;
+    position: absolute;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #0066a5;
+      }
+    }
+
+    @include media.breakpoint(tablet) {
+      display: none;
+    }
+  }
+
+  &__button-navigation svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__button-navigation--to-left {
+    left: -6rem;
+    bottom: 42.5%;
+  }
+
+  &__button-navigation--to-right {
+    bottom: 42.5%;
+    right: -10rem;
   }
 
   &__card {
@@ -88,7 +151,8 @@
     position: relative;
     padding: 0 1.2rem;
     min-height: 36.5rem;
-    min-width: 46.4rem;
+    width: 100% !important;
+    max-width: 50rem;
     background-color: transparent;
     text-align: left;
     overflow: hidden;
@@ -191,7 +255,7 @@
     }
   }
 
-  &__card:nth-child(1) img {
+  &__card.one img {
     bottom: -3rem;
     width: 22.5rem;
 
@@ -200,7 +264,7 @@
     }
   }
 
-  &__card:nth-child(2) img {
+  &__card.two img {
     bottom: -4rem;
     right: -2rem;
     width: 32.5rem;
@@ -210,7 +274,7 @@
     }
   }
 
-  &__card:nth-child(3) img {
+  &__card.three img {
     bottom: -7rem;
     right: -4rem;
     width: 30.5rem;
@@ -221,7 +285,7 @@
     }
   }
 
-  &__card:nth-child(4) img {
+  &__card.four img {
     bottom: 0;
     right: -2rem;
     width: 32.5rem;
@@ -231,7 +295,7 @@
     }
   }
 
-  &__card:nth-child(5) img {
+  &__card.five img {
     bottom: 0;
     right: 0;
     width: 24.5rem;
@@ -242,7 +306,7 @@
     }
   }
 
-  &__card:nth-child(6) img {
+  &__card.six img {
     bottom: 0;
     right: 0;
     width: 18.5rem;
@@ -253,7 +317,7 @@
     }
   }
 
-  &__card:nth-child(7) img {
+  &__card.seven img {
     bottom: 0;
     right: 0;
     width: 19.5rem;
@@ -262,8 +326,8 @@
       width: 11.5rem;
     }
   }
-  
-  &__card:nth-child(8) img {
+
+  &__card.eight img {
     bottom: 0;
     right: 0;
     width: 21.5rem;
@@ -273,17 +337,17 @@
     }
   }
 
-  &__card:nth-child(9) img {
+  &__card.nine img {
     bottom: -4rem;
     right: 0;
     width: 23.5rem;
-    
+
     @include media.breakpoint(mobile) {
       width: 15.5rem;
     }
   }
 
-  &__card:nth-child(10) img {
+  &__card.ten img {
     bottom: -5rem;
     right: 0;
     width: 25.5rem;

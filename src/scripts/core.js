@@ -1,5 +1,6 @@
 import { Fancybox } from "@fancyapps/ui"
 import loopTape from "./tsconf/looptape"
+import speakersSlider from "./tsconf/speakersSlider"
 import initHeaderAnimation from "./tsconf/header"
 import initAnchors from "./utils/anhors"
 import smoothScrolling from "./utils/smoothScrolling"
@@ -13,6 +14,7 @@ import './utils/validation';
 document.addEventListener('DOMContentLoaded', () => {
   const instance = Fancybox;
   window.fancybox = instance
+  window.fancybox.bind("[data-fancybox]", {})
   
   smoothScrolling();
   initAnchors();
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFutureSlider();
   initTickets();
   connectMap();
-  initBurgerModal()
-  loadVideoModal()
+  initBurgerModal();
+  loadVideoModal();
+  speakersSlider();
 })
