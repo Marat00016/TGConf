@@ -1,10 +1,10 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Mousewheel } from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-Swiper.use([Navigation, Pagination])
+Swiper.use([Navigation, Pagination, Mousewheel])
 
 export default function speakersSlider() {
   const slider = document.querySelector('.speakers__slider');
@@ -30,7 +30,11 @@ export default function speakersSlider() {
           el: pagination,
         }
       },
-      1024: {}
+      1024: {
+        mousewheel: {
+          enabled: true
+        },
+      }
     }
   })
 }
