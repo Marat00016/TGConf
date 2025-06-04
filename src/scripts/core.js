@@ -10,6 +10,7 @@ import initTickets from "./tsconf/tickets"
 import initBurgerModal from "./tsconf/menu"
 import loadVideoModal from "./tsconf/loadVideoModal"
 import './utils/validation';
+import submitForm from './utils/partner';
 
 document.addEventListener('DOMContentLoaded', () => {
   const instance = Fancybox;

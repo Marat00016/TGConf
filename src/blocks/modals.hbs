@@ -122,13 +122,13 @@
   <h2 class="tg-modal-partners__title">
     Станьте партнером конференции
   </h2>
-  <form novalidate data-need-validation class="tg-modal-partners__form" method="post"> 
+  <form novalidate data-need-validation class="tg-modal-partners__form">
     <label class="tg-modal-partners__form-control" for="name">
       <input placeholder="Ваше имя" name="name" type="text" class="tg-modal-partners__form-input" data-parsley-minlength="2" required="true"/>
     </label>
     
      <label class="tg-modal-partners__form-control" for="phone">
-      <input placeholder="Номер телефона" name="name" type="text" class="js-phone-input tg-modal-partners__form-input" name="phone" type="phone" autocomplete="off" data-parsley-phone required="true"/>
+      <input placeholder="Номер телефона" name="phone" type="phone" class="js-phone-input tg-modal-partners__form-input" autocomplete="off" data-parsley-phone required="true"/>
     </label>
     
     <label class="tg-modal-partners__form-control" for="telegram">
@@ -148,7 +148,7 @@
       </p>
     </label>
 
-    <button class="tg-modal-partners__button-submit">
+    <button type="button" class="tg-modal-partners__button-submit" onclick="submitForm()">
       Оставить заявку
     </button>
   </form>
