@@ -21,6 +21,7 @@
 @use "tgconf/info";
 @use "tgconf/modal-user.scss";
 @use "tgconf/modal-partners.scss";
+@use "tgconf/modal-feedback.scss";
 
 
 html {
@@ -63,4 +64,10 @@ section:first-child {
 
 section:last-child {
   margin-bottom: 0;
+}
+
+button[disabled] {
+  opacity: .75;
+  cursor: default;
+  pointer-events: none;
 }

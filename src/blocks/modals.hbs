@@ -122,7 +122,7 @@
   <h2 class="tg-modal-partners__title">
     Станьте партнером конференции
   </h2>
-  <form novalidate data-need-validation class="tg-modal-partners__form">
+  <form data-need-validation data-parsley-validate data-parsley-focus="none" class="tg-modal-partners__form">
     <label class="tg-modal-partners__form-control" for="name">
       <input placeholder="Ваше имя" name="name" type="text" class="tg-modal-partners__form-input" data-parsley-minlength="2" required="true"/>
     </label>
@@ -148,7 +148,7 @@
       </p>
     </label>
 
-    <button type="button" class="tg-modal-partners__button-submit" onclick="submitForm()">
+    <button type="submit" class="tg-modal-partners__button-submit">
       Оставить заявку
     </button>
   </form>
@@ -156,4 +156,27 @@
 
 <div class="tg-modal-config-video" id="speaker-video" style="display:none;">
   <div class="video-container"></div>
+</div>
+
+<div class="tg-modal-config tg-modal-feedback-success" id="modal-feedback-success" style="display:none;">
+  <h2 class="tg-modal-feedback-success__title">
+    Спасибо!
+  </h2>
+  <p class="tg-modal-feedback-success__text">
+    В скором времени наш менеджер свяжется с вами!
+  </p>
+  </form>
+</div>
+
+<div class="tg-modal-config tg-modal-feedback-error" id="modal-feedback-error" style="display:none;">
+  <h2 class="tg-modal-feedback-error__title">
+    Ошибка!
+  </h2>
+  <p class="tg-modal-feedback-error__text">
+    Не удалось отправить форму, попробуйте еще раз или свяжитесь с нашим менеджером
+  </p>
+  <span class="tg-modal-feedback-error__info-contacts-text">
+    Telegram: <a href="https://t.me/info_tgconf" target="_blank" rel="noopener">@info_tgconf</a>
+  </span>
+  </form>
 </div>
