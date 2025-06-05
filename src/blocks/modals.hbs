@@ -126,11 +126,11 @@
     <label class="tg-modal-partners__form-control" for="name">
       <input placeholder="Ваше имя" name="name" type="text" class="tg-modal-partners__form-input" data-parsley-minlength="2" required="true"/>
     </label>
-    
+
      <label class="tg-modal-partners__form-control" for="phone">
       <input placeholder="Номер телефона" name="phone" type="phone" class="js-phone-input tg-modal-partners__form-input" autocomplete="off" data-parsley-phone required="true"/>
     </label>
-    
+
     <label class="tg-modal-partners__form-control" for="telegram">
       <input placeholder="telegram" name="telegram" type="text" class="tg-modal-partners__form-input" required="true"/>
     </label>
@@ -152,6 +152,11 @@
       Оставить заявку
     </button>
   </form>
+
+  <div class="tg-modal-config tg-modal-partners" id="modal-success" style="display:none;">
+    <h2 class="tg-modal-partners__title">Спасибо за вашу заявку!</h2>
+    <p class="tg-modal-partners__form-policy">Ваше сообщение успешно отправлено.</p>
+  </div>
 </div>
 
 <div class="tg-modal-config-video" id="speaker-video" style="display:none;">
