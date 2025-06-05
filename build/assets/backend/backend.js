@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.tg-modal-partners__form');
-
   if (!form) return
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+
    
     const formData = {
       name: form.querySelector('input[name="name"]').value,
@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 
         body: JSON.stringify(formData)
       })
+
+      window.fancybox.close()
+      window.fancybox.show([
+        { src: "#modal-feedback-success", type: "inline" }
+      ])
     } catch (error) {
       console.error(error)
       window.fancybox.close()
