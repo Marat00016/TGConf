@@ -98,103 +98,51 @@
 }
 
 #speaker-one img {
-  bottom: -5rem;
-  width: 22.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 14.5rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-two img {
-  bottom: -5rem;
-  right: -6rem;
-  width: 32.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 22.5rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-three img {
-  bottom: -8rem;
-  right: -6rem;
-  width: 30.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 22.5rem;
-    bottom: -9rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-four img {
-  bottom: 0;
-  right: -2rem;
-  width: 32.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 20.5rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-five img {
-  bottom: -2rem;
-  right: 0;
-  width: 24.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 17.5rem;
-    bottom: -3rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-six img {
-  bottom: 0;
-  right: 0;
-  width: 18.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 15.5rem;
-    bottom: -2.5rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-seven img {
-  bottom: 0;
-  right: 0;
-  width: 19.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 11.5rem;
-  }
+  width: 100%;
+  height: 100%;
 }
-#speaker-eight img {
-  bottom: -2rem;
-  right: 0;
-  width: 21.5rem;
 
-  @include media.breakpoint(mobile) {
-    width: 13.5rem;
-  }
+#speaker-eight img {
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-nine img {
-  bottom: -5rem;
-  right: 0;
-  width: 23.5rem;
-  
-  @include media.breakpoint(mobile) {
-    width: 15.5rem;
-  }
+  width: 100%;
+  height: 100%;
 }
 
 #speaker-ten img {
-  bottom: -7rem;
-  right: 0;
-  width: 25.5rem;
-
-  @include media.breakpoint(mobile) {
-    width: 22.5rem;
-    bottom: -12rem;
-  }
+  width: 100%;
+  height: 100%;
 }
