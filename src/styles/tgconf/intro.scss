@@ -235,54 +235,14 @@
   }
 
   &__center-people-item img {
-    width: 10rem;
-    height: auto;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
     position: absolute;
-    bottom: 0rem;
-    left: -3.25rem;
-
-    @include media.breakpoint(tablet) {
-      width: 9rem;
-    }
-
-    @include media.breakpoint(mobile) {
-      width: 7rem;
-      left: -2.75rem;
-    }
   }
 
-  &__center-people-item:nth-child(1) img {
-    width: 10rem;
-    bottom: -6rem;
-    left: -2.25rem;
-
-    @include media.breakpoint(mobile) {
-      left: -2rem;
-      bottom: -7em;
-    }
-  }
-
-  &__center-people-item:nth-child(2) img {
-    width: 10rem;
-    left: -1.5rem;
-    bottom: -2rem;
-
-    @include media.breakpoint(mobile) {
-      bottom: -2.75rem;
-    }
-  }
-
-  &__center-people-item:nth-child(3) img {
-    width: 9rem;
-    left: 0rem;
-    bottom: -5.75rem;
-
-    @include media.breakpoint(mobile) {
-      left: -.5rem;
-      bottom: -6.5rem;
-    }
-  }
 
 
   &__center-title {
