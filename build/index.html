@@ -7,8 +7,31 @@
   <meta name="format-detection" content="telephone=no">
   <meta property="og:locale" content="ru_RU">
 
+  <script type="text/javascript" src="https://cdn.qtickets.tech/openapi.js"></script>
+
+  <link type="image/x-icon" href="assets/icons/favicon.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="assets/icons/favicon.ico" rel="icon">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(96239679, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/96239679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
   <link rel="stylesheet" href="css/core.min.css" />
-  <title>TGConf</title>
+  <title>TgConf — Крупнейшая конференция по Telegram</title>
 </head>
 <body>
   <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
@@ -24,7 +47,7 @@
             </svg>
           </a>
           <nav class="header__nav">
-            <a class="header__nav-link" href="#to-speakers">СПикеры</a>
+            <a class="header__nav-link" href="#to-speakers">Спикеры</a>
             <a class="header__nav-link" href="#to-future">Программа</a>
             <a class="header__nav-link" href="#to-place">Место проведения</a>
           </nav>
@@ -763,7 +786,7 @@
           <use xlink:href="#tgconf-logo-footer"></use>
         </svg>
         <div class="footer__bottom">
-          <span>© 2023–2025  TGCONF</span>
+          <span>© 2024–2025  TGCONF</span>
           <a href="./assets/docs/oferta.docx">
             Договор оферты
           </a>
@@ -895,15 +918,15 @@
     <h2 class="tg-modal-partners__title">
       Станьте партнером конференции
     </h2>
-    <form novalidate data-need-validation class="tg-modal-partners__form" method="post"> 
+    <form novalidate data-need-validation class="tg-modal-partners__form">
       <label class="tg-modal-partners__form-control" for="name">
         <input placeholder="Ваше имя" name="name" type="text" class="tg-modal-partners__form-input" data-parsley-minlength="2" required="true"/>
       </label>
-      
+  
        <label class="tg-modal-partners__form-control" for="phone">
-        <input placeholder="Номер телефона" name="name" type="text" class="js-phone-input tg-modal-partners__form-input" name="phone" type="phone" autocomplete="off" data-parsley-phone required="true"/>
+        <input placeholder="Номер телефона" name="phone" type="phone" class="js-phone-input tg-modal-partners__form-input" autocomplete="off" data-parsley-phone required="true"/>
       </label>
-      
+  
       <label class="tg-modal-partners__form-control" for="telegram">
         <input placeholder="telegram" name="telegram" type="text" class="tg-modal-partners__form-input" required="true"/>
       </label>
@@ -921,10 +944,15 @@
         </p>
       </label>
   
-      <button class="tg-modal-partners__button-submit">
+      <button type="button" class="tg-modal-partners__button-submit" onclick="submitForm()">
         Оставить заявку
       </button>
     </form>
+  
+    <div class="tg-modal-config tg-modal-partners" id="modal-success" style="display:none;">
+      <h2 class="tg-modal-partners__title">Спасибо за вашу заявку!</h2>
+      <p class="tg-modal-partners__form-policy">Ваше сообщение успешно отправлено.</p>
+    </div>
   </div>
   
   <div class="tg-modal-config-video" id="speaker-video" style="display:none;">
