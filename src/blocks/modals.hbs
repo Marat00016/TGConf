@@ -1,122 +1,16 @@
-<div class="tg-modal-config tg-modal-config-user" id="speaker-one" style="display:none;">
+{{#each speakers}}
+<div class="tg-modal-config tg-modal-config-user" id="{{this.id}}" style="display:none;">
   <div class="tg-modal-config-user__header">
-    <img src="./assets/images/artem_lebedev.png" alt="speaker-img"/>
+    <img src="{{this.image}}" alt="speaker-img"/>
     <span>
-      Артемий <br> Лебедев
+      {{splitFirstName this.name}} <br> {{splitLastName this.name}}
     </span>
   </div>
   <p class="tg-modal-config-user__text">
-    Дизайнер
+    {{this.position}}
   </p>
 </div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-two" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/marat_shahabutdinov.png" alt="speaker-img"/>
-    <span>
-      Марат <br> Шайхетдинов
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Основатель Clickise и TgConf
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-three" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/kristosenko.png" alt="speaker-img"/>
-    <span>
-      Михаил <br> Христосенко
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Основатель онлайн-школы SMM Академия
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-four" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/zinatullin.png" alt="speaker-img"/>
-    <span>
-       Феликс <br> Зинатуллин
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-     Основатель "Церебро"
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-five" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/kolukanov.png" alt="speaker-img"/>
-    <span>
-      Павел  <br> Калюканов
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Руководитель Академии TGStat
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-six" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/numizmatka.png" alt="speaker-img"/>
-    <span>
-      Ирина  <br> Нумизматка
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Автор крупнейшего канала о Telegram Ads
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-seven" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/amirchanan.png" alt="speaker-img"/>
-    <span>
-      Денис  <br> Амирханян
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Серийный предприниматель, маркетолог
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-eight" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/yaskevic.png" alt="speaker-img"/>
-    <span>
-      Глеб  <br> Яскевич
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Основатель AX Family
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-nine" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/ivanova.png" alt="speaker-img"/>
-    <span>
-      Анна  <br> Иванова
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    Таргетолог и teamlead команды по трафику в Clickise
-  </p>
-</div>
-
-<div class="tg-modal-config tg-modal-config-user" id="speaker-ten" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="./assets/images/pestov.png" alt="speaker-img"/>
-    <span>
-      Алексей  <br> Пестов
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-   Маркетолог, основатель агентства ads-telegram.pro
-  </p>
-</div>
+{{/each}}
 
 
 <div class="tg-modal-config tg-modal-partners" id="modal-partners" style="display:none;">

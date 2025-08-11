@@ -20,6 +20,24 @@ import webpackConfig from './webpack.config.js';
 import svgSprite from 'gulp-svg-sprite';
 import hb from 'gulp-hb';
 import layouts from 'handlebars-layouts';
+import handlebars from 'handlebars';
+
+// 1. Определи хелперы
+const helpers = {
+  splitFirstName(name) {
+    return name ? name.split(' ')[0] : '';
+  },
+  splitLastName(name) {
+    return name ? name.split(' ')[1] || '' : '';
+  },
+  replace(str, find, replace) {
+    return str ? str.split(find).join(replace) : '';
+  }
+};
+
+Object.keys(helpers).forEach(name => {
+  handlebars.registerHelper(name, helpers[name]);
+});
 
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();
@@ -78,11 +96,27 @@ function additionalScripts() {
 }
 
 function json() {
-  return src(['src/**/*.json', '!src/data/data.json', '!src/pages/**/*.json'], { encoding: false })
-    .pipe(merge({ fileName: 'data.json' }))
+  return src([
+    'src/**/*.json', 
+    '!src/data/data.json',
+     'public/assets/json/speakers.json',
+    '!src/pages/**/*.json'
+  ], { encoding: false,  allowEmpty: true  })
+    .pipe(merge({ 
+      fileName: 'data.json',
+      edit: (parsedJson, file) => {
+        if (file.relative.includes('speakers.json')) {
+          return { speakers: parsedJson };
+        }
+        return parsedJson;
+      }
+    }))
     .pipe(dest('src/data'));
 }
 
+Object.keys(helpers).forEach(name => {
+  handlebars.registerHelper(name, helpers[name]);
+});
 function html() {
   return src('./src/pages/**/*.hbs')
     .pipe(data(function() {
@@ -104,7 +138,8 @@ function html() {
     .pipe(hb()
       .partials('./src/blocks/**/*.hbs')
       .partials('./src/layouts/**/*.hbs')
-      .helpers(layouts)
+      .helpers(layouts)           // handlebars-layouts
+      .helpers(helpers)           // ← твои кастомные хелперы (важно!)
     )
     .pipe(rename(function(path) {
       path.extname = '.html';
@@ -112,7 +147,6 @@ function html() {
     .pipe(dest('build'))
     .pipe(browserSync.stream());
 }
-
 function assets() {
   return src(['public/**/*'], { encoding: false })
     .pipe(dest('build'));

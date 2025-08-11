@@ -117,176 +117,31 @@
       <div class="speakers__slider">
         <div class="speakers__cards">
 
-          <button type="button" data-fancybox data-src="#speaker-one" class=" speakers__card one">
-            <div class="speakers__card-main orange">
-              <img loading="lazy" src="./assets/images/artem_lebedev.png" alt="speaker-img" />    
-            </div>
-            <span class="speakers__card__name">
-              Артемий <br> Лебедев
-            </span>
-            <div class="speakers__content-wrapper">
-              <p class="speakers__card__description">
-                Дизайнер
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-two" class=" speakers__card one">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/marat_shahabutdinov.png" alt="speaker-img" />    
+        {{#each speakers}}
+          <button type="button" data-fancybox data-src="#{{this.id}}" class="speakers__card {{replace this.id 'speaker-' ''}}">
+            <div class="speakers__card-main{{#if this.color}} {{this.color}}{{/if}}">
+              <img loading="lazy" src="{{this.image}}" alt="{{this.name}}" />
+              {{#if this.logos}}
               <div class="speakers__logos">
                 <div class="speakers__logo-wrapper">
-                  <div class="speakers__logo one"></div>
+                  {{#each this.logos}}
+                  <div class="speakers__logo {{this}}"></div>
+                  {{/each}}
                 </div>
               </div>
+              {{/if}}
             </div>
             <span class="speakers__card__name">
-              Марат <br> Шайхетдинов
+              {{splitFirstName this.name}} <br> {{splitLastName this.name}}
             </span>
             <div class="speakers__content-wrapper">
               <p class="speakers__card__description">
-                Основатель Clickise и TgConf
+                {{this.position}}
               </p>
               <div class="speakers__open-modal-button"></div>
             </div>
           </button>
-
-          <button type="button" data-fancybox data-src="#speaker-three" class="speakers__card two">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/kristosenko.png" alt="speaker-img" />
-            </div>
-            <span>
-              Михаил <br> Христосенко
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Основатель онлайн-школы SMM Академия
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-four" class=" speakers__card three">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/zinatullin.png" alt="speaker-img"/>
-              <div class="speakers__logos">
-                <div class="speakers__logo-wrapper">
-                  <div class="speakers__logo three"></div>
-                </div>
-              </div> 
-            </div> 
-            <span>
-              Феликс <br> Зинатуллин
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Основатель "Церебро" 
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-five" class="speakers__card four">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/kolukanov.png" alt="speaker-img"/>
-              <div class="speakers__logos">
-                <div class="speakers__logo-wrapper">
-                  <div class="speakers__logo four"></div>
-                </div>
-              </div> 
-            </div>
-            <span>
-              Павел  <br> Калюканов
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Руководитель Академии TGStat
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-six" class="speakers__card five">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/numizmatka.png" alt="speaker-img"/>
-            </div>
-            <span>
-                Ирина  <br> Нумизматка
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Автор крупнейшего канала о Telegram Ads
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-           
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-seven" class=" speakers__card six">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/amirchanan.png" alt="speaker-img"/>
-            </div>
-            <span>
-              Денис  <br> Амирханян
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Серийный предприниматель, маркетолог
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-eight" class=" speakers__card seven">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/yaskevic.png" alt="speaker-img"/>
-            </div>
-            <span>
-              Глеб  <br> Яскевич
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Основатель AX Family
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-nine" class=" speakers__card eight">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/ivanova.png" alt="speaker-img"/>
-              <div class="speakers__logos">
-                <div class="speakers__logo-wrapper">
-                  <div class="speakers__logo eight"></div>
-                </div>
-              </div> 
-            </div>
-            <span>
-              Анна  <br> Иванова
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Таргетолог и teamlead команды по трафику в Clickise
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-
-          <button type="button" data-fancybox data-src="#speaker-ten" class=" speakers__card nine">
-            <div class="speakers__card-main">
-              <img loading="lazy" src="./assets/images/pestov.png" alt="speaker-img"/>
-            </div>
-            <span>
-              Алексей  <br> Пестов
-            </span>
-            <div class="speakers__content-wrapper">
-              <p>
-                Маркетолог, основатель агентства ads-telegram.pro
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
+        {{/each}}
         </div>
       </div>
       <div class="speakers__pagination"></div>
