@@ -13,7 +13,12 @@
     "position": "Основатель Clickise и TgConf",
     "image": "/assets/images/marat_shahabutdinov.png",
     "color": "",
-    "logos": ["one"]
+    "logos": [
+      {
+        "src": "/assets/icons/clickise-logo.svg",
+        "alt": "Clickise"
+      }
+    ]
   },
   {
     "id": "speaker-three",
@@ -29,7 +34,12 @@
     "position": "Основатель \"Церебро\"",
     "image": "/assets/images/zinatullin.png",
     "color": "",
-    "logos": ["three"]
+    "logos": [
+      {
+        "src": "/assets/images/zinatulin-logo.jpg",
+        "alt": "Церебро"
+      }
+    ]
   },
   {
     "id": "speaker-five",
@@ -37,7 +47,12 @@
     "position": "Руководитель Академии TGStat",
     "image": "/assets/images/kolukanov.png",
     "color": "",
-    "logos": ["four"]
+    "logos": [
+      {
+        "src": "/assets/images/kolukanov-logo.jpg",
+        "alt": "TGStat"
+      }
+    ]
   },
   {
     "id": "speaker-six",
@@ -69,7 +84,12 @@
     "position": "Таргетолог и teamlead команды по трафику в Clickise",
     "image": "/assets/images/ivanova.png",
     "color": "",
-    "logos": ["eight"]
+    "logos": [
+      {
+        "src": "/assets/icons/clickise-logo.svg",
+        "alt": "Clickise"
+      }
+    ]
   },
   {
     "id": "speaker-ten",

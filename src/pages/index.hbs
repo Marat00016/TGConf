@@ -125,7 +125,7 @@
               <div class="speakers__logos">
                 <div class="speakers__logo-wrapper">
                   {{#each this.logos}}
-                  <div class="speakers__logo {{this}}"></div>
+                  <div class="speakers__logo {{ this.src }}" style="background-image: url({{ this.src }});" title="{{this.alt}}"></div>
                   {{/each}}
                 </div>
               </div>

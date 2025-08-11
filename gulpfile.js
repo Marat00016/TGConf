@@ -21,8 +21,8 @@ import svgSprite from 'gulp-svg-sprite';
 import hb from 'gulp-hb';
 import layouts from 'handlebars-layouts';
 import handlebars from 'handlebars';
+import fetch from 'node-fetch';
 
-// 1. Определи хелперы
 const helpers = {
   splitFirstName(name) {
     return name ? name.split(' ')[0] : '';
@@ -95,28 +95,50 @@ function additionalScripts() {
     .pipe(bs.stream());
 }
 
-function json() {
-  return src([
-    'src/**/*.json', 
+async function json() {
+  const dataFiles = [
+    'src/**/*.json',
     '!src/data/data.json',
-     'public/assets/json/speakers.json',
     '!src/pages/**/*.json'
-  ], { encoding: false,  allowEmpty: true  })
-    .pipe(merge({ 
+  ];
+
+  // 1. Скачиваем внешний JSON
+  let remoteSpeakers = [];
+  try {
+    const response = await fetch('https://clickise.org/speakers.json');
+    if (response.ok) {
+      remoteSpeakers = await response.json();
+      console.log('✅ Успешно загружены спикеры с https://clickise.org/speakers.json');
+    } else {
+      console.warn('⚠️ Не удалось загрузить спикеров, используем fallback');
+    }
+  } catch (err) {
+    console.warn('⚠️ Ошибка сети при загрузке спикеров:', err.message);
+  }
+
+  // 2. Сохраняем во временный файл в src/data/
+  await import('fs').then(fs => {
+    fs.writeFileSync('src/data/speakers.json', JSON.stringify(remoteSpeakers, null, 2));
+  });
+
+  // 3. Собираем все JSON (включая только что загруженный)
+  return src([...dataFiles, 'src/data/speakers.json'], {
+    encoding: false,
+    allowEmpty: true
+  })
+    .pipe(merge({
       fileName: 'data.json',
       edit: (parsedJson, file) => {
-        if (file.relative.includes('speakers.json')) {
+        if (file.path.includes('speakers.json')) {
           return { speakers: parsedJson };
         }
         return parsedJson;
-      }
+      },
+      concatArrays: true
     }))
     .pipe(dest('src/data'));
 }
 
-Object.keys(helpers).forEach(name => {
-  handlebars.registerHelper(name, helpers[name]);
-});
 function html() {
   return src('./src/pages/**/*.hbs')
     .pipe(data(function() {
