@@ -11,12 +11,14 @@ import initBurgerModal from "./tsconf/menu"
 import loadVideoModal from "./tsconf/loadVideoModal"
 import './utils/validation';
 import submitForm from './utils/partner';
+import { loadSpeakers } from './utils/renderSpeakers';
 
 document.addEventListener('DOMContentLoaded', () => {
   const instance = Fancybox;
   window.fancybox = instance
   window.fancybox.bind("[data-fancybox]", {})
   
+  loadSpeakers();
   smoothScrolling();
   initAnchors();
   loopTape();

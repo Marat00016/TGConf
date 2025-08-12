@@ -115,33 +115,7 @@
         </p>
       </div>
       <div class="speakers__slider">
-        <div class="speakers__cards">
-
-        {{#each speakers}}
-          <button type="button" data-fancybox data-src="#{{this.id}}" class="speakers__card {{replace this.id 'speaker-' ''}}">
-            <div class="speakers__card-main{{#if this.color}} {{this.color}}{{/if}}">
-              <img loading="lazy" src="{{this.image}}" alt="{{this.name}}" />
-              {{#if this.logos}}
-              <div class="speakers__logos">
-                <div class="speakers__logo-wrapper">
-                  {{#each this.logos}}
-                  <div class="speakers__logo {{ this.src }}" style="background-image: url({{ this.src }});" title="{{this.alt}}"></div>
-                  {{/each}}
-                </div>
-              </div>
-              {{/if}}
-            </div>
-            <span class="speakers__card__name">
-              {{splitFirstName this.name}} <br> {{splitLastName this.name}}
-            </span>
-            <div class="speakers__content-wrapper">
-              <p class="speakers__card__description">
-                {{this.position}}
-              </p>
-              <div class="speakers__open-modal-button"></div>
-            </div>
-          </button>
-        {{/each}}
+        <div class="speakers__cards" id="speakers-cards-container">
         </div>
       </div>
       <div class="speakers__pagination"></div>

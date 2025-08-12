@@ -1,18 +1,3 @@
-{{#each speakers}}
-<div class="tg-modal-config tg-modal-config-user" id="{{this.id}}" style="display:none;">
-  <div class="tg-modal-config-user__header">
-    <img src="{{this.image}}" alt="speaker-img" loading="lazy"/>
-    <span>
-      {{splitFirstName this.name}} <br> {{splitLastName this.name}}
-    </span>
-  </div>
-  <p class="tg-modal-config-user__text">
-    {{this.position}}
-  </p>
-</div>
-{{/each}} 
-
-
 <div class="tg-modal-config tg-modal-partners" id="modal-partners" style="display:none;">
   <h2 class="tg-modal-partners__title">
     Станьте партнером конференции
