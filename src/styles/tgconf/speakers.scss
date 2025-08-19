@@ -403,10 +403,14 @@
     height: 100%;
   }
 
-  &__card.ten img {
-    width: 100%;
-    height: 100%;
+  &__card {
+    // ????????? TODO: надо убрать эту портянку
+    &.ten img, &.eleven img, &.twelve img, &.thirteen img, &.fourteen img, &.fifteen img, &.sixteen img {
+      width: 100%;
+      height: 100%;
+    }
   }
+
 
 
   &__figure {

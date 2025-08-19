@@ -3,7 +3,7 @@
     "id": "speaker-one",
     "name": "Артемий Лебедев",
     "position": "Дизайнер",
-    "image": "/assets/images/artem_lebedev.png",
+    "image": "/assets/images/speakers/artem_lebedev.webp",
     "color": "orange",
     "logos": []
   },
@@ -11,7 +11,7 @@
     "id": "speaker-two",
     "name": "Марат Шайхетдинов",
     "position": "Основатель Clickise и TgConf",
-    "image": "/assets/images/marat_shahabutdinov.png",
+    "image": "/assets/images/speakers/marat_shahabutdinov.webp",
     "color": "",
     "logos": [
       {
@@ -24,7 +24,7 @@
     "id": "speaker-three",
     "name": "Михаил Христосенко",
     "position": "Основатель онлайн-школы SMM Академия",
-    "image": "/assets/images/kristosenko.png",
+    "image": "/assets/images/speakers/kristosenko.webp",
     "color": "",
     "logos": []
   },
@@ -32,7 +32,7 @@
     "id": "speaker-four",
     "name": "Феликс Зинатуллин",
     "position": "Основатель \"Церебро\"",
-    "image": "/assets/images/zinatullin.png",
+    "image": "/assets/images/speakers/zinatullin.webp",
     "color": "",
     "logos": [
       {
@@ -45,7 +45,7 @@
     "id": "speaker-five",
     "name": "Павел Калюканов",
     "position": "Руководитель Академии TGStat",
-    "image": "/assets/images/kolukanov.png",
+    "image": "/assets/images/speakers/kolukanov.webp",
     "color": "",
     "logos": [
       {
@@ -58,7 +58,7 @@
     "id": "speaker-six",
     "name": "Ирина Нумизматка",
     "position": "Автор крупнейшего канала о Telegram Ads",
-    "image": "/assets/images/numizmatka.png",
+    "image": "/assets/images/speakers/numizmatka.webp",
     "color": "",
     "logos": []
   },
@@ -66,7 +66,7 @@
     "id": "speaker-seven",
     "name": "Денис Амирханян",
     "position": "Серийный предприниматель, маркетолог",
-    "image": "/assets/images/amirchanan.png",
+    "image": "/assets/images/speakers/amirchanan.webp",
     "color": "",
     "logos": []
   },
@@ -74,7 +74,7 @@
     "id": "speaker-eight",
     "name": "Глеб Яскевич",
     "position": "Основатель AX Family",
-    "image": "/assets/images/yaskevic.png",
+    "image": "/assets/images/speakers/yaskevic.webp",
     "color": "",
     "logos": []
   },
@@ -82,7 +82,7 @@
     "id": "speaker-nine",
     "name": "Анна Иванова",
     "position": "Таргетолог и teamlead команды по трафику в Clickise",
-    "image": "/assets/images/ivanova.png",
+    "image": "/assets/images/speakers/ivanova.webp",
     "color": "",
     "logos": [
       {
@@ -95,8 +95,76 @@
     "id": "speaker-ten",
     "name": "Алексей Пестов",
     "position": "Маркетолог, основатель агентства ads-telegram.pro",
-    "image": "/assets/images/pestov.png",
+    "image": "/assets/images/speakers/pestov.webp",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-eleven",
+    "name": "Любовь Мурзина",
+    "position": "SMM Lead в Авиасейлс",
+    "image": "/assets/images/speakers/murzina.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/aviasales.svg",
+        "alt": "Aviasales"
+      }
+    ]
+  },
+  {
+    "id": "speaker-twelve",
+    "name": "Вячеслав Самохвалов",
+    "position": "Head of Performance Marketing ЕГЭLAND",
+    "image": "/assets/images/speakers/samokhvalov.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/egeland.svg",
+        "alt": "ЕГЭLAND"
+      }
+    ]
+  },
+  {
+    "id": "speaker-thirteen",
+    "name": "Ильяна Левина",
+    "position": "Маркетолог Яна Топлес, бренд-директор международной школы кино Moshka.",
+    "image": "/assets/images/speakers/levina.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fourteen",
+    "name": "Егор Матита",
+    "position": "Основатель онлайн-школы рисования «Арт-Матита»",
+    "image": "/assets/images/speakers/matita.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fifteen",
+    "name": "Екатерина Барухова",
+    "position": "Customer Success Lead / Tribute",
+    "image": "/assets/images/speakers/barukhova.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/tribute.svg",
+        "alt": "Tribute"
+      }
+    ]
+  },
+  {
+    "id": "speaker-sixteen",
+    "name": "Андрей Чорапов",
+    "position": "Group Head of Marketing Otus",
+    "image": "/assets/images/speakers/chorapov.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/otus.svg",
+        "alt": "Otus"
+      }
+    ]
   }
 ]

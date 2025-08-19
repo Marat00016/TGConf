@@ -13,7 +13,7 @@
 
 ### Выгрузить на локальную машину:
 ```
-git clone git@github.com:AzatF2020/TGConf.git
+git clone git@github.com:Marat00016/TGConf.git
 ```
 
 ### Запуск проекта 
