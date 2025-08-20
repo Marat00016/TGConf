@@ -166,5 +166,18 @@
         "alt": "Otus"
       }
     ]
+  },
+  {
+    "id": "speaker-seventeen",
+    "name": "Антон Попов",
+    "position": "Руководитель направления по работе с блогерами и телеграм-каналами, Яндекс.Реклама",
+    "image": "/assets/images/speakers/popov.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/yandex.svg",
+        "alt": "Яндекс"
+      }
+    ]
   }
 ]

@@ -405,9 +405,18 @@
 
   &__card {
     // ????????? TODO: надо убрать эту портянку
-    &.ten img, &.eleven img, &.twelve img, &.thirteen img, &.fourteen img, &.fifteen img, &.sixteen img {
-      width: 100%;
-      height: 100%;
+    &.ten,
+    &.eleven,
+    &.twelve,
+    &.thirteen,
+    &.fourteen,
+    &.fifteen,
+    &.sixteen,
+    &.seventeen {
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 
