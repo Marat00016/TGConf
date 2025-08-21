@@ -187,5 +187,13 @@
     "image": "/assets/images/speakers/bibik.webp",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-nineteen",
+    "name": "Кирилл Сибиряк",
+    "position": "Продюсер онлайн-школ.\nЭксперт по системным запускам в Telegram с выручкой 20 млн в месяц \n\nПродюсер года по версии GetCourse 2025",
+    "image": "/assets/images/speakers/sibiryak.webp",
+    "color": "",
+    "logos": []
   }
 ]

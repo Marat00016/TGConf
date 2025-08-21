@@ -3191,7 +3191,7 @@ template {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.speakers__card.ten img, .speakers__card.eleven img, .speakers__card.twelve img, .speakers__card.thirteen img, .speakers__card.fourteen img, .speakers__card.fifteen img, .speakers__card.sixteen img, .speakers__card.seventeen img, .speakers__card.eighteen img {
+.speakers__card.ten img, .speakers__card.eleven img, .speakers__card.twelve img, .speakers__card.thirteen img, .speakers__card.fourteen img, .speakers__card.fifteen img, .speakers__card.sixteen img, .speakers__card.seventeen img, .speakers__card.eighteen img, .speakers__card.nineteen img {
   width: 100%;
   height: 100%;
 }
@@ -4758,7 +4758,8 @@ template {
 #speaker-fifteen img,
 #speaker-sixteen img,
 #speaker-seventeen img,
-#speaker-eighteen img {
+#speaker-eighteen img,
+#speaker-nineteen img {
   width: 100%;
   height: 100%;
 }
