@@ -195,5 +195,13 @@
     "image": "/assets/images/speakers/sibiryak.webp",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-twenty",
+    "name": "Евгений Лашков",
+    "position": "Макроэкономист, преподаватель МГИМО, общественный уполномоченный по финансам и инвестициям в Правительстве Москвы",
+    "image": "/assets/images/speakers/lashkov.webp",
+    "color": "",
+    "logos": []
   }
 ]
