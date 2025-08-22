@@ -123,7 +123,7 @@
               <img loading="lazy" src="{{this.image}}" alt="{{this.name}}" />
               {{#if this.logos}}
               <div class="speakers__logos">
-                <div class="speakers__logo-wrapper">
+                <div class="speakers__logo-wrapper {{#if this.wideLogo}}speakers__logo-wrapper--wide{{/if}}">
                   {{#each this.logos}}
                   <div class="speakers__logo {{ this.src }}" style="background-image: url({{ this.src }});" title="{{this.alt}}"></div>
                   {{/each}}

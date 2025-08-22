@@ -97,6 +97,13 @@
       height: 15px;
       padding: 2px 6px;
     }
+
+    &--wide {
+      width: 120px;
+      @include media.breakpoint(mobile) {
+        width: 100px;
+      }
+    }
   }
 
   &__logo {

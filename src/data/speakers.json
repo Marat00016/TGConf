@@ -47,6 +47,7 @@
     "position": "Product Manager Telepush — сервиса нативного продвижения в Telegram",
     "image": "/assets/images/speakers/kolukanov.webp",
     "color": "",
+    "wideLogo": true,
     "logos": [
       {
         "src": "/assets/images/logos/telepush.svg",
@@ -105,6 +106,7 @@
     "position": "SMM Lead в Авиасейлс",
     "image": "/assets/images/speakers/murzina.webp",
     "color": "",
+    "wideLogo": true,
     "logos": [
       {
         "src": "/assets/images/logos/aviasales.svg",
