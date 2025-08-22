@@ -44,12 +44,12 @@
   {
     "id": "speaker-five",
     "name": "Павел Калюканов",
-    "position": "Руководитель Академии TGStat",
+    "position": "Product Manager Telepush — сервиса нативного продвижения в Telegram",
     "image": "/assets/images/speakers/kolukanov.webp",
     "color": "",
     "logos": [
       {
-        "src": "/assets/images/kolukanov-logo.jpg",
+        "src": "/assets/images/logos/telepush.svg",
         "alt": "TGStat"
       }
     ]
