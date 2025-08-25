@@ -205,5 +205,19 @@
     "image": "/assets/images/speakers/lashkov.webp",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-twenty-one",
+    "name": "Ксения Баушева",
+    "position": "Руководитель блока внешних коммуникаций сети каналов «Новости Москвы»",
+    "image": "/assets/images/speakers/bausheva.webp",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/moscow-news-logo.svg",
+        "alt": "Новости Москвы"
+      }
+    ]
   }
 ]
