@@ -348,8 +348,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 20.5rem;
-    height: auto;
+    //width: 20.5rem;
+    //height: auto;
     object-fit: cover;
   }
 
@@ -371,51 +371,6 @@
     }
   }
 
-  &__card.one img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.two img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.three img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.four img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.five img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.six img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.seven img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.eight img {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__card.nine img {
-    width: 100%;
-    height: 100%;
-  }
-
   &__card {
     &__description {
       display: -webkit-box;
@@ -424,27 +379,12 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    // ????????? TODO: надо убрать эту портянку
-    &.ten,
-    &.eleven,
-    &.twelve,
-    &.thirteen,
-    &.fourteen,
-    &.fifteen,
-    &.sixteen,
-    &.seventeen,
-    &.eighteen,
-    &.nineteen,
-    &.twenty,
-    &.twenty-one {
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
   }
 
-
+  &__card-img {
+    width: 100%;
+    height: 100%;
+  }
 
   &__figure {
     position: absolute;

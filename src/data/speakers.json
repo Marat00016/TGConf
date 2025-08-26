@@ -219,5 +219,19 @@
         "alt": "Новости Москвы"
       }
     ]
+  },
+  {
+    "id": "speaker-twenty-two",
+    "name": "Денис Сметнёв",
+    "position": "Сооснователь Skyeng & маркетингового агентства uForce, академический директор магистратуры Бизнес-школы МФТИ",
+    "image": "/assets/images/speakers/smetnev.webp",
+    "color": "",
+    "wideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/skyeng.svg",
+        "alt": "Skyeng"
+      }
+    ]
   }
 ]

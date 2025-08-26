@@ -59,8 +59,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 20.5rem;
-    height: auto;
+    //width: 20.5rem;
+    //height: auto;
     object-fit: cover;
   }
 
@@ -95,6 +95,11 @@
       font-size: 1.4rem;
     }
   }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #speaker-one,
@@ -117,9 +122,10 @@
 #speaker-eighteen,
 #speaker-nineteen,
 #speaker-twenty,
-#speaker-twenty-one{
-  img {
-    width: 100%;
-    height: 100%;
-  }
+#speaker-twenty-one,
+#speaker-twenty-two {
+  //img {
+  //  width: 100%;
+  //  height: 100%;
+  //}
 }

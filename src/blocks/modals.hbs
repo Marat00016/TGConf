@@ -1,7 +1,7 @@
 {{#each speakers}}
 <div class="tg-modal-config tg-modal-config-user" id="{{this.id}}" style="display:none;">
   <div class="tg-modal-config-user__header">
-    <img src="{{this.image}}" alt="speaker-img" loading="lazy"/>
+    <img src="{{this.image}}" alt="speaker-img" loading="lazy" class="tg-modal-config-user__img"/>
     <span>
       {{splitFirstName this.name}} <br> {{splitLastName this.name}}
     </span>
