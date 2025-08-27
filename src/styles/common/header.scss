@@ -40,9 +40,23 @@
     object-fit: cover;
   }
 
+  &__logo-divider {
+    height: 2.3rem;
+    width: 2.3rem;
+    object-fit: cover;
+  }
+
+  &__logo-clickise {
+    height: 2.3rem;
+    width: 9rem;
+    object-fit: cover;
+  }
+
   &__logo-link {
     opacity: 1;
     transition: .3s ease opacity;
+    display: flex;
+    gap: 16px;
 
     @media (hover: hover) {
       &:hover {
