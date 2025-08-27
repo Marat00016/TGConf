@@ -30,6 +30,10 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/96239679" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 
+  <!-- Pixel Tag Code -->
+  <script>(function(t,l,g,r,m){t[g]||(g=t[g]=function(){g.run?g.run.apply(g,arguments):g.queue.push(arguments)},g.queue=[],t=l.createElement(r),t.async=!0,t.src=m,l=l.getElementsByTagName(r)[0],l.parentNode.insertBefore(t,l))})(window,document,'tgp','script','https://telegram.org/js/pixel.js');tgp('init','PTy0sGgv');</script>
+  <!-- End Pixel Tag Code -->
+
   <link rel="stylesheet" href="css/core.min.css" />
   <title>TgConf — Крупнейшая конференция по Telegram</title>
 </head>
@@ -49,5 +53,16 @@
   {{>modals}}
   <script src="https://api-maps.yandex.ru/2.1/?apikey=428d32ed-76b6-4133-ae2e-94978ae00167&lang=ru_RU" type="text/javascript" defer="true"></script>
   <script src="js/core.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const buyButtons = document.querySelectorAll('.tickets__card-buy-ticket-button');
+
+      buyButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          tgp('event','PTy0sGgv-ayUhAwCa');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
