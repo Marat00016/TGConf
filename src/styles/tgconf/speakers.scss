@@ -110,6 +110,12 @@
         width: 140px;
       }
     }
+    &--high {
+      height: 60px;
+      @include media.breakpoint(mobile) {
+        height: 25px;
+      }
+    }
   }
 
   &__logo {

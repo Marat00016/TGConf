@@ -233,5 +233,19 @@
         "alt": "Skyeng"
       }
     ]
+  },
+  {
+    "id": "speaker-twenty-three",
+    "name": "Вероника Филимонова",
+    "position": "СМО студии портретов Монро Арт ех Head of Traffic школы программирования EasyCode",
+    "image": "/assets/images/speakers/filiminova.webp",
+    "color": "",
+    "highLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/monro-art-logo.svg",
+        "alt": "Monro Art"
+      }
+    ]
   }
 ]
