@@ -3721,7 +3721,6 @@ template {
   line-height: 1.4;
   text-transform: uppercase;
   color: white;
-  text-decoration: line-through;
 }
 @media only screen and (max-width: 640px) {
   .tickets__card-after-price {

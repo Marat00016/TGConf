@@ -221,7 +221,7 @@
     line-height: 1.4;
     text-transform: uppercase;
     color: white;
-    text-decoration: line-through;
+    //text-decoration: line-through;
 
     @include media.breakpoint(mobile) {
       font-size: 1.6rem;
