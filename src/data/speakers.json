@@ -261,5 +261,19 @@
         "alt": "Elama"
       }
     ]
+  },
+  {
+    "id": "speaker-twenty-five",
+    "name": "Вадим Стерлин",
+    "position": "Основатель Adsgram",
+    "description": "- Основатель AdsGram, крупнейшей рекламной платформы в мини-приложениях Telegram. \n- Бывший менеджер продукта в «Яндекс Директ». \n- Сооснователь NFT-игры Fanton, получившей грант от Ton Foundation и привлекшей инвестиции на сумму более $1,3 млн",
+    "image": "/assets/images/speakers/sterlin.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/adsgram.svg",
+        "alt": "Adsgram"
+      }
+    ]
   }
 ]

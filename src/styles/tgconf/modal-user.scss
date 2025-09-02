@@ -90,6 +90,7 @@
     color: white;
     text-align: left;
     margin: 0 8px;
+    white-space: pre-line;
 
     @include media.breakpoint(tablet) {
       font-size: 1.4rem;
