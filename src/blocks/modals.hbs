@@ -7,7 +7,8 @@
     </span>
   </div>
   <p class="tg-modal-config-user__text">
-    {{this.position}}
+    {{#if this.description}}{{this.description}}{{/if}}
+    {{#else}}{{this.position}}{{/else}}
   </p>
 </div>
 {{/each}} 

@@ -247,5 +247,19 @@
         "alt": "Monro Art"
       }
     ]
+  },
+  {
+    "id": "speaker-twenty-four",
+    "name": "Никита Кравченко",
+    "position": "Эксперт по платному трафику и евангелист eLama",
+    "description": "Более 13 лет в диджитал. Сертифицированный эксперт Яндекс Рекламы. Автор Telegram-канала «Будни евангелиста». Автор полного курса eLama и ppc world по Яндекс Директу. В разное время преподавал на курсе «Директор по марктетингу» в MaEd, курсах по интернет-рекламе в Яндексе, Сбере, Нетологии, Skillbox, ppc world, Coursera, Skypro и др.",
+    "image": "/assets/images/speakers/kravchenko.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/elama.svg",
+        "alt": "Elama"
+      }
+    ]
   }
 ]
