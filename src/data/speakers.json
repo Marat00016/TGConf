@@ -101,20 +101,6 @@
     "logos": []
   },
   {
-    "id": "speaker-eleven",
-    "name": "Любовь Мурзина",
-    "position": "SMM Lead в Авиасейлс",
-    "image": "/assets/images/speakers/murzina.webp",
-    "color": "",
-    "wideLogo": true,
-    "logos": [
-      {
-        "src": "/assets/images/logos/aviasales.svg",
-        "alt": "Aviasales"
-      }
-    ]
-  },
-  {
     "id": "speaker-twelve",
     "name": "Вячеслав Самохвалов",
     "position": "Head of Performance Marketing ЕГЭLAND",
