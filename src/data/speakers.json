@@ -261,5 +261,18 @@
         "alt": "Adsgram"
       }
     ]
+  },
+  {
+    "id": "speaker-twenty-six",
+    "name": "Алексей Золотов",
+    "position": "Продюсер экспертов в инфобизнесе с выручкой 60–100 млн в год. Лучший канал по продажам 2025",
+    "image": "/assets/images/speakers/zolotov.webp",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/alexey-zolotov-tg.svg",
+        "alt": "Алексей Золотов"
+      }
+    ]
   }
 ]
