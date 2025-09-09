@@ -3,6 +3,7 @@
 .footer {
   margin-top: 20rem;
   position: relative;
+  margin-bottom: 10rem;
 
   @include media.breakpoint(tablet) {
     margin-top: 10rem;
