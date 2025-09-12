@@ -1,0 +1,92 @@
+@use '../media';
+
+.awards {
+  .intro__overlay {
+    background-image: none;
+  }
+  .container {
+    .intro__center {
+      margin: 3.875rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &-title-wrapper {
+        margin-bottom: 0;
+      }
+
+      .about__text {
+        max-width: none;
+        line-height: 140%;
+      }
+    }
+  }
+  &__button-ticket {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: white;
+    line-height: 1;
+    padding-inline: 5.5rem;
+    height: 5.6rem;
+    background-color: #E45D22;
+    border-radius: 5.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.8rem;
+    width: 100%;
+    transition: 0.3s ease background-color;
+    cursor: pointer;
+    text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #be4613;
+      }
+    }
+
+    @include media.breakpoint(tablet) {
+      font-size: 1.4rem;
+      height: 3.8rem;
+    }
+    
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    @include media.breakpoint(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media.breakpoint(mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .award {
+      padding: 2.4rem;
+      border: 0.1rem solid #9A9A9A;
+      border-radius: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      
+      span {
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 100%;
+        color: white;
+        width: 80%;
+      }
+    }
+  }
+}

@@ -14,7 +14,9 @@ export default function initBurgerModal() {
   closeTriggers.forEach((item) => {
     item.addEventListener('click', () => {
       menu.classList.remove(activeClass)
-    })
+      if (window.location.pathname.includes('awards')) {
+        window.location.href = window.location.origin
+      }
+    })    
   })
-  
 }

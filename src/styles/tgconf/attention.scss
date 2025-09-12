@@ -48,23 +48,19 @@
       transition: 0.3s ease background-color;
       cursor: pointer;
       text-decoration: none;
-      animation: blink-animation 2s infinite; /* 1 секунда, бесконечно */
+      animation: blink-animation 2s infinite;
 
-      @media (hover: hover) {
-        &:hover {
-          background-color: #be4613;
-        }
-      }
+      // @media (hover: hover) {
+      //   &:hover {
+      //     background-color: #be4613;
+      //   }
+      // }
       
       @keyframes blink-animation {
         0% { opacity: 1; }
         50% { opacity: 0; }
         100% { opacity: 1; }
       }
-
-      // .blink-element {
-      //     animation: blink-animation 1s infinite; /* 1 секунда, бесконечно */
-      // }
 
       @include media.breakpoint(tablet) {
         font-size: 1.4rem;
