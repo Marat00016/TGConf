@@ -274,5 +274,17 @@
         "alt": "Алексей Золотов"
       }
     ]
+  },
+  {
+    "id": "speaker-twenty-seven",
+    "name": "Феодор Иванов",
+    "position": "Head of Product InvestFuture Media. Развил сетку телеграм-каналов до 700 000 человек",
+    "image": "/assets/images/speakers/feodor_ivanov.png",
+    "logos": [
+      {
+        "src": "/assets/images/logos/if_logo.png",
+        "alt": "Феодор Иванов"
+      }
+    ]
   }
 ]
