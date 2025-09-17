@@ -21,6 +21,12 @@
     ]
   },
   {
+    "id": "speaker-twenty-nine",
+    "name": "Наиль Байков — ведущий TgConf!",
+    "position": "Эксперт в digital-маркетинге и коммуникациях",
+    "image": "/assets/images/speakers/nail_baikov.png"
+  },
+  {
     "id": "speaker-three",
     "name": "Михаил Христосенко",
     "position": "Основатель онлайн-школы SMM Академия",
@@ -185,14 +191,6 @@
     "logos": []
   },
   {
-    "id": "speaker-twenty",
-    "name": "Евгений Лашков",
-    "position": "Макроэкономист, преподаватель МГИМО, общественный уполномоченный по финансам и инвестициям в Правительстве Москвы",
-    "image": "/assets/images/speakers/lashkov.webp",
-    "color": "",
-    "logos": []
-  },
-  {
     "id": "speaker-twenty-one",
     "name": "Ксения Баушева",
     "position": "Руководитель блока внешних коммуникаций сети каналов «Новости Москвы»",
@@ -284,6 +282,19 @@
       {
         "src": "/assets/images/logos/if_logo.png",
         "alt": "Феодор Иванов"
+      }
+    ]
+  },
+  {
+    "id": "speaker-twenty-eight",
+    "name": "Винтер Даниил",
+    "position": "Специалист по платному трафику в Контуре (Telegram Ads)",
+    "image": "/assets/images/speakers/winter_daniil.png",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/kontur.svg",
+        "alt": "Винтер Даниил"
       }
     ]
   }
