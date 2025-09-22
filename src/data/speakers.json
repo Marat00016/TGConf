@@ -308,6 +308,13 @@
     "id": "speaker-thirty-two",
     "name": "Виталий Горюнов",
     "position": "IT-евангелист и маркетинговый аналитик Roistat. Более 6 лет в аналитике маркетинга. Оптимизировал бюджеты с ростом ROI Х2. Провел больше 400 аудитов по сайтам, CRM-системам, рекламным каналам",
-    "image": "/assets/images/speakers/vitaliy_goryunov.png"
+    "image": "/assets/images/speakers/vitaliy_goryunov.png",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/roistat_logo.svg",
+        "alt": "Виталий Горюнов"
+      }
+    ]
   }
 ]
