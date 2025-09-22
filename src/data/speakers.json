@@ -33,170 +33,6 @@
     "image": "/assets/images/speakers/nail_baikov.png"
   },
   {
-    "id": "speaker-three",
-    "name": "Михаил Христосенко",
-    "position": "Основатель онлайн-школы SMM Академия",
-    "image": "/assets/images/speakers/kristosenko.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-four",
-    "name": "Феликс Зинатуллин",
-    "position": "Основатель \"Церебро\"",
-    "image": "/assets/images/speakers/zinatullin.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/zinatulin-logo.jpg",
-        "alt": "Церебро"
-      }
-    ]
-  },
-  {
-    "id": "speaker-five",
-    "name": "Павел Калюканов",
-    "position": "Product Manager Telepush — сервиса нативного продвижения в Telegram",
-    "image": "/assets/images/speakers/kolukanov.webp",
-    "color": "",
-    "wideLogo": true,
-    "logos": [
-      {
-        "src": "/assets/images/logos/telepush.svg",
-        "alt": "Telepush"
-      }
-    ]
-  },
-  {
-    "id": "speaker-six",
-    "name": "Ирина Нумизматка",
-    "position": "Автор крупнейшего канала о Telegram Ads",
-    "image": "/assets/images/speakers/numizmatka.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-seven",
-    "name": "Денис Амирханян",
-    "position": "Серийный предприниматель, маркетолог",
-    "image": "/assets/images/speakers/amirchanan.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-eight",
-    "name": "Глеб Яскевич",
-    "position": "Основатель AX Family",
-    "image": "/assets/images/speakers/yaskevic.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-nine",
-    "name": "Анна Иванова",
-    "position": "Таргетолог и teamlead команды по трафику в Clickise",
-    "image": "/assets/images/speakers/ivanova.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/icons/clickise-logo.svg",
-        "alt": "Clickise"
-      }
-    ]
-  },
-  {
-    "id": "speaker-ten",
-    "name": "Алексей Пестов",
-    "position": "Маркетолог, основатель агентства ads-telegram.pro",
-    "image": "/assets/images/speakers/pestov.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-twelve",
-    "name": "Вячеслав Самохвалов",
-    "position": "Head of Performance Marketing ЕГЭLAND",
-    "image": "/assets/images/speakers/samokhvalov.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/logos/egeland.svg",
-        "alt": "ЕГЭLAND"
-      }
-    ]
-  },
-  {
-    "id": "speaker-thirteen",
-    "name": "Ильяна Левина",
-    "position": "Маркетолог Яна Топлес, бренд-директор международной школы кино Moshka.",
-    "image": "/assets/images/speakers/levina.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-fourteen",
-    "name": "Егор Матита",
-    "position": "Основатель онлайн-школы рисования «Арт-Матита»",
-    "image": "/assets/images/speakers/matita.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-fifteen",
-    "name": "Екатерина Барухова",
-    "position": "Customer Success Lead / Tribute",
-    "image": "/assets/images/speakers/barukhova.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/logos/tribute.svg",
-        "alt": "Tribute"
-      }
-    ]
-  },
-  {
-    "id": "speaker-sixteen",
-    "name": "Андрей Чорапов",
-    "position": "Group Head of Marketing Otus",
-    "image": "/assets/images/speakers/chorapov.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/logos/otus.svg",
-        "alt": "Otus"
-      }
-    ]
-  },
-  {
-    "id": "speaker-seventeen",
-    "name": "Антон Попов",
-    "position": "Руководитель направления по работе с блогерами и телеграм-каналами, Яндекс Реклама",
-    "image": "/assets/images/speakers/popov.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/logos/yandex.svg",
-        "alt": "Яндекс"
-      }
-    ]
-  },
-  {
-    "id": "speaker-eighteen",
-    "name": "Татьяна Бибик",
-    "position": "Основатель бренда «НЕ ШКОЛА». 300 филиалов в 12 странах. 3000+ сотрудников и 3 млрд выручки в 2024 году. ТОП10 франшиз в списке Forbes",
-    "image": "/assets/images/speakers/bibik.webp",
-    "color": "",
-    "logos": []
-  },
-  {
-    "id": "speaker-nineteen",
-    "name": "Кирилл Сибиряк",
-    "position": "Продюсер онлайн-школ.\nЭксперт по системным запускам в Telegram с выручкой 20 млн в месяц \n\nПродюсер года по версии GetCourse 2025",
-    "image": "/assets/images/speakers/sibiryak.webp",
-    "color": "",
-    "logos": []
-  },
-  {
     "id": "speaker-twenty-one",
     "name": "Ксения Баушева",
     "position": "Руководитель блока внешних коммуникаций сети каналов «Новости Москвы»",
@@ -225,6 +61,57 @@
     ]
   },
   {
+    "id": "speaker-five",
+    "name": "Павел Калюканов",
+    "position": "Product Manager Telepush — сервиса нативного продвижения в Telegram",
+    "image": "/assets/images/speakers/kolukanov.webp",
+    "color": "",
+    "wideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/telepush.svg",
+        "alt": "Telepush"
+      }
+    ]
+  },
+  {
+    "id": "speaker-four",
+    "name": "Феликс Зинатуллин",
+    "position": "Основатель \"Церебро\"",
+    "image": "/assets/images/speakers/zinatullin.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/zinatulin-logo.jpg",
+        "alt": "Церебро"
+      }
+    ]
+  },
+  {
+    "id": "speaker-three",
+    "name": "Михаил Христосенко",
+    "position": "Основатель онлайн-школы SMM Академия",
+    "image": "/assets/images/speakers/kristosenko.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-eighteen",
+    "name": "Татьяна Бибик",
+    "position": "Основатель бренда «НЕ ШКОЛА». 300 филиалов в 12 странах. 3000+ сотрудников и 3 млрд выручки в 2024 году. ТОП10 франшиз в списке Forbes",
+    "image": "/assets/images/speakers/bibik.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fourteen",
+    "name": "Егор Матита",
+    "position": "Основатель онлайн-школы рисования «Арт-Матита»",
+    "image": "/assets/images/speakers/matita.webp",
+    "color": "",
+    "logos": []
+  },
+  {
     "id": "speaker-twenty-three",
     "name": "Вероника Филимонова",
     "position": "СМО студии портретов Монро Арт",
@@ -239,34 +126,6 @@
     ]
   },
   {
-    "id": "speaker-twenty-four",
-    "name": "Никита Кравченко",
-    "position": "Эксперт по платному трафику и евангелист eLama",
-    "description": "Более 13 лет в диджитал. Сертифицированный эксперт Яндекс Рекламы. Автор Telegram-канала «Будни евангелиста». Автор полного курса eLama и ppc world по Яндекс Директу. В разное время преподавал на курсе «Директор по марктетингу» в MaEd, курсах по интернет-рекламе в Яндексе, Сбере, Нетологии, Skillbox, ppc world, Coursera, Skypro и др.",
-    "image": "/assets/images/speakers/kravchenko.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/logos/elama.svg",
-        "alt": "Elama"
-      }
-    ]
-  },
-  {
-    "id": "speaker-twenty-five",
-    "name": "Вадим Стерлин",
-    "position": "Основатель Adsgram",
-    "description": "- Основатель AdsGram, крупнейшей рекламной платформы в мини-приложениях Telegram. \n- Бывший менеджер продукта в «Яндекс Директ». \n- Сооснователь NFT-игры Fanton, получившей грант от Ton Foundation и привлекшей инвестиции на сумму более $1,3 млн",
-    "image": "/assets/images/speakers/sterlin.webp",
-    "color": "",
-    "logos": [
-      {
-        "src": "/assets/images/logos/adsgram.svg",
-        "alt": "Adsgram"
-      }
-    ]
-  },
-  {
     "id": "speaker-twenty-six",
     "name": "Алексей Золотов",
     "position": "Продюсер экспертов в инфобизнесе с выручкой 60–100 млн в год. Лучший канал по продажам 2025",
@@ -276,6 +135,19 @@
       {
         "src": "/assets/images/logos/alexey-zolotov-tg.svg",
         "alt": "Алексей Золотов"
+      }
+    ]
+  },
+  {
+    "id": "speaker-thirty-three",
+    "name": "Олег Факеев",
+    "position": "Инвестор. С 2017г в крипте. Управляющий инвестор целом на 240 человек с капиталом 30млн.$",
+    "image": "/assets/images/speakers/oleg_fakeev.png",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/kits_invest.svg",
+        "alt": "Олег Факеев"
       }
     ]
   },
@@ -305,6 +177,97 @@
     ]
   },
   {
+    "id": "speaker-ten",
+    "name": "Алексей Пестов",
+    "position": "Маркетолог, основатель агентства ads-telegram.pro",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-six",
+    "name": "Ирина Нумизматка",
+    "position": "Автор крупнейшего канала о Telegram Ads",
+    "image": "/assets/images/speakers/numizmatka.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-twenty-four",
+    "name": "Никита Кравченко",
+    "position": "Эксперт по платному трафику и евангелист eLama",
+    "description": "Более 13 лет в диджитал. Сертифицированный эксперт Яндекс Рекламы. Автор Telegram-канала «Будни евангелиста». Автор полного курса eLama и ppc world по Яндекс Директу. В разное время преподавал на курсе «Директор по марктетингу» в MaEd, курсах по интернет-рекламе в Яндексе, Сбере, Нетологии, Skillbox, ppc world, Coursera, Skypro и др.",
+    "image": "/assets/images/speakers/kravchenko.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/elama.svg",
+        "alt": "Elama"
+      }
+    ]
+  },
+  {
+    "id": "speaker-nine",
+    "name": "Анна Иванова",
+    "position": "Таргетолог и teamlead команды по трафику в Clickise",
+    "image": "/assets/images/speakers/ivanova.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/icons/clickise-logo.svg",
+        "alt": "Clickise"
+      }
+    ]
+  },
+  {
+    "id": "speaker-seven",
+    "name": "Денис Амирханян",
+    "position": "Серийный предприниматель, маркетолог",
+    "image": "/assets/images/speakers/amirchanan.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-twelve",
+    "name": "Вячеслав Самохвалов",
+    "position": "Head of Performance Marketing ЕГЭLAND",
+    "image": "/assets/images/speakers/samokhvalov.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/egeland.svg",
+        "alt": "ЕГЭLAND"
+      }
+    ]
+  },
+  {
+    "id": "speaker-sixteen",
+    "name": "Андрей Чорапов",
+    "position": "Group Head of Marketing Otus",
+    "image": "/assets/images/speakers/chorapov.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/otus.svg",
+        "alt": "Otus"
+      }
+    ]
+  },
+  {
+    "id": "speaker-twenty-five",
+    "name": "Вадим Стерлин",
+    "position": "Основатель Adsgram",
+    "description": "- Основатель AdsGram, крупнейшей рекламной платформы в мини-приложениях Telegram. \n- Бывший менеджер продукта в «Яндекс Директ». \n- Сооснователь NFT-игры Fanton, получившей грант от Ton Foundation и привлекшей инвестиции на сумму более $1,3 млн",
+    "image": "/assets/images/speakers/sterlin.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/adsgram.svg",
+        "alt": "Adsgram"
+      }
+    ]
+  },
+  {
     "id": "speaker-thirty-two",
     "name": "Виталий Горюнов",
     "position": "IT-евангелист и маркетинговый аналитик Roistat. Более 6 лет в аналитике маркетинга. Оптимизировал бюджеты с ростом ROI Х2. Провел больше 400 аудитов по сайтам, CRM-системам, рекламным каналам",
@@ -316,5 +279,55 @@
         "alt": "Виталий Горюнов"
       }
     ]
+  },
+  {
+    "id": "speaker-nineteen",
+    "name": "Кирилл Сибиряк",
+    "position": "Продюсер онлайн-школ.\nЭксперт по системным запускам в Telegram с выручкой 20 млн в месяц \n\nПродюсер года по версии GetCourse 2025",
+    "image": "/assets/images/speakers/sibiryak.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-eight",
+    "name": "Глеб Яскевич",
+    "position": "Основатель AX Family",
+    "image": "/assets/images/speakers/yaskevic.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-seventeen",
+    "name": "Антон Попов",
+    "position": "Руководитель направления по работе с блогерами и телеграм-каналами, Яндекс Реклама",
+    "image": "/assets/images/speakers/popov.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/yandex.svg",
+        "alt": "Яндекс"
+      }
+    ]
+  },
+  {
+    "id": "speaker-fifteen",
+    "name": "Екатерина Барухова",
+    "position": "Customer Success Lead / Tribute",
+    "image": "/assets/images/speakers/barukhova.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/tribute.svg",
+        "alt": "Tribute"
+      }
+    ]
+  },
+  {
+    "id": "speaker-thirteen",
+    "name": "Ильяна Левина",
+    "position": "Маркетолог Яна Топлес, бренд-директор международной школы кино Moshka.",
+    "image": "/assets/images/speakers/levina.webp",
+    "color": "",
+    "logos": []
   }
 ]
