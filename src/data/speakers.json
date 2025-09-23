@@ -96,6 +96,19 @@
     "logos": []
   },
   {
+    "id": "speaker-thirty-four",
+    "name": "Алексей Успешный",
+    "position": "Совладелец постинга AnyPost и Lightning 2.0. Владелец сетки каналов с суточным охватом более 100.000 просмотров",
+    "image": "/assets/images/speakers/alexey_uspeshniy.png",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/uspeshniy.png",
+        "alt": "Алексей Успешный"
+      }
+    ]
+  },
+  {
     "id": "speaker-eighteen",
     "name": "Татьяна Бибик",
     "position": "Основатель бренда «НЕ ШКОЛА». 300 филиалов в 12 странах. 3000+ сотрудников и 3 млрд выручки в 2024 году. ТОП10 франшиз в списке Forbes",
