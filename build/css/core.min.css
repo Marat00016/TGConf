@@ -3850,6 +3850,42 @@ template {
 .tickets__card--blue .tickets__card-list-item::before {
   background-image: url("../assets/icons/mark-blue.svg");
 }
+.tickets .warning-info {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #E45D22;
+  position: relative;
+  padding: 0.75rem;
+  background-color: rgba(228, 93, 34, 0.2);
+  padding-left: 4rem;
+  border-radius: 1.25rem;
+  margin-top: 1.6rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets .warning-info {
+    font-size: 1.2rem;
+  }
+}
+.tickets .warning-info::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/icons/info-orange-icon.svg");
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets .warning-info::before {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 .organisers__title {
   font-weight: 700;

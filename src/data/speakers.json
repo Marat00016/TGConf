@@ -342,5 +342,26 @@
     "image": "/assets/images/speakers/levina.webp",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-thirty-five",
+    "name": "Лукьянов Никита",
+    "position": "Сооснователь Flyer",
+    "image": "/assets/images/speakers/lukyanov_nikita.webp",
+    "color": "",
+    "logos": [
+      {
+        "src": "/assets/images/logos/flyer_logo.png",
+        "alt": "Flyer"
+      }
+    ]
+  },
+  {
+    "id": "speaker-thirty-six",
+    "name": "Корнеев Кирилл",
+    "position": "Совладелец, основатель Kiss. Миллион пользователей в миниапп, за 3 месяца. Своя сеть телеграм каналов на 1 000 000+ человек",
+    "image": "/assets/images/speakers/korneev_kirill.webp",
+    "color": "",
+    "logos": []
   }
 ]

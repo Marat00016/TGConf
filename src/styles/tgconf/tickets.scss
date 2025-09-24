@@ -355,4 +355,40 @@
   &__card--blue &__card-list-item::before {
     background-image: url('../assets/icons/mark-blue.svg');
   }
+
+  .warning-info {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: #E45D22;
+    position: relative;
+    padding: 0.75rem;
+    background-color: #E45D2233;
+    padding-left: 4rem;
+    border-radius: 1.25rem;
+    margin-top: 1.6rem;
+
+    @include media.breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../assets/icons/info-orange-icon.svg');
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+
+      @include media.breakpoint(mobile) {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
 }
