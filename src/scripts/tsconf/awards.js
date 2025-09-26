@@ -55,7 +55,7 @@ function fetchTgNominationData(nomination) {
   }
 }
 
-export function fetchAllTgApiDatas() {
+export default function fetchAllTgApiDatas() {
   fetchTgNominationData('16');
   fetchTgNominationData('17');
   fetchTgNominationData('18');
@@ -63,7 +63,3 @@ export function fetchAllTgApiDatas() {
   fetchTgNominationData('20');
   fetchTgNominationData('24');
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(fetchAllTgApiDatas, 0);
-});
