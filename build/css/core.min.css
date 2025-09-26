@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --f-spinner-width: 36px;
   --f-spinner-height: 36px;
@@ -2478,14 +2479,13 @@ template {
   }
 }
 .intro__center-people-item:nth-child(1) img {
-  width: 10rem;
-  bottom: -6rem;
-  left: -2.25rem;
+  width: 13rem;
+  left: -2.9rem;
 }
 @media only screen and (max-width: 640px) {
   .intro__center-people-item:nth-child(1) img {
-    left: -2rem;
-    bottom: -7em;
+    width: 12rem;
+    left: -2.6rem;
   }
 }
 .intro__center-people-item:nth-child(2) img {
@@ -3850,6 +3850,42 @@ template {
 .tickets__card--blue .tickets__card-list-item::before {
   background-image: url("../assets/icons/mark-blue.svg");
 }
+.tickets .warning-info {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #E45D22;
+  position: relative;
+  padding: 0.75rem;
+  background-color: rgba(228, 93, 34, 0.2);
+  padding-left: 4rem;
+  border-radius: 1.25rem;
+  margin-top: 1.6rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets .warning-info {
+    font-size: 1.2rem;
+  }
+}
+.tickets .warning-info::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/icons/info-orange-icon.svg");
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets .warning-info::before {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 .organisers__title {
   font-weight: 700;
@@ -4936,7 +4972,12 @@ template {
   transition: 0.3s ease background-color;
   cursor: pointer;
   text-decoration: none;
-  animation: blink-animation 2s infinite;
+  animation: blink-animation 2s infinite; /* 1 секунда, бесконечно */
+}
+@media (hover: hover) {
+  .attention .container .attention__button-ticket:hover {
+    background-color: #be4613;
+  }
 }
 @keyframes blink-animation {
   0% {

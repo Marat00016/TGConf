@@ -253,13 +253,19 @@
   }
 
   &__center-people-item:nth-child(1) img {
-    width: 10rem;
-    bottom: -6rem;
-    left: -2.25rem;
+    // width: 10rem;
+    // bottom: -6rem;
+    // left: -2.25rem;
+
+    width: 13rem;
+    left: -2.9rem;
 
     @include media.breakpoint(mobile) {
-      left: -2rem;
-      bottom: -7em;
+      // left: -2rem;
+      // bottom: -7em;
+
+      width: 12rem;
+      left: -2.6rem;
     }
   }
 
