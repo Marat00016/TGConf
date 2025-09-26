@@ -9,7 +9,17 @@ function fetchTgNominationData(nomination) {
       })
       .then(data => {
         const nominationBlog = document.querySelector(`.tg_block_${nomination}`);
-        data.participants.sort((a, b) => a.percent - b.percent);
+        
+        data.participants.sort(function (a, b) {
+          if (a.percent > b.percent) {
+            return -1;
+          }
+          if (a.percent < b.percent) {
+            return 1;
+          }
+          return 0;
+        });
+        
         data.participants.forEach(el => {
           const block = document.createElement('div');
           block.classList.add('block')
@@ -38,7 +48,7 @@ function fetchTgNominationData(nomination) {
 
           const progress2 = document.createElement('div');
           progress2.classList.add('progress-bar-fill')
-          progress2.style.width = el.percent;
+          progress2.style.width = `${el.percent}%`;
           blockContainer.append(progress2);
 
           const percent = document.createElement('div');
