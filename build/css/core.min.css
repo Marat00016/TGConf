@@ -4972,12 +4972,7 @@ template {
   transition: 0.3s ease background-color;
   cursor: pointer;
   text-decoration: none;
-  animation: blink-animation 2s infinite; /* 1 секунда, бесконечно */
-}
-@media (hover: hover) {
-  .attention .container .attention__button-ticket:hover {
-    background-color: #be4613;
-  }
+  animation: blink-animation 2s infinite;
 }
 @keyframes blink-animation {
   0% {
@@ -5031,6 +5026,165 @@ template {
     height: 11.5rem;
     background-image: url("../assets/images/plaska_bg_mb.png");
   }
+}
+
+.awards {
+  min-height: 70dvh;
+}
+.awards .intro__overlay {
+  background-image: none;
+}
+.awards .container .intro__center {
+  margin: 3.875rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.awards .container .intro__center-title-wrapper {
+  margin-bottom: 0;
+}
+.awards .container .intro__center .about__text {
+  max-width: none;
+  line-height: 140%;
+}
+.awards__button-ticket {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: white;
+  line-height: 1;
+  padding-inline: 5.5rem;
+  height: 5.6rem;
+  background-color: #E45D22;
+  border-radius: 5.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.8rem;
+  width: 100%;
+  transition: 0.3s ease background-color;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .awards__button-ticket:hover {
+    background-color: #be4613;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .awards__button-ticket {
+    font-size: 1.4rem;
+    height: 3.8rem;
+  }
+}
+.awards__button-ticket-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.awards__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .awards__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 640px) {
+  .awards__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.awards__list .award {
+  padding: 2.4rem;
+  border: 0.1rem solid #9A9A9A;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.awards__list .award__block {
+  width: 100%;
+  max-height: 340px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.awards__list .award__block::-webkit-scrollbar {
+  display: none;
+}
+.awards__list .award .block {
+  color: white;
+  display: flex;
+  gap: 8px;
+}
+.awards__list .award .block-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.awards__list .award .block-container__info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.awards__list .award .block .percent {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  vertical-align: middle;
+  display: flex;
+  align-items: flex-end;
+}
+.awards__list .award span {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 100%;
+  color: white;
+  width: 80%;
+}
+.awards__list .award .image-nomination {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 8px 0;
+  background-size: cover;
+}
+.awards__list .award .name-nomination {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  max-width: 70%;
+  text-align: start;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  max-height: 42px;
+}
+.awards__list .award .progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #26252A;
+  border-radius: 5px;
+}
+.awards__list .award .progress-bar-fill {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #E45D22;
 }
 
 html {
