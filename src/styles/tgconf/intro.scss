@@ -475,6 +475,20 @@
       display: none;
     }
   }
+
+  .button-container {
+    display: flex;
+    gap: 24px;
+
+    .blue-ticket {
+      padding: 18px 22px;
+      background-color: #0288DB;
+    }
+
+    @include media.breakpoint(tablet) {
+      flex-direction: column;
+    }
+  }
 }
 
 @keyframes shadowPulse {

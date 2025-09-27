@@ -5,20 +5,22 @@ import Lenis from 'lenis';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function smoothScrolling() {
-    const lenis = new Lenis();
+    if (!window.location.pathname.includes('awards')) {
+        const lenis = new Lenis();
 
-    lenis.on('scroll', ScrollTrigger.update);
+        lenis.on('scroll', ScrollTrigger.update);
 
-    gsap.ticker.add(time => {
-        lenis.raf(time * 900);
-    });
+        gsap.ticker.add(time => {
+            lenis.raf(time * 900);
+        });
 
-    gsap.ticker.lagSmoothing(0);
+        gsap.ticker.lagSmoothing(0);
 
-    window.scroll = {
-        stopScroll: null,
-        startScroll: null
-    };
-    window.scroll.stopScroll = () => lenis.stop();
-    window.scroll.startScroll = () => lenis.start();
+        window.scroll = {
+            stopScroll: null,
+            startScroll: null
+        };
+        window.scroll.stopScroll = () => lenis.stop();
+        window.scroll.startScroll = () => lenis.start();
+    }    
 }
