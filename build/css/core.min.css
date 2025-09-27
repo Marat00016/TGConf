@@ -2700,6 +2700,19 @@ template {
     display: none;
   }
 }
+.intro .button-container {
+  display: flex;
+  gap: 24px;
+}
+.intro .button-container .blue-ticket {
+  padding: 18px 22px;
+  background-color: #0288DB;
+}
+@media only screen and (max-width: 1024px) {
+  .intro .button-container {
+    flex-direction: column;
+  }
+}
 
 @keyframes shadowPulse {
   0%, 100% {
@@ -5113,13 +5126,9 @@ template {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow: hidden;
   overflow-y: auto;
   -ms-overflow-style: none; /* IE и Edge */
   scrollbar-width: none; /* Firefox */
-}
-.awards__list .award__block::-webkit-scrollbar {
-  display: none;
 }
 .awards__list .award .block {
   color: white;
