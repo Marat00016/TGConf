@@ -2707,6 +2707,10 @@ template {
 .intro .button-container .blue-ticket {
   padding: 18px 22px;
   background-color: #0288DB;
+  transition: 0.3s ease background-color;
+}
+.intro .button-container .blue-ticket:hover {
+  background-color: #016db0;
 }
 @media only screen and (max-width: 1024px) {
   .intro .button-container {
@@ -5194,6 +5198,114 @@ template {
   height: 6px;
   border-radius: 5px;
   background-color: #E45D22;
+}
+
+.schedule {
+  color: white;
+}
+.schedule__title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 10.2rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+}
+.schedule .blue-ticket {
+  padding-inline: 17.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  column-gap: 8px;
+  height: 5.6rem;
+  border-radius: 5.6rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: 0.3sease background-color;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #26252A;
+  width: 100%;
+  transition: 0.3s ease background-color;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+.schedule .blue-ticket:hover {
+  background-color: #312f35;
+}
+.schedule .blue-ticket.active {
+  background-color: #0288DB;
+}
+.schedule .blue-ticket.active:hover {
+  background-color: #016db0;
+}
+.schedule .double {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 3.5rem;
+}
+.schedule .double__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.schedule-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #5A5A5A;
+}
+.schedule-card__info {
+  display: flex;
+  align-items: center;
+  gap: 5.75rem;
+}
+.schedule-card__info .time span {
+  font-size: 2.5rem;
+}
+.schedule-card__info .time p {
+  display: none;
+}
+.schedule-card__speaker {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.schedule-card__speaker .intro__center-people-item {
+  width: 7.2rem;
+  height: 7.2rem;
+  position: relative;
+  z-index: 5;
+  border-radius: 7.2rem;
+  overflow: hidden;
+  animation: none;
+  box-shadow: none;
+}
+.schedule-card__speaker span {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+}
+.schedule-card__text {
+  font-size: 2.25rem;
+  color: #9A9A9A;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  max-height: 5rem;
+}
+.schedule .lunch {
+  font-size: 2rem;
+  height: 5.6rem;
+  border-radius: 5.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  background-color: #26252A;
+  margin: 1.5rem 0;
 }
 
 html {
