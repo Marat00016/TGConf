@@ -8,6 +8,12 @@
     "logos": []
   },
   {
+    "id": "speaker-fourty-two",
+    "name": "Антон Горелкин",
+    "position": "Первый заместитель председателя комитета Госдумы по информационной политике, информационным технологиям и связи, председатель правления РОЦИТ",
+    "image": "/assets/images/speakers/gorelkin.png"
+  },
+  {
     "id": "speaker-thirty-one",
     "name": "Андрей Свинцов",
     "position": "Депутат Государственной думы РФ, заместитель председателя Комитета Госдумы по информационной политике, информационным технологиям и связи",
@@ -88,10 +94,24 @@
     ]
   },
   {
-    "id": "speaker-three",
-    "name": "Михаил Христосенко",
-    "position": "Основатель онлайн-школы SMM Академия",
-    "image": "/assets/images/speakers/kristosenko.webp",
+    "id": "speaker-thirty-seven",
+    "name": "Алексей Дощинский",
+    "position": "Product Owner в сервисе Telemetr",
+    "image": "/assets/images/speakers/alexey_doshinski.webp",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/telemetr.svg",
+        "alt": "telemetr"
+      }
+    ]
+  },
+  {
+    "id": "speaker-fourty-three",
+    "name": "Георгий Лобушкин",
+    "position": "Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнер агентства К2",
+    "image": "/assets/images/speakers/lobushkin.png",
     "color": "",
     "logos": []
   },
@@ -105,6 +125,42 @@
       {
         "src": "/assets/images/logos/uspeshniy.png",
         "alt": "Алексей Успешный"
+      }
+    ]
+  },
+  {
+    "id": "speaker-three",
+    "name": "Михаил Христосенко",
+    "position": "Основатель онлайн-школы SMM Академия",
+    "image": "/assets/images/speakers/kristosenko.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-thirty-eight",
+    "name": "Артур Хасаханов",
+    "position": "Co-founder tgmaps",
+    "image": "/assets/images/speakers/artur_khasanov.png",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/tgmaps.svg",
+        "alt": "tgmaps"
+      }
+    ]
+  },
+  {
+    "id": "speaker-three",
+    "name": "Ольга Младенцева",
+    "position": "Основатель и гендиректор коммуникационного агентства DAO Agency. PR-директор Нескучные финансы. PR-директор Profit Consulting",
+    "image": "/assets/images/speakers/olga_mladenceva.png",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/NF-icon.svg",
+        "alt": "Нескучные финансы"
       }
     ]
   },
@@ -347,7 +403,7 @@
     "id": "speaker-thirty-five",
     "name": "Лукьянов Никита",
     "position": "Сооснователь Flyer",
-    "image": "/assets/images/speakers/lukyanov_nikita.webp",
+    "image": "/assets/images/speakers/lukyanov.png",
     "color": "",
     "logos": [
       {
@@ -361,6 +417,30 @@
     "name": "Корнеев Кирилл",
     "position": "Совладелец, основатель Kiss. Миллион пользователей в миниапп, за 3 месяца. Своя сеть телеграм каналов на 1 000 000+ человек",
     "image": "/assets/images/speakers/korneev_kirill.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-thirty-nine",
+    "name": "Александр Кадычков",
+    "position": "Сооснователь и руководитель проектов @sounds и @clips — сервисов, которыми пользуются более 3,5 млн человек",
+    "image": "/assets/images/speakers/kadychkov.png",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fourty",
+    "name": "Семен Верушкин",
+    "position": "Founder & СEO Leadmagnet на 38 000+ партнеров. 12 лет в Арбитраже трафика, 15 лет в Предпринимательстве, 17 лет в Маркетинге, сейчас Ментор для крупных компаний. Спикер 30+ профильных конференций по арбитражу, трафику на онлайн образование: CPA Life, БроКонф, Кинза, МАК и тд",
+    "image": "/assets/images/speakers/verushkin.png",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fourty-one",
+    "name": "Олег Артемьев",
+    "position": "Крипто инфлюенсер. 1м+ подписчиков за год",
+    "image": "/assets/images/speakers/artemiev.png",
     "color": "",
     "logos": []
   }
