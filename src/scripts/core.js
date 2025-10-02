@@ -10,6 +10,7 @@ import initTickets from "./tsconf/tickets"
 import initBurgerModal from "./tsconf/menu"
 import loadVideoModal from "./tsconf/loadVideoModal"
 import fetchAllTgApiDatas from "./tsconf/awards"
+import initScheduleAnimation from "./tsconf/schedule"
 import './utils/validation';
 import submitForm from './utils/partner';
 
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   connectMap();
   initBurgerModal();
   loadVideoModal();
-  speakersSlider();
+  // speakersSlider();
   fetchAllTgApiDatas();
+  initScheduleAnimation();
 })
