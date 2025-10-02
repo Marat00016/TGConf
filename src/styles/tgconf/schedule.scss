@@ -52,18 +52,18 @@
     font-size: 2rem;
     text-transform: uppercase;
     line-height: 1;
-    transition: 0.3sease background-color;
     width: fit-content;
     text-decoration: none;
-    background-color: #26252A;
     width: 100%;
     transition: 0.3s ease background-color;
-    // cursor: pointer;
     margin-bottom: 5rem;
-
-    &:hover {
-      background-color: #312f35;
-    }
+    
+    // background-color: #26252A;
+    // cursor: pointer;
+    // &:hover {
+    //   background-color: #312f35;
+    // }
+    background-color: #0288DB;
 
     @include media.breakpoint(tablet) {
       padding-inline: 2rem;
@@ -72,8 +72,13 @@
     }
 
     @include media.breakpoint(mobile) {
-      font-size: 12px;
+      font-size: 11px;
       margin-bottom: 1rem;
+      
+      background-color: #26252A;
+      &:hover {
+        background-color: #312f35;
+      }
     }
   }
   .blue-ticket.active {
@@ -86,9 +91,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0 3.5rem;
+    transition: 0.5s;
 
     @include media.breakpoint(mobile) {
-      grid-template-columns: repeat(1, 1fr);
+      // grid-template-columns: repeat(1, 1fr);
+      width: calc(200% + 3.5rem);
     }
 
     &__title {
@@ -100,7 +107,13 @@
     @include media.breakpoint(mobile) {
       grid-template-columns: repeat(2, 1fr);
       gap: 0 1rem;
+      width: auto;
     }
+  }
+
+  .double.active {
+    transform: translateX(calc(-50% - 1.75rem));
+    transition: 0.5s;
   }
 
   &-card {
@@ -197,7 +210,10 @@
     justify-content: center;
 
     @include media.breakpoint(mobile) {
-      grid-row: 2;
+      // grid-row: 2;
+      .schedule-card__text {
+        -webkit-line-clamp: 3;
+      }
     }
   }
 
@@ -207,7 +223,7 @@
   .second-column {
     grid-column: 2;
     @include media.breakpoint(mobile) {
-      grid-column: 1;
+      // grid-column: 1;
     }
   }
   .no-border {

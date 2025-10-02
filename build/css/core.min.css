@@ -5254,16 +5254,12 @@ template {
   font-size: 2rem;
   text-transform: uppercase;
   line-height: 1;
-  transition: 0.3sease background-color;
   width: fit-content;
   text-decoration: none;
-  background-color: #26252A;
   width: 100%;
   transition: 0.3s ease background-color;
   margin-bottom: 5rem;
-}
-.schedule .blue-ticket:hover {
-  background-color: #312f35;
+  background-color: #0288DB;
 }
 @media only screen and (max-width: 1024px) {
   .schedule .blue-ticket {
@@ -5274,8 +5270,12 @@ template {
 }
 @media only screen and (max-width: 640px) {
   .schedule .blue-ticket {
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 1rem;
+    background-color: #26252A;
+  }
+  .schedule .blue-ticket:hover {
+    background-color: #312f35;
   }
 }
 .schedule .blue-ticket.active {
@@ -5285,10 +5285,11 @@ template {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 3.5rem;
+  transition: 0.5s;
 }
 @media only screen and (max-width: 640px) {
   .schedule .double {
-    grid-template-columns: repeat(1, 1fr);
+    width: calc(200% + 3.5rem);
   }
 }
 .schedule .double__title {
@@ -5299,7 +5300,12 @@ template {
   .schedule .double.schedule__dates {
     grid-template-columns: repeat(2, 1fr);
     gap: 0 1rem;
+    width: auto;
   }
+}
+.schedule .double.active {
+  transform: translateX(calc(-50% - 1.75rem));
+  transition: 0.5s;
 }
 .schedule-card {
   display: flex;
@@ -5390,8 +5396,8 @@ template {
   justify-content: center;
 }
 @media only screen and (max-width: 640px) {
-  .schedule .two-rows {
-    grid-row: 2;
+  .schedule .two-rows .schedule-card__text {
+    -webkit-line-clamp: 3;
   }
 }
 .schedule .first-column {
@@ -5399,11 +5405,6 @@ template {
 }
 .schedule .second-column {
   grid-column: 2;
-}
-@media only screen and (max-width: 640px) {
-  .schedule .second-column {
-    grid-column: 1;
-  }
 }
 .schedule .no-border {
   border-bottom: none;
