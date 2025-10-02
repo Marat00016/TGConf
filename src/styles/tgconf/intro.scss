@@ -483,6 +483,11 @@
     .blue-ticket {
       padding: 18px 22px;
       background-color: #0288DB;
+      transition: 0.3s ease background-color;
+
+      &:hover {
+        background-color: #016db0;
+      }
     }
 
     @include media.breakpoint(tablet) {
