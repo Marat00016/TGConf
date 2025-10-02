@@ -5225,7 +5225,7 @@ template {
   margin: 1.5rem 0;
 }
 .schedule__list {
-  max-height: 1350px;
+  max-height: 1150px;
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
