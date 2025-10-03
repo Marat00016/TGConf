@@ -4519,8 +4519,44 @@ template {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../assets/images/afterparty.jpg");
+  background-image: url("../assets/images/banderos.png");
   z-index: -2;
+}
+@media only screen and (max-width: 640px) {
+  .afterparty__overlay {
+    background-image: url("../assets/images/banderos_mobile.png");
+  }
+}
+.afterparty__ticket {
+  position: absolute;
+  height: 15rem;
+  right: 12%;
+  bottom: 15%;
+  rotate: -15deg;
+}
+@media only screen and (max-width: 1024px) {
+  .afterparty .container {
+    justify-items: center;
+  }
+  .afterparty__ticket {
+    height: 10rem;
+    right: calc(50% - 10rem);
+    bottom: 20%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .afterparty .afterparty__overlay {
+    background-size: contain;
+  }
+  .afterparty .place__badge {
+    display: none;
+  }
+  .afterparty .afterparty__time {
+    margin: 0 auto 2.2rem;
+  }
+  .afterparty .afterparty__title {
+    margin: 0px auto 45.8rem;
+  }
 }
 
 .info {
