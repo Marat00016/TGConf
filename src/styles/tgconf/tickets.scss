@@ -356,6 +356,18 @@
     background-image: url('../assets/icons/mark-blue.svg');
   }
 
+  &__card-content-image {
+    background-image: url('../assets/images/headliner_afterparty.png');
+    height: 10rem;
+    background-size: cover;
+    border-radius: 12px;
+    margin-top: 1.6rem;
+
+    @include media.breakpoint(mobile) {
+      height: 8.5rem;
+    }
+  }
+
   .warning-info {
     font-weight: 400;
     font-size: 1.6rem;
