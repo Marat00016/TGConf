@@ -443,5 +443,19 @@
     "image": "/assets/images/speakers/artemiev.png",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-fourty-four",
+    "name": "Львов Александр",
+    "position": "Основатель агентства перформанс-маркетинга Libre",
+    "image": "/assets/images/speakers/lvov.webp",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/libre.svg",
+        "alt": "Libre"
+      }
+    ]
   }
 ]
