@@ -3867,6 +3867,18 @@ template {
 .tickets__card--blue .tickets__card-list-item::before {
   background-image: url("../assets/icons/mark-blue.svg");
 }
+.tickets__card-content-image {
+  background-image: url("../assets/images/headliner_afterparty.png");
+  height: 10rem;
+  background-size: cover;
+  border-radius: 12px;
+  margin-top: 1.6rem;
+}
+@media only screen and (max-width: 640px) {
+  .tickets__card-content-image {
+    height: 8.5rem;
+  }
+}
 .tickets .warning-info {
   font-weight: 400;
   font-size: 1.6rem;
