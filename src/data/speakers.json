@@ -453,7 +453,35 @@
     "ultraWideLogo": true,
     "logos": [
       {
-        "src": "/assets/images/logos/libre.svg",
+        "src": "/assets/images/logos/libre_white.svg",
+        "alt": "Libre"
+      }
+    ]
+  },
+  {
+    "id": "speaker-fourty-five",
+    "name": "Карим Салахов",
+    "position": "Руководитель трафика в одной из крупнейших онлайн - школ в РФ, более 500 000 000₽ рекламного бюджета с окупаемостью в 3 раза",
+    "image": "/assets/images/speakers/salakhov.webp",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/parta.svg",
+        "alt": "Libre"
+      }
+    ]
+  },
+  {
+    "id": "speaker-fourty-six",
+    "name": "Скородумов Павел",
+    "position": "CEO и основатель агентства по трафику SkoroLead",
+    "image": "/assets/images/speakers/skorodumov.webp",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/skoro_lead.svg",
         "alt": "Libre"
       }
     ]
