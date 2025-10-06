@@ -72,4 +72,7 @@ export default function fetchAllTgApiDatas() {
   fetchTgNominationData('19');
   fetchTgNominationData('20');
   fetchTgNominationData('24');
+  fetchTgNominationData('31');
+  fetchTgNominationData('30');
+  fetchTgNominationData('28');
 }
