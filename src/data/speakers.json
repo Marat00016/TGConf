@@ -151,12 +151,12 @@
     ]
   },
   {
-    "id": "speaker-three",
+    "id": "speaker-fourty-seven",
     "name": "Ольга Младенцева",
     "position": "Основатель и гендиректор коммуникационного агентства DAO Agency. PR-директор Нескучные финансы. PR-директор Profit Consulting",
-    "image": "/assets/images/speakers/olga_mladenceva.png",
+    "image": "/assets/images/speakers/mladencova.webp",
     "color": "",
-    "ultraWideLogo": true,
+    "wideLogo": true,
     "logos": [
       {
         "src": "/assets/images/logos/NF-icon.svg",
