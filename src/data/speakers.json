@@ -485,5 +485,29 @@
         "alt": "Libre"
       }
     ]
+  },
+  {
+    "id": "speaker-fourty-eight",
+    "name": "Силаев Владимир",
+    "position": "Креатор, владелец telegram-каналов и проектов в соц.сетях (млн аудитории), автор блога «Хозяин Телеги», гарант, со-основатель агентства «Качество» и telegram-сервисов",
+    "image": "/assets/images/speakers/silaev.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fourty-nine",
+    "name": "Рюмин Вячеслав",
+    "position": "Основатель контент-агентства «Команда Рюмина», экс-владелец сети ночных клубов, автор книги «Упал, поднялся»",
+    "image": "/assets/images/speakers/ryumin.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fifty",
+    "name": "Петренчук Максим",
+    "position": "Коммуникационное агентство Social Stars, сооснователь",
+    "image": "/assets/images/speakers/petrenchuk.webp",
+    "color": "",
+    "logos": []
   }
 ]
