@@ -5382,6 +5382,7 @@ template {
   display: flex;
   align-items: center;
   gap: 2rem;
+  height: 100%;
 }
 .schedule-card__speaker .intro__center-people-item {
   width: 7.2rem;
@@ -5428,6 +5429,23 @@ template {
   .schedule-card__text {
     font-size: 14px;
   }
+}
+.schedule-card__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.schedule-card__wrapper img {
+  height: 18px;
+  width: fit-content;
+  padding-left: 1px;
+}
+.schedule-card__wrapper .small-logo {
+  height: 12px;
+}
+.schedule-card__wrapper .big-logo {
+  height: 24px;
 }
 .schedule .lunch {
   font-size: 2rem;

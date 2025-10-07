@@ -109,7 +109,7 @@
     "ultraWideLogo": true,
     "logos": [
       {
-        "src": "/assets/images/logos/telemetr.svg",
+        "src": "/assets/images/logos/telemetr_white.svg",
         "alt": "telemetr"
       }
     ]
@@ -232,9 +232,10 @@
     "name": "Феодор Иванов",
     "position": "Head of Product InvestFuture Media. Развил сетку телеграм-каналов до 700 000 человек",
     "image": "/assets/images/speakers/feodor_ivanov.png",
+    "ultraWideLogo": true,
     "logos": [
       {
-        "src": "/assets/images/logos/if_logo.png",
+        "src": "/assets/images/logos/if_logo.svg",
         "alt": "Феодор Иванов"
       }
     ]
@@ -516,5 +517,19 @@
     "image": "/assets/images/speakers/petrenchuk.webp",
     "color": "",
     "logos": []
+  },
+  {
+    "id": "speaker-fifty-two",
+    "name": "Алёна Маснева",
+    "position": "Маркетолог-стратег, преподаватель, практик, генеральный директор агентства Minimasneva Project Team",
+    "image": "/assets/images/speakers/masneva.webp",
+    "color": "",
+    "ultraWideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/masneva_logo.png",
+        "alt": "masneva"
+      }
+    ]
   }
 ]
