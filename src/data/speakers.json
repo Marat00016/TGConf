@@ -3,14 +3,14 @@
     "id": "speaker-one",
     "name": "Артемий Лебедев",
     "position": "Дизайнер",
-    "image": "/assets/images/speakers/artem_lebedev.webp",
+    "image": "/assets/images/speakers/artem_lebedev.png",
     "color": "orange"
   },
   {
     "id": "speaker-fifty-one",
     "name": "Максим Ильяхов",
     "position": "Главред",
-    "image": "/assets/images/speakers/ilyahov.webp"
+    "image": "/assets/images/speakers/ilyahov.png"
   },
   {
     "id": "speaker-fourty-two",
@@ -35,7 +35,7 @@
     "id": "speaker-two",
     "name": "Марат Шайхетдинов",
     "position": "Основатель Clickise и TgConf",
-    "image": "/assets/images/speakers/marat_shahabutdinov.webp",
+    "image": "/assets/images/speakers/marat_shahabutdinov.png",
     "color": "",
     "logos": [
       {
@@ -48,7 +48,7 @@
     "id": "speaker-fifty-three",
     "name": "Максим Лутчак",
     "position": "Блогер, музыкант, самый популярный Зумер России",
-    "image": "/assets/images/speakers/lutchak.webp"
+    "image": "/assets/images/speakers/lutchak.png"
   },
   {
     "id": "speaker-twenty-nine",
@@ -60,7 +60,7 @@
     "id": "speaker-twenty-one",
     "name": "Ксения Баушева",
     "position": "Руководитель блока внешних коммуникаций сети каналов «Новости Москвы»",
-    "image": "/assets/images/speakers/bausheva.webp",
+    "image": "/assets/images/speakers/bausheva.png",
     "color": "",
     "ultraWideLogo": true,
     "logos": [
@@ -74,7 +74,7 @@
     "id": "speaker-twenty-two",
     "name": "Денис Сметнёв",
     "position": "Сооснователь Skyeng & маркетингового агентства uForce, академический директор магистратуры Бизнес-школы МФТИ",
-    "image": "/assets/images/speakers/smetnev.webp",
+    "image": "/assets/images/speakers/smetnev.png",
     "color": "",
     "wideLogo": true,
     "logos": [
@@ -88,7 +88,7 @@
     "id": "speaker-five",
     "name": "Павел Калюканов",
     "position": "Product Manager Telepush — сервиса нативного продвижения в Telegram",
-    "image": "/assets/images/speakers/kolukanov.webp",
+    "image": "/assets/images/speakers/kolukanov.png",
     "color": "",
     "wideLogo": true,
     "logos": [
@@ -102,7 +102,7 @@
     "id": "speaker-four",
     "name": "Феликс Зинатуллин",
     "position": "Основатель \"Церебро\"",
-    "image": "/assets/images/speakers/zinatullin.webp",
+    "image": "/assets/images/speakers/zinatullin.png",
     "color": "",
     "logos": [
       {
@@ -115,7 +115,7 @@
     "id": "speaker-thirty-seven",
     "name": "Алексей Дощинский",
     "position": "Product Owner в сервисе Telemetr",
-    "image": "/assets/images/speakers/alexey_doshinski.webp",
+    "image": "/assets/images/speakers/alexey_doshinski.png",
     "color": "",
     "ultraWideLogo": true,
     "logos": [
@@ -124,6 +124,13 @@
         "alt": "telemetr"
       }
     ]
+  },
+  {
+    "id": "speaker-fifty-six",
+    "name": "Ковпак Дмитрий",
+    "position": "Основатель Акселератора для селлеров «АКС»",
+    "image": "/assets/images/speakers/kovpak.png",
+    "color": ""
   },
   {
     "id": "speaker-fourty-three",
@@ -149,9 +156,8 @@
     "id": "speaker-three",
     "name": "Михаил Христосенко",
     "position": "Основатель онлайн-школы SMM Академия",
-    "image": "/assets/images/speakers/kristosenko.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/kristosenko.png",
+    "color": ""
   },
   {
     "id": "speaker-thirty-eight",
@@ -171,7 +177,7 @@
     "id": "speaker-fourty-seven",
     "name": "Ольга Младенцева",
     "position": "Основатель и гендиректор коммуникационного агентства DAO Agency. PR-директор Нескучные финансы. PR-директор Profit Consulting",
-    "image": "/assets/images/speakers/mladencova.webp",
+    "image": "/assets/images/speakers/mladencova.png",
     "color": "",
     "wideLogo": true,
     "logos": [
@@ -185,23 +191,21 @@
     "id": "speaker-eighteen",
     "name": "Татьяна Бибик",
     "position": "Основатель бренда «НЕ ШКОЛА». 300 филиалов в 12 странах. 3000+ сотрудников и 3 млрд выручки в 2024 году. ТОП10 франшиз в списке Forbes",
-    "image": "/assets/images/speakers/bibik.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/bibik.png",
+    "color": ""
   },
   {
     "id": "speaker-fourteen",
     "name": "Егор Матита",
     "position": "Основатель онлайн-школы рисования «Арт-Матита»",
-    "image": "/assets/images/speakers/matita.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/matita.png",
+    "color": ""
   },
   {
     "id": "speaker-twenty-three",
     "name": "Вероника Филимонова",
     "position": "СМО студии портретов Монро Арт",
-    "image": "/assets/images/speakers/filiminova.webp",
+    "image": "/assets/images/speakers/filimonova.png",
     "color": "",
     "highLogo": true,
     "logos": [
@@ -215,7 +219,7 @@
     "id": "speaker-twenty-six",
     "name": "Алексей Золотов",
     "position": "Продюсер экспертов в инфобизнесе с выручкой 60–100 млн в год. Лучший канал по продажам 2025",
-    "image": "/assets/images/speakers/zolotov.webp",
+    "image": "/assets/images/speakers/zolotov.png",
     "ultraWideLogo": true,
     "logos": [
       {
@@ -267,24 +271,22 @@
     "id": "speaker-ten",
     "name": "Алексей Пестов",
     "position": "Маркетолог, основатель агентства ads-telegram.pro",
-    "image": "/assets/images/speakers/pestov.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/pestov.png",
+    "color": ""
   },
   {
     "id": "speaker-six",
     "name": "Ирина Нумизматка",
     "position": "Автор крупнейшего канала о Telegram Ads",
-    "image": "/assets/images/speakers/numizmatka.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/numizmatka.png",
+    "color": ""
   },
   {
     "id": "speaker-twenty-four",
     "name": "Никита Кравченко",
     "position": "Эксперт по платному трафику и евангелист eLama",
     "description": "Более 13 лет в диджитал. Сертифицированный эксперт Яндекс Рекламы. Автор Telegram-канала «Будни евангелиста». Автор полного курса eLama и ppc world по Яндекс Директу. В разное время преподавал на курсе «Директор по марктетингу» в MaEd, курсах по интернет-рекламе в Яндексе, Сбере, Нетологии, Skillbox, ppc world, Coursera, Skypro и др.",
-    "image": "/assets/images/speakers/kravchenko.webp",
+    "image": "/assets/images/speakers/kravchenko.png",
     "color": "",
     "logos": [
       {
@@ -297,7 +299,7 @@
     "id": "speaker-nine",
     "name": "Анна Иванова",
     "position": "Таргетолог и teamlead команды по трафику в Clickise",
-    "image": "/assets/images/speakers/ivanova.webp",
+    "image": "/assets/images/speakers/ivanova.png",
     "color": "",
     "logos": [
       {
@@ -310,15 +312,14 @@
     "id": "speaker-seven",
     "name": "Денис Амирханян",
     "position": "Серийный предприниматель, маркетолог",
-    "image": "/assets/images/speakers/amirchanan.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/amirchanan.png",
+    "color": ""
   },
   {
     "id": "speaker-twelve",
     "name": "Вячеслав Самохвалов",
     "position": "Head of Performance Marketing ЕГЭLAND",
-    "image": "/assets/images/speakers/samokhvalov.webp",
+    "image": "/assets/images/speakers/samokhvalov.png",
     "color": "",
     "logos": [
       {
@@ -331,7 +332,7 @@
     "id": "speaker-sixteen",
     "name": "Андрей Чорапов",
     "position": "Group Head of Marketing Otus",
-    "image": "/assets/images/speakers/chorapov.webp",
+    "image": "/assets/images/speakers/chorapov.png",
     "color": "",
     "logos": [
       {
@@ -345,7 +346,7 @@
     "name": "Вадим Стерлин",
     "position": "Основатель Adsgram",
     "description": "- Основатель AdsGram, крупнейшей рекламной платформы в мини-приложениях Telegram. \n- Бывший менеджер продукта в «Яндекс Директ». \n- Сооснователь NFT-игры Fanton, получившей грант от Ton Foundation и привлекшей инвестиции на сумму более $1,3 млн",
-    "image": "/assets/images/speakers/sterlin.webp",
+    "image": "/assets/images/speakers/sterlin.png",
     "color": "",
     "logos": [
       {
@@ -371,23 +372,21 @@
     "id": "speaker-nineteen",
     "name": "Кирилл Сибиряк",
     "position": "Продюсер онлайн-школ.\nЭксперт по системным запускам в Telegram с выручкой 20 млн в месяц \n\nПродюсер года по версии GetCourse 2025",
-    "image": "/assets/images/speakers/sibiryak.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/sibiryak.png",
+    "color": ""
   },
   {
     "id": "speaker-eight",
     "name": "Глеб Яскевич",
     "position": "Основатель AX Family",
-    "image": "/assets/images/speakers/yaskevic.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/yaskevic.png",
+    "color": ""
   },
   {
     "id": "speaker-seventeen",
     "name": "Антон Попов",
     "position": "Руководитель направления по работе с блогерами и телеграм-каналами, Яндекс Реклама",
-    "image": "/assets/images/speakers/popov.webp",
+    "image": "/assets/images/speakers/popov.png",
     "color": "",
     "logos": [
       {
@@ -400,7 +399,7 @@
     "id": "speaker-fifteen",
     "name": "Екатерина Барухова",
     "position": "Customer Success Lead / Tribute",
-    "image": "/assets/images/speakers/barukhova.webp",
+    "image": "/assets/images/speakers/barukhova.png",
     "color": "",
     "logos": [
       {
@@ -413,9 +412,8 @@
     "id": "speaker-thirteen",
     "name": "Ильяна Левина",
     "position": "Маркетолог Яна Топлес, бренд-директор международной школы кино Moshka.",
-    "image": "/assets/images/speakers/levina.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/levina.png",
+    "color": ""
   },
   {
     "id": "speaker-thirty-five",
@@ -434,39 +432,35 @@
     "id": "speaker-thirty-six",
     "name": "Корнеев Кирилл",
     "position": "Совладелец, основатель Kiss. Миллион пользователей в миниапп, за 3 месяца. Своя сеть телеграм каналов на 1 000 000+ человек",
-    "image": "/assets/images/speakers/korneev_kirill.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/korneev_kirill.png",
+    "color": ""
   },
   {
     "id": "speaker-thirty-nine",
     "name": "Александр Кадычков",
     "position": "Сооснователь и руководитель проектов @sounds и @clips — сервисов, которыми пользуются более 3,5 млн человек",
     "image": "/assets/images/speakers/kadychkov.png",
-    "color": "",
-    "logos": []
+    "color": ""
   },
   {
     "id": "speaker-fourty",
     "name": "Семен Верушкин",
     "position": "Founder & СEO Leadmagnet на 38 000+ партнеров. 12 лет в Арбитраже трафика, 15 лет в Предпринимательстве, 17 лет в Маркетинге, сейчас Ментор для крупных компаний. Спикер 30+ профильных конференций по арбитражу, трафику на онлайн образование: CPA Life, БроКонф, Кинза, МАК и тд",
     "image": "/assets/images/speakers/verushkin.png",
-    "color": "",
-    "logos": []
+    "color": ""
   },
   {
     "id": "speaker-fourty-one",
     "name": "Олег Артемьев",
     "position": "Крипто инфлюенсер. 1м+ подписчиков за год",
-    "image": "/assets/images/speakers/artemiev.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/artemiev.png",
+    "color": ""
   },
   {
     "id": "speaker-fourty-four",
     "name": "Львов Александр",
     "position": "Основатель агентства перформанс-маркетинга Libre",
-    "image": "/assets/images/speakers/lvov.webp",
+    "image": "/assets/images/speakers/lvov.png",
     "color": "",
     "ultraWideLogo": true,
     "logos": [
@@ -480,7 +474,7 @@
     "id": "speaker-fourty-five",
     "name": "Карим Салахов",
     "position": "Руководитель трафика в одной из крупнейших онлайн - школ в РФ, более 500 000 000₽ рекламного бюджета с окупаемостью в 3 раза",
-    "image": "/assets/images/speakers/salakhov.webp",
+    "image": "/assets/images/speakers/salakhov.png",
     "color": "",
     "ultraWideLogo": true,
     "logos": [
@@ -494,7 +488,7 @@
     "id": "speaker-fourty-six",
     "name": "Скородумов Павел",
     "position": "CEO и основатель агентства по трафику SkoroLead",
-    "image": "/assets/images/speakers/skorodumov.webp",
+    "image": "/assets/images/speakers/skorodumov.png",
     "color": "",
     "ultraWideLogo": true,
     "logos": [
@@ -508,31 +502,28 @@
     "id": "speaker-fourty-eight",
     "name": "Силаев Владимир",
     "position": "Креатор, владелец telegram-каналов и проектов в соц.сетях (млн аудитории), автор блога «Хозяин Телеги», гарант, со-основатель агентства «Качество» и telegram-сервисов",
-    "image": "/assets/images/speakers/silaev.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/silaev.png",
+    "color": ""
   },
   {
     "id": "speaker-fourty-nine",
     "name": "Рюмин Вячеслав",
     "position": "Основатель контент-агентства «Команда Рюмина», экс-владелец сети ночных клубов, автор книги «Упал, поднялся»",
-    "image": "/assets/images/speakers/ryumin.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/ryumin.png",
+    "color": ""
   },
   {
     "id": "speaker-fifty",
     "name": "Петренчук Максим",
     "position": "Коммуникационное агентство Social Stars, сооснователь",
-    "image": "/assets/images/speakers/petrenchuk.webp",
-    "color": "",
-    "logos": []
+    "image": "/assets/images/speakers/petrenchuk.png",
+    "color": ""
   },
   {
     "id": "speaker-fifty-two",
     "name": "Алёна Маснева",
     "position": "Маркетолог-стратег, преподаватель, практик, генеральный директор агентства Minimasneva Project Team",
-    "image": "/assets/images/speakers/masneva.webp",
+    "image": "/assets/images/speakers/masneva.png",
     "color": "",
     "ultraWideLogo": true,
     "logos": [
@@ -541,5 +532,26 @@
         "alt": "masneva"
       }
     ]
+  },
+  {
+    "id": "speaker-fifty-four",
+    "name": "Романов Владислав",
+    "position": "Продюсер авторских телеграм каналов с годовой выручкой 400+ млн рублей. Основатель Ax-family",
+    "image": "/assets/images/speakers/romanov.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-fifty-five",
+    "name": "Колмыкова Марина",
+    "position": "Фаундер и CEO агентства Таргетерия. 200+ реализованных проектов в агентстве, среди клиентов: VK, X5, МТС, Третьяковская галерея",
+    "image": "/assets/images/speakers/kolmikova.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-fifty-seven",
+    "name": "Ланцов Антон",
+    "position": "Автор крупного канала про маркетинг и продажи - Рыжий М",
+    "image": "/assets/images/speakers/lantsov.png",
+    "color": ""
   }
 ]
