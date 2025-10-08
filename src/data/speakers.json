@@ -45,6 +45,12 @@
     ]
   },
   {
+    "id": "speaker-fifty-three",
+    "name": "Максим Лутчак",
+    "position": "Блогер, музыкант, самый популярный Зумер России",
+    "image": "/assets/images/speakers/lutchak.webp"
+  },
+  {
     "id": "speaker-twenty-nine",
     "name": "Наиль Байков — ведущий TgConf!",
     "position": "Ведущий TgConf, эксперт в digital-маркетинге и коммуникациях",
