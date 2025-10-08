@@ -206,9 +206,9 @@
         width: fit-content;
         padding-left: 1px;
         
-        @include media.breakpoint(mobile) {
-          // height: 12px;
-        }
+        // @include media.breakpoint(mobile) {
+        //   // height: 12px;
+        // }
       }
       
       .small-logo {
