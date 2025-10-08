@@ -130,14 +130,7 @@
     "name": "Георгий Лобушкин",
     "position": "Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнер агентства К2",
     "image": "/assets/images/speakers/lobushkin.png",
-    "color": "",
-    "wideLogo": true,
-    "logos": [
-      {
-        "src": "/assets/images/logos/logo_rocit.svg",
-        "alt": "Libre"
-      }
-    ]
+    "color": ""
   },
   {
     "id": "speaker-thirty-four",
