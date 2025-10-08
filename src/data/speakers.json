@@ -4,21 +4,26 @@
     "name": "Артемий Лебедев",
     "position": "Дизайнер",
     "image": "/assets/images/speakers/artem_lebedev.webp",
-    "color": "orange",
-    "logos": []
+    "color": "orange"
   },
   {
     "id": "speaker-fifty-one",
     "name": "Максим Ильяхов",
     "position": "Главред",
-    "image": "/assets/images/speakers/ilyahov.webp",
-    "logos": []
+    "image": "/assets/images/speakers/ilyahov.webp"
   },
   {
     "id": "speaker-fourty-two",
     "name": "Антон Горелкин",
     "position": "Первый заместитель председателя комитета Госдумы по информационной политике, информационным технологиям и связи, председатель правления РОЦИТ",
-    "image": "/assets/images/speakers/gorelkin.png"
+    "image": "/assets/images/speakers/gorelkin.png",
+    "wideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/logo_rocit.svg",
+        "alt": "Libre"
+      }
+    ]
   },
   {
     "id": "speaker-thirty-one",
@@ -120,7 +125,13 @@
     "position": "Бывший пресс-секретарь Павла Дурова. Медиаменеджер, блогер, партнер агентства К2",
     "image": "/assets/images/speakers/lobushkin.png",
     "color": "",
-    "logos": []
+    "wideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/logo_rocit.svg",
+        "alt": "Libre"
+      }
+    ]
   },
   {
     "id": "speaker-thirty-four",
