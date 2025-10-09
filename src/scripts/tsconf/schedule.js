@@ -1,12 +1,10 @@
 export default function initScheduleAnimation() {
   const openButton = document.querySelector(".open-schedule");
-  const scheduleList = document.querySelector(".schedule__list");
+  const scheduleList = document.querySelectorAll(".schedule__list");  
+  const leftColumn = document.querySelector(".left-list");
   const firstDate = document.querySelector(".left-ticket");
   const secondDate = document.querySelector(".right-ticket");
-  const speakersList = document.querySelector(".left-list");
-  const lists = speakersList.querySelectorAll('.double');
-
-  console.log(lists);  
+  const lists = document.querySelector(".schedule__lists");
 
   let isOpenList = false;
 
@@ -15,28 +13,30 @@ export default function initScheduleAnimation() {
   firstDate.addEventListener('click', () => {
     firstDate.classList.add('active');
     secondDate.classList.remove('active');
-    lists.forEach((item) => {
-      item.classList.remove('active');
-    })
+    lists.classList.remove('active');
+    lists.style.maxHeight = '5200px';
   })
   
   secondDate.addEventListener('click', () => {
     secondDate.classList.add('active');
     firstDate.classList.remove('active');
-    lists.forEach((item) => {
-      item.classList.add('active');  
-    })
+    lists.classList.add('active');
+    lists.style.maxHeight = '4170px';
   })
 
   openButton.addEventListener('click', () => {
     if (!isOpenList) {
-      scheduleList.classList.add('opened-list');
+      scheduleList.forEach((item) => {
+        item.classList.add('opened-list');  
+      })
       isOpenList = true;
     } else {
-      scheduleList.classList.remove('opened-list');
+      scheduleList.forEach((item) => {
+        item.classList.remove('opened-list');  
+      })
       isOpenList = false;
       setTimeout(() => {
-        scheduleList.scrollIntoView({
+        scheduleList[0].scrollIntoView({
           behavior: "smooth",
           block: "end"
         });
