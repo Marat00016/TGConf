@@ -4080,15 +4080,20 @@ template {
   }
 }
 .partners__card-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 34.2rem;
-  height: 16rem;
+  height: 12rem;
   background-color: #26252A;
   border-radius: 2.4rem;
   overflow: hidden;
   position: relative;
   z-index: 0;
+}
+.partners__card-link svg {
+  width: 80%;
 }
 @media only screen and (max-width: 1024px) {
   .partners__card-link {
@@ -4100,59 +4105,6 @@ template {
   .partners__card-link {
     height: 8rem;
   }
-}
-.partners__card-link:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 0.8rem;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s ease opacity;
-}
-@media (hover: hover) {
-  .partners__card-link:last-child:hover {
-    opacity: 0.85;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .partners__card-link:last-child {
-    font-size: 1.4rem;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .partners__card-link:last-child {
-    font-size: 1.2rem;
-  }
-}
-.partners__card-link:last-child svg {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-@media only screen and (max-width: 1024px) {
-  .partners__card-link:last-child svg {
-    display: none;
-  }
-}
-.partners__card-link:last-child:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../assets/images/partner-bg.jpg");
-  z-index: -1;
 }
 .partners__button {
   width: 100%;
@@ -5091,6 +5043,25 @@ template {
     height: 11.5rem;
     background-image: url("../assets/images/plaska_bg_mb.png");
   }
+}
+.attention-timer {
+  display: flex;
+  gap: 5px;
+}
+.attention-time {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attention-time p {
+  font-size: 4rem;
+}
+.attention-time span {
+  font-size: 1.5rem !important;
+}
+.attention .dots span {
+  font-size: 4rem;
 }
 
 .awards {

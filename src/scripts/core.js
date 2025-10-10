@@ -11,6 +11,7 @@ import initBurgerModal from "./tsconf/menu"
 import loadVideoModal from "./tsconf/loadVideoModal"
 import fetchAllTgApiDatas from "./tsconf/awards"
 import initScheduleAnimation from "./tsconf/schedule"
+import initTimer from "./tsconf/timer"
 import './utils/validation';
 import submitForm from './utils/partner';
 
@@ -31,4 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // speakersSlider();
   fetchAllTgApiDatas();
   initScheduleAnimation();
+  initTimer()
 })
