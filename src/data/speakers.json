@@ -570,6 +570,13 @@
   },
   {
     "id": "speaker-sixty",
+    "name": "Михаил Новиков",
+    "position": "Руководитель Отдела Продаж в Posted Agency (Топ-3 TG сеть в РФ)",
+    "image": "/assets/images/speakers/novikov.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-sixty-one",
     "name": "Спикер уточняется",
     "position": "Тема уточняется",
     "image": "/assets/images/speakers/mobile.png",
