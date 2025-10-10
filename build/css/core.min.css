@@ -5063,6 +5063,20 @@ template {
 .attention .dots span {
   font-size: 4rem;
 }
+@media only screen and (max-width: 640px) {
+  .attention-timer {
+    gap: 2px;
+  }
+  .attention-time p {
+    font-size: 2rem;
+  }
+  .attention-time span {
+    font-size: 0.75rem !important;
+  }
+  .attention .dots span {
+    font-size: 2rem;
+  }
+}
 
 .awards {
   min-height: 70dvh;

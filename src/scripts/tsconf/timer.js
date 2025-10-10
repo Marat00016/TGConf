@@ -22,7 +22,6 @@ export default function initTimer() {
     if (endTime === now) {
       clearInterval(timerInterval)
     }
-    console.log(days, '-', hours, '-', minutes);
   }
   setTime()
   const timerInterval = setInterval(setTime, 1000);

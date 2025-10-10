@@ -126,4 +126,23 @@
       font-size: 4rem;
     };
   }
+
+  @include media.breakpoint(mobile) {
+    &-timer {
+      gap: 2px;
+    }
+    &-time {
+      p {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 0.75rem !important;
+      }
+    }
+    .dots {
+      span {
+        font-size: 2rem;
+      };
+    }
+  }
 }
