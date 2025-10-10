@@ -473,7 +473,7 @@
   {
     "id": "speaker-fourty-five",
     "name": "Карим Салахов",
-    "position": "Руководитель трафика в одной из крупнейших онлайн - школ в РФ, более 500 000 000₽ рекламного бюджета с окупаемостью в 3 раза",
+    "position": "Head of Performance Marketing",
     "image": "/assets/images/speakers/salakhov.png",
     "color": "",
     "ultraWideLogo": true,
@@ -559,6 +559,20 @@
     "name": "Антон Иванов",
     "position": "Шефред в банке. Автор Telegram-канала «Пиши Касука»",
     "image": "/assets/images/speakers/ivanov.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-fifty-nine",
+    "name": "Вадим Подскребаев",
+    "position": "Сооснователь ТГ-канала «Отменили CTR» на 35 тысяч подписчиков и закрытого комьюнити для предпринимателей «План Б»",
+    "image": "/assets/images/speakers/podskrebaev.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-sixty",
+    "name": "Спикер уточняется",
+    "position": "Тема уточняется",
+    "image": "/assets/images/speakers/mobile.png",
     "color": ""
   }
 ]

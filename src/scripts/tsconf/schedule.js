@@ -1,7 +1,6 @@
 export default function initScheduleAnimation() {
   const openButton = document.querySelector(".open-schedule");
-  const scheduleList = document.querySelectorAll(".schedule__list");  
-  const leftColumn = document.querySelector(".left-list");
+  const scheduleList = document.querySelectorAll(".schedule__list");
   const firstDate = document.querySelector(".left-ticket");
   const secondDate = document.querySelector(".right-ticket");
   const lists = document.querySelector(".schedule__lists");
