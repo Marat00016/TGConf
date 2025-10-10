@@ -553,5 +553,12 @@
     "position": "Автор Telegram-Канала Рыжий М.",
     "image": "/assets/images/speakers/lantsov.png",
     "color": ""
+  },
+  {
+    "id": "speaker-fifty-eight",
+    "name": "Антон Иванов",
+    "position": "Шефред в банке. Автор Telegram-канала «Пиши Касука»",
+    "image": "/assets/images/speakers/ivanov.png",
+    "color": ""
   }
 ]
