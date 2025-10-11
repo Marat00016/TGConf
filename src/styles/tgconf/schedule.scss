@@ -44,8 +44,8 @@
 
   &__lists {
     display: flex;
-    width: calc(200% + 30.5rem);
-    gap: 30rem;
+    width: calc(200% + 55.5rem);
+    gap: 55rem;
     transition: 0.5s;
     @include media.breakpoint(mobile) {
       width: calc(200% + 22rem);
@@ -131,7 +131,7 @@
   }
 
   &__lists.active {
-    transform: translateX(calc(-50% - 14.75rem));
+    transform: translateX(calc(-50% - 27.25rem));
     @include media.breakpoint(mobile) {
       transform: translateX(calc(-50% - 10.75rem));
     }
