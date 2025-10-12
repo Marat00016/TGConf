@@ -577,6 +577,13 @@
   },
   {
     "id": "speaker-sixty-one",
+    "name": "Казанцев Евгений",
+    "position": "Аудитор, Аналитик в сфере TG-каналов, креатив-creator, закупщик в посевах",
+    "image": "/assets/images/speakers/kazancev.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-sixty-two",
     "name": "Спикер уточняется",
     "position": "Тема уточняется",
     "image": "/assets/images/speakers/mobile.png",
