@@ -590,10 +590,47 @@
     "color": ""
   },
   {
+    "id": "speaker-sixty-four",
+    "name": "Олег Рыскин",
+    "position": "Маркетолог.  Ex-COO агентства по трафику Telegram Ads Silantev Studio",
+    "image": "/assets/images/speakers/ryskin.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-sixty-four",
+    "name": "Олег Рыскин",
+    "position": "Маркетолог.  Ex-COO агентства по трафику Telegram Ads Silantev Studio",
+    "image": "/assets/images/speakers/ryskin.png",
+    "color": "",
+    "wideLogo": true,
+    "logos": [
+      {
+        "src": "/assets/images/logos/telescope-blacklogo.svg",
+        "alt": "Telescope"
+      }
+    ]
+  },
+  {
+    "id": "speaker-sixty-five",
+    "name": "Мария Смирнова",
+    "position": "Автор канала Маша & Telegram Ads. Основатель агентства M&Ads",
+    "image": "/assets/images/speakers/smirnova.png",
+    "color": ""
+  },
+  {
+    "id": "speaker-sixty-six",
+    "name": "Павел Артамонов",
+    "position": "Product manager Mobile",
+    "description": "Работал над запуском и развитием eSIM-сервиса в Telegram с нуля до стабильного продукта, которым уже воспользовались тысячи пользователей.",
+    "image": "/assets/images/speakers/artamonov.png",
+    "color": ""
+  },
+  {
     "id": "speaker-sixty-two",
     "name": "Спикер уточняется",
     "position": "Тема уточняется",
     "image": "/assets/images/speakers/mobile.png",
-    "color": ""
+    "color": "",
+    "show": false
   }
 ]

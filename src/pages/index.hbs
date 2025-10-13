@@ -129,35 +129,37 @@
       <div class="speakers__cards">
 
         {{#each speakers}}
-        <button type="button" data-fancybox data-src="#{{this.id}}"
-          class="speakers__card {{replace this.id 'speaker-' ''}}">
-          <div class="speakers__card-main{{#if this.color}} {{this.color}}{{/if}}">
-            <img loading="lazy" src="{{this.image}}" alt="{{this.name}}" class="speakers__card-img" />
-            {{#if this.logos}}
-            <div class="speakers__logos">
-              <div class="speakers__logo-wrapper
-                {{#if this.wideLogo}}speakers__logo-wrapper--wide{{/if}}
-                {{#if this.ultraWideLogo}}speakers__logo-wrapper--ultra-wide{{/if}}
-                {{#if this.highLogo}}speakers__logo-wrapper--high{{/if}}
-                ">
-                {{#each this.logos}}
-                <div class="speakers__logo {{ this.src }}" style="background-image: url({{ this.src }});"
-                  title="{{this.alt}}"></div>
-                {{/each}}
+          {{#notEquals this.show false}}
+          <button type="button" data-fancybox data-src="#{{this.id}}"
+            class="speakers__card {{replace this.id 'speaker-' ''}}">
+            <div class="speakers__card-main{{#if this.color}} {{this.color}}{{/if}}">
+              <img loading="lazy" src="{{this.image}}" alt="{{this.name}}" class="speakers__card-img" />
+              {{#if this.logos}}
+              <div class="speakers__logos">
+                <div class="speakers__logo-wrapper
+                  {{#if this.wideLogo}}speakers__logo-wrapper--wide{{/if}}
+                  {{#if this.ultraWideLogo}}speakers__logo-wrapper--ultra-wide{{/if}}
+                  {{#if this.highLogo}}speakers__logo-wrapper--high{{/if}}
+                  ">
+                  {{#each this.logos}}
+                  <div class="speakers__logo {{ this.src }}" style="background-image: url({{ this.src }});"
+                    title="{{this.alt}}"></div>
+                  {{/each}}
+                </div>
               </div>
+              {{/if}}
             </div>
-            {{/if}}
-          </div>
-          <span class="speakers__card__name">
-            {{splitFirstName this.name}} <br> {{splitLastName this.name}}
-          </span>
-          <div class="speakers__content-wrapper">
-            <p class="speakers__card__description">
-              {{this.position}}
-            </p>
-            <div class="speakers__open-modal-button"></div>
-          </div>
-        </button>
+            <span class="speakers__card__name">
+              {{splitFirstName this.name}} <br> {{splitLastName this.name}}
+            </span>
+            <div class="speakers__content-wrapper">
+              <p class="speakers__card__description">
+                {{this.position}}
+              </p>
+              <div class="speakers__open-modal-button"></div>
+            </div>
+          </button>
+          {{/notEquals}}
         {{/each}}
       </div>
     </div>
