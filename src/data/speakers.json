@@ -333,7 +333,14 @@
         "src": "/assets/images/logos/monro-art-logo.svg",
         "alt": "Monro Art"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "16:15",
+      "end": "16:40",
+      "duration": "25",
+      "topic": "Как построить систему поиска связок, которая позволяет осваивать от 100.000€ в месяц",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-six",
