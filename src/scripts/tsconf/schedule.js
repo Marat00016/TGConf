@@ -13,14 +13,14 @@ export default function initScheduleAnimation() {
     firstDate.classList.add('active');
     secondDate.classList.remove('active');
     lists.classList.remove('active');
-    lists.style.maxHeight = '5200px';
+    lists.style.maxHeight = '6000px';
   })
   
   secondDate.addEventListener('click', () => {
     secondDate.classList.add('active');
     firstDate.classList.remove('active');
     lists.classList.add('active');
-    lists.style.maxHeight = '4170px';
+    lists.style.maxHeight = '4715px';
   })
 
   openButton.addEventListener('click', () => {

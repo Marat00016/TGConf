@@ -4,13 +4,27 @@
     "name": "Артемий Лебедев",
     "position": "Дизайнер",
     "image": "/assets/images/speakers/artem_lebedev.png",
-    "color": "orange"
+    "color": "orange",
+    "secondDay": {
+      "start": "18:00",
+      "end": "19:00",
+      "duration": "60",
+      "topic": "Финальное выступление",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fifty-one",
     "name": "Максим Ильяхов",
     "position": "Главред",
-    "image": "/assets/images/speakers/ilyahov.png"
+    "image": "/assets/images/speakers/ilyahov.png",
+    "firstDay": {
+      "start": "18:30",
+      "end": "19:00",
+      "duration": "30",
+      "topic": "Блог как бизнес, блог для личного бренда, блог для души",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fourty-two",
@@ -29,7 +43,14 @@
     "id": "speaker-thirty-one",
     "name": "Андрей Свинцов",
     "position": "Депутат Государственной думы РФ, заместитель председателя Комитета Госдумы по информационной политике, информационным технологиям и связи",
-    "image": "/assets/images/speakers/andrey_svintsov.png"
+    "image": "/assets/images/speakers/andrey_svintsov.png",
+    "firstDay": {
+      "start": "13:00",
+      "end": "13:30",
+      "duration": "30",
+      "topic": "Будущее регулирования Telegram и других мессенджеров в России:",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-two",
@@ -42,13 +63,28 @@
         "src": "/assets/icons/clickise-logo.svg",
         "alt": "Clickise"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "13:30",
+      "end": "14:00",
+      "duration": "30",
+      "topic": "Почему 8 из 10 рекламодателей сливают бюджеты в Telegram – и что с этим делать",
+      "bigStand": true,
+      "lunchAfter": true
+    }
   },
   {
     "id": "speaker-fifty-three",
     "name": "Максим Лутчак",
     "position": "Блогер, музыкант, самый популярный Зумер России",
-    "image": "/assets/images/speakers/lutchak.png"
+    "image": "/assets/images/speakers/lutchak.png",
+    "firstDay": {
+      "start": "18:00",
+      "end": "18:30",
+      "duration": "30",
+      "topic": "Как продавать зуммерам. Фишки создания контента, который хочется репостить",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-nine",
@@ -68,7 +104,14 @@
         "src": "/assets/images/logos/moscow-news-logo.svg",
         "alt": "Новости Москвы"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "16:15",
+      "end": "16:40",
+      "duration": "25",
+      "topic": "Из онлайна в оффлайн: нестандартный креатив",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-two",
@@ -82,7 +125,14 @@
         "src": "/assets/images/logos/skyeng.svg",
         "alt": "Skyeng"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "10:55",
+      "end": "11:20",
+      "duration": "25",
+      "topic": "Рефлексия моего опыта построения Skyeng, это меньше про маркетинг и больше как мотивационный спич с рефлексией и моим опытом",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-five",
@@ -96,7 +146,14 @@
         "src": "/assets/images/logos/telepush.svg",
         "alt": "Telepush"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "16:40",
+      "end": "17:05",
+      "duration": "25",
+      "topic": "5 способов увеличить эффективность закупов в Telegram с помощью Telepush",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-four",
@@ -109,7 +166,14 @@
         "src": "/assets/images/zinatulin-logo.jpg",
         "alt": "Церебро"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "15:25",
+      "end": "15:50",
+      "duration": "25",
+      "topic": "Тема уточняется",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-thirty-seven",
@@ -123,14 +187,28 @@
         "src": "/assets/images/logos/telemetr_white.svg",
         "alt": "telemetr"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "12:35",
+      "end": "13:00",
+      "duration": "25",
+      "topic": "Как повысить эффективность рекламы в Telegram: подбор, аналитика и мониторинг",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fifty-six",
-    "name": "Ковпак Дмитрий",
+    "name": "Дмитрий Ковпак",
     "position": "Основатель Акселератора для селлеров «АКС»",
     "image": "/assets/images/speakers/kovpak.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "15:00",
+      "end": "15:25",
+      "duration": "25",
+      "topic": "Стратегии трафика Лидеров WB с выручкой 100-500 млн в месяц",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fourty-three",
@@ -150,14 +228,28 @@
         "src": "/assets/images/logos/uspeshniy.png",
         "alt": "Алексей Успешный"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "11:45",
+      "end": "12:10",
+      "duration": "25",
+      "topic": "В каком направлении лучше развиваться в Telegram в 2025 году: миниапы или каналы",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-three",
     "name": "Михаил Христосенко",
     "position": "Основатель онлайн-школы SMM Академия",
     "image": "/assets/images/speakers/kristosenko.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "11:20",
+      "end": "11:45",
+      "duration": "25",
+      "topic": "Сильный оффер. Как окупать даже очень дорогой трафик",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-thirty-eight",
@@ -171,7 +263,14 @@
         "src": "/assets/images/logos/tgmaps.svg",
         "alt": "tgmaps"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "12:40",
+      "end": "13:00",
+      "duration": "20",
+      "topic": "Как в 3 клика найти креативы конкурентов",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty-seven",
@@ -185,21 +284,42 @@
         "src": "/assets/images/logos/NF-icon.svg",
         "alt": "Нескучные финансы"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "10:55",
+      "end": "11:20",
+      "duration": "25",
+      "topic": "Кейс Telegram-канала  \"Нескучные финансы\": контент, продвижение, монетизация и факапы",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-eighteen",
     "name": "Татьяна Бибик",
     "position": "Основатель бренда «НЕ ШКОЛА». 300 филиалов в 12 странах. 3000+ сотрудников и 3 млрд выручки в 2024 году. ТОП10 франшиз в списке Forbes",
     "image": "/assets/images/speakers/bibik.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "13:00",
+      "end": "13:30",
+      "duration": "30",
+      "topic": "Продажи: как построить культуру и отдел",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fourteen",
     "name": "Егор Матита",
     "position": "Основатель онлайн-школы рисования «Арт-Матита»",
     "image": "/assets/images/speakers/matita.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "10:30",
+      "end": "10:55",
+      "duration": "25",
+      "topic": "Как качественный продукт позволяет расти быстрее независимо от обстоятельств",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-three",
@@ -226,7 +346,14 @@
         "src": "/assets/images/logos/alexey-zolotov-tg.svg",
         "alt": "Алексей Золотов"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "15:50",
+      "end": "16:15",
+      "duration": "25",
+      "topic": "Как экспертам и онлайн-школам растить прибыль независимо от кризисов и сезонов",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-thirty-three",
@@ -239,7 +366,14 @@
         "src": "/assets/images/logos/kits_invest.svg",
         "alt": "Олег Факеев"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "12:40",
+      "end": "13:00",
+      "duration": "20",
+      "topic": "Как вести крипто-блог в Telegram и продавать на большие чеки",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-seven",
@@ -252,11 +386,18 @@
         "src": "/assets/images/logos/if_logo.svg",
         "alt": "Феодор Иванов"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "15:50",
+      "end": "16:15",
+      "duration": "25",
+      "topic": "Как привлекать подписчиков в 10 раз дешевле рынка",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-eight",
-    "name": "Винтер Даниил",
+    "name": "Даниил Винтер",
     "position": "Специалист по платному трафику в Контуре (Telegram Ads)",
     "image": "/assets/images/speakers/winter_daniil.png",
     "ultraWideLogo": true,
@@ -265,21 +406,42 @@
         "src": "/assets/images/logos/kontur.svg",
         "alt": "Винтер Даниил"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "12:35",
+      "end": "13:00",
+      "duration": "25",
+      "topic": "Telegram Ads для B2B: как находить рабочие связки и привлекать качественную аудиторию",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-ten",
     "name": "Алексей Пестов",
     "position": "Маркетолог, основатель агентства ads-telegram.pro",
     "image": "/assets/images/speakers/pestov.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "12:10",
+      "end": "12:35",
+      "duration": "25",
+      "topic": "Как получить максимум клиентов из Telegram Ads (150+ кейсов)",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-six",
     "name": "Ирина Нумизматка",
     "position": "Автор крупнейшего канала о Telegram Ads",
     "image": "/assets/images/speakers/numizmatka.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "10:30",
+      "end": "10:55",
+      "duration": "25",
+      "topic": "15 фишек по Telegram Ads, которые экономят время и снижают стоимость подписчика.",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twenty-four",
@@ -293,7 +455,14 @@
         "src": "/assets/images/logos/elama.svg",
         "alt": "Elama"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "17:30",
+      "end": "18:00",
+      "duration": "30",
+      "topic": "Чек-лист для самоаудита Telegram Ads: выжимаем максимум из каждого евро",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-nine",
@@ -306,14 +475,28 @@
         "src": "/assets/icons/clickise-logo.svg",
         "alt": "Clickise"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "12:10",
+      "end": "12:35",
+      "duration": "25",
+      "topic": "Как мы тратим €200 000 в месяц в Telegram Ads и какие фишки реально работают",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-seven",
     "name": "Денис Амирханян",
     "position": "Серийный предприниматель, маркетолог",
     "image": "/assets/images/speakers/amirchanan.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "15:25",
+      "end": "15:50",
+      "duration": "25",
+      "topic": "Убойные лайфхаки вовлечения в Telegram",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-twelve",
@@ -326,7 +509,14 @@
         "src": "/assets/images/logos/egeland.svg",
         "alt": "ЕГЭLAND"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "11:20",
+      "end": "11:45",
+      "duration": "25",
+      "topic": "Посевы vs Telegram Ads: реальный опыт крупнейшей онлайн-школы по подготовке к экзаменам",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-sixteen",
@@ -339,7 +529,14 @@
         "src": "/assets/images/logos/otus.svg",
         "alt": "Otus"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "16:40",
+      "end": "17:05",
+      "duration": "25",
+      "topic": "«Фабрика посевов: как сделать систему и не сжечь Telegram»",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-twenty-five",
@@ -353,7 +550,14 @@
         "src": "/assets/images/logos/adsgram.svg",
         "alt": "Adsgram"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "15:50",
+      "end": "16:15",
+      "duration": "25",
+      "topic": "Инсайты тг-трафика от AdsGram: взгляд рекламной сети",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-thirty-two",
@@ -366,21 +570,43 @@
         "src": "/assets/images/logos/roistat_logo.svg",
         "alt": "Виталий Горюнов"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "13:30",
+      "end": "14:00",
+      "duration": "30",
+      "topic": "Масштабируем бизнес с помощью Telegram и маркетинговой платформы",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-nineteen",
     "name": "Кирилл Сибиряк",
     "position": "Продюсер онлайн-школ.\nЭксперт по системным запускам в Telegram с выручкой 20 млн в месяц \n\nПродюсер года по версии GetCourse 2025",
     "image": "/assets/images/speakers/sibiryak.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "10:05",
+      "end": "10:30",
+      "duration": "25",
+      "topic": "Как стартовать новый проект в Telegram и сделать 160 млн за полгода",
+      "bigStand": true,
+      "first": true
+    }
   },
   {
     "id": "speaker-eight",
     "name": "Глеб Яскевич",
     "position": "Основатель AX Family",
     "image": "/assets/images/speakers/yaskevic.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "17:05",
+      "end": "17:30",
+      "duration": "25",
+      "topic": "NFT-стикеры: sold-out за 14 минут",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-seventeen",
@@ -393,7 +619,14 @@
         "src": "/assets/images/logos/yandex.svg",
         "alt": "Яндекс"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "12:10",
+      "end": "12:40",
+      "duration": "30",
+      "topic": "От контента к доходу: как РСЯ помогает монетизировать каналы",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fifteen",
@@ -406,14 +639,29 @@
         "src": "/assets/images/logos/tribute.svg",
         "alt": "Tribute"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "13:30",
+      "end": "14:00",
+      "duration": "30",
+      "topic": "Подписная модель, как основа монетизации",
+      "bigStand": true,
+      "lunchAfter": true
+    }
   },
   {
     "id": "speaker-thirteen",
     "name": "Ильяна Левина",
     "position": "Маркетолог Яна Топлес, бренд-директор международной школы кино Moshka.",
     "image": "/assets/images/speakers/levina.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "13:00",
+      "end": "13:30",
+      "duration": "30",
+      "topic": "Как превратить свой Telegram-канал в Netflix с помощью ИИ, чтобы о вас говорил весь рынок",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-thirty-five",
@@ -426,39 +674,75 @@
         "src": "/assets/images/logos/flyer_logo.png",
         "alt": "Flyer"
       }
-    ]
+    ],
+    "secondDay": {
+      "speakerName": "Никита Лукьянов / Тришкин Максим",
+      "start": "10:05",
+      "end": "10:30",
+      "duration": "25",
+      "topic": "Мотивированный трафик (Flyer)",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-thirty-six",
-    "name": "Корнеев Кирилл",
+    "name": "Кирилл Корнеев",
     "position": "Совладелец, основатель Kiss. Миллион пользователей в миниапп, за 3 месяца. Своя сеть телеграм каналов на 1 000 000+ человек",
     "image": "/assets/images/speakers/korneev_kirill.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "11:45",
+      "end": "12:10",
+      "duration": "25",
+      "topic": "Новые способы привлечения трафика в телеграм",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-thirty-nine",
     "name": "Александр Кадычков",
     "position": "Сооснователь и руководитель проектов @sounds и @clips — сервисов, которыми пользуются более 3,5 млн человек",
     "image": "/assets/images/speakers/kadychkov.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "11:45",
+      "end": "12:10",
+      "duration": "25",
+      "topic": "Как Inline-боты сделали контент нативным и вирусным в Telegram",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty",
-    "name": "Семен Верушкин",
+    "name": "Верушкин Семён",
     "position": "Founder & СEO Leadmagnet на 38 000+ партнеров. 12 лет в Арбитраже трафика, 15 лет в Предпринимательстве, 17 лет в Маркетинге, сейчас Ментор для крупных компаний. Спикер 30+ профильных конференций по арбитражу, трафику на онлайн образование: CPA Life, БроКонф, Кинза, МАК и тд",
     "image": "/assets/images/speakers/verushkin.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "15:25",
+      "end": "15:50",
+      "duration": "25",
+      "topic": "«Как зарабатывать со своего канала или чат бота в TG от 200тр до 700тр плюсом?»",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty-one",
     "name": "Олег Артемьев",
     "position": "Крипто инфлюенсер. 1м+ подписчиков за год",
     "image": "/assets/images/speakers/artemiev.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "11:45",
+      "end": "12:10",
+      "duration": "25",
+      "topic": "Как набрать 1 000 000 подписчиков и бесплатно получать трафик в блог",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fourty-four",
-    "name": "Львов Александр",
+    "name": "Александр Львов",
     "position": "Основатель агентства перформанс-маркетинга Libre",
     "image": "/assets/images/speakers/lvov.png",
     "color": "",
@@ -468,7 +752,14 @@
         "src": "/assets/images/logos/libre_white.svg",
         "alt": "Libre"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "13:30",
+      "end": "14:00",
+      "duration": "30",
+      "topic": "«Продвижение B2B: разбор кейсов»",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty-five",
@@ -482,7 +773,14 @@
         "src": "/assets/images/logos/parta.svg",
         "alt": "Libre"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "15:50",
+      "end": "16:15",
+      "duration": "25",
+      "topic": "Как делать тысячи интеграций в Телеграм посевах. От хаоса к системе",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty-six",
@@ -496,28 +794,56 @@
         "src": "/assets/images/logos/skoro_lead.svg",
         "alt": "Libre"
       }
-    ]
+    ],
+    "firstDay": {
+      "start": "17:05",
+      "end": "17:30",
+      "duration": "25",
+      "topic": "Как разогнать бюджеты в TG ADS до 17 000 евро в день, удерживая KPI и каким бизнесам это возможно?",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty-eight",
-    "name": "Силаев Владимир",
+    "name": "Владимир Силаев",
     "position": "Креатор, владелец telegram-каналов и проектов в соц.сетях (млн аудитории), автор блога «Хозяин Телеги», гарант, со-основатель агентства «Качество» и telegram-сервисов",
     "image": "/assets/images/speakers/silaev.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "15:00",
+      "end": "15:25",
+      "duration": "25",
+      "topic": "33 фишки Упаковки телеграм-канала, и почему это — 80% успеха",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fourty-nine",
-    "name": "Рюмин Вячеслав",
+    "name": "Вячеслав Рюмин",
     "position": "Основатель контент-агентства «Команда Рюмина», экс-владелец сети ночных клубов, автор книги «Упал, поднялся»",
     "image": "/assets/images/speakers/ryumin.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "16:15",
+      "end": "16:40",
+      "duration": "25",
+      "topic": "Как за 2 года собрал канал в Телеграм в бизнес-тематике на 50 000 подписчиков без вложений в рекламу",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fifty",
     "name": "Петренчук Максим",
     "position": "Коммуникационное агентство Social Stars, сооснователь",
     "image": "/assets/images/speakers/petrenchuk.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "17:30",
+      "end": "18:00",
+      "duration": "30",
+      "topic": "Телеграм - платформа для активной отработки антикризисных кампаний",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fifty-two",
@@ -531,56 +857,112 @@
         "src": "/assets/images/logos/masneva_logo.png",
         "alt": "masneva"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "13:00",
+      "end": "13:30",
+      "duration": "30",
+      "topic": "Геймификация: как боты делают жизнь бизнеса проще и прибыльнее",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fifty-four",
-    "name": "Романов Владислав",
+    "name": "Романов Владис",
     "position": "Продюсер авторских телеграм каналов с годовой выручкой 400+ млн рублей. Основатель Ax-family",
     "image": "/assets/images/speakers/romanov.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "16:15",
+      "end": "16:40",
+      "duration": "25",
+      "topic": "Как с авторского телеграм канала с 3.000 подписчиков зарабатывать от 1.000.000 в месяц",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fifty-five",
     "name": "Колмыкова Марина",
     "position": "Фаундер и CEO агентства Таргетерия. 200+ реализованных проектов в агентстве, среди клиентов: VK, X5, МТС, Третьяковская галерея",
     "image": "/assets/images/speakers/kolmikova.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "15:00",
+      "end": "15:25",
+      "duration": "25",
+      "topic": "Контент важнее трафика: как снизить стоимость подписчика в 4 раза и превратить канал в машину продаж",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fifty-seven",
-    "name": "Ланцов Антон",
+    "name": "Антон Ланцов",
     "position": "Автор Telegram-Канала Рыжий М.",
     "image": "/assets/images/speakers/lantsov.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "15:00",
+      "end": "15:25",
+      "duration": "25",
+      "topic": "Тема уточняется",
+      "bigStand": true
+    }
   },
   {
     "id": "speaker-fifty-eight",
     "name": "Антон Иванов",
     "position": "Шефред в банке. Автор Telegram-канала «Пиши Касука»",
     "image": "/assets/images/speakers/ivanov.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "15:25",
+      "end": "15:50",
+      "duration": "25",
+      "topic": "Копирайтинг после смерти копирайтеров",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-fifty-nine",
     "name": "Вадим Подскребаев",
     "position": "Сооснователь ТГ-канала «Отменили CTR» на 35 тысяч подписчиков и закрытого комьюнити для предпринимателей «План Б»",
     "image": "/assets/images/speakers/podskrebaev.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "16:40",
+      "end": "17:05",
+      "duration": "25",
+      "topic": "Тема: 10 основных ошибок монетизации тг канала",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty",
     "name": "Михаил Новиков",
     "position": "Руководитель Отдела Продаж в Posted Agency (Топ-3 TG сеть в РФ)",
     "image": "/assets/images/speakers/novikov.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "17:30",
+      "end": "18:00",
+      "duration": "30",
+      "topic": "Спец проекты внутри телеграмма, зачем они нужны админам и внешним рекламодателям",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty-one",
-    "name": "Казанцев Евгений",
+    "name": "Евгений Казанцев",
     "position": "Аудитор, Аналитик в сфере TG-каналов, креатив-creator, закупщик в посевах",
     "image": "/assets/images/speakers/kazancev.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "11:20",
+      "end": "11:45",
+      "duration": "25",
+      "topic": "Нетипичная аналитика TG-каналов или как «не слить» рекламный бюджет на мошенников",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty-three",
@@ -601,14 +983,28 @@
         "src": "/assets/images/logos/telescope-blacklogo.svg",
         "alt": "Telescope"
       }
-    ]
+    ],
+    "secondDay": {
+      "start": "11:20",
+      "end": "11:45",
+      "duration": "25",
+      "topic": "Как анализировать и подбирать несколько тысяч каналов и ботов для рекламы с помощью ИИ за 2 минуты",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty-five",
     "name": "Мария Смирнова",
     "position": "Автор канала Маша & Telegram Ads. Основатель агентства M&Ads",
     "image": "/assets/images/speakers/smirnova.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "17:05",
+      "end": "17:30",
+      "duration": "25",
+      "topic": "Креативы в Telegram Ads: какие работают в 2025 году, как создавать и тестировать",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty-six",
@@ -616,7 +1012,14 @@
     "position": "Product manager Mobile",
     "description": "Работал над запуском и развитием eSIM-сервиса в Telegram с нуля до стабильного продукта, которым уже воспользовались тысячи пользователей.",
     "image": "/assets/images/speakers/artamonov.png",
-    "color": ""
+    "color": "",
+    "firstDay": {
+      "start": "12:10",
+      "end": "12:40",
+      "duration": "30",
+      "topic": "Построение успешного eSIM-продукта на одной только платформе Telegram",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty-two",
@@ -625,5 +1028,33 @@
     "image": "/assets/images/speakers/mobile.png",
     "color": "",
     "show": false
+  },
+  {
+    "id": "speaker-sixty-seven",
+    "name": "«Панельная дискуссия»",
+    "position": "",
+    "color": "",
+    "show": false,
+    "secondDay": {
+      "start": "16:40",
+      "end": "17:30",
+      "duration": "50",
+      "topic": "Панельная дискуссия про будущее Telegram \nАнтон Горелкин, Георгий Лобушкин, Марат Шайхетдинов, Наиль Байков",
+      "bigStand": true
+    }
+  },
+  {
+    "id": "speaker-sixty-eight",
+    "name": "TgConf Awards",
+    "position": "",
+    "color": "",
+    "show": false,
+    "secondDay": {
+      "start": "17:30",
+      "end": "18:00",
+      "duration": "30",
+      "topic": "Лучшие проекты и спикеры",
+      "bigStand": true
+    }
   }
 ]

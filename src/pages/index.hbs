@@ -186,8 +186,86 @@
         <span class="double__title">Малая сцена</span>
       </div>
       <div class="schedule__lists">
-        {{!-- 15-е октября --}}
+        <!-- TEST -->
         <div class="schedule__list left-list">
+          <div>
+            {{#schedule speakers "firstDay"}}
+              {{#each this}}
+                <div class="double">
+                  <div class="schedule-card {{#if @last}}no-border{{/if}}">
+                    <div class="schedule-card__info">
+                      <div class="time">
+                        <span>{{this.firstDay.start}}</span>
+                        <p>Главная сцена</p>
+                      </div>
+                      <div class="schedule-card__speaker">
+                        <div
+                          class="intro__center-people-item">
+                          <img src="{{this.image}}" alt="{{this.name}}" />
+                        </div>
+                        <span>
+                          {{#if this.firstDay.speakerName}}
+                            {{this.firstDay.speakerName}}
+                          {{else}}
+                            {{this.name}}
+                          {{/if}}
+                        </span>
+                      </div>
+                    </div>
+                    <div class="schedule-card__text">{{this.firstDay.topic}}</div>
+                  </div>
+                  {{#if @first}}
+                    <div class="schedule-card-empty schedule-disclaimer">
+                      <div>
+                        <img src="./assets/images/clock.svg" alt="disclaimer" />
+                        <span>Выступления на малой сцене <br/> начинаются с 11:20</span>
+                      </div>
+                    </div>
+                  {{else}}
+                    {{#if this.smallStand}}
+                      {{#each this.smallStand}}
+                        <div class="schedule-card">
+                          <div class="schedule-card__info">
+                            <div class="time">
+                              <span>{{this.firstDay.start}}</span>
+                              <p>Малая сцена</p>
+                            </div>
+                            <div class="schedule-card__speaker">
+                              <div
+                                class="intro__center-people-item {{#unless this.image}}empty{{/unless}}">
+                                <img src="{{this.image}}"
+                                     alt="{{this.name}}" />
+                              </div>
+                              <span>
+                                {{#if this.firstDay.speakerName}}
+                                  {{this.firstDay.speakerName}}
+                                {{else}}
+                                  {{this.name}}
+                                {{/if}}
+                              </span>
+                            </div>
+                          </div>
+                          <div class="schedule-card__text">
+                            {{this.firstDay.topic}}
+                          </div>
+                        </div>
+                      {{/each}}
+
+                    {{else}}
+                      <div class="schedule-card-empty"></div>
+                    {{/if}}
+
+                  {{/if}}
+                </div>
+                {{#if this.firstDay.lunchAfter}}
+                  <div class="lunch">Перерыв</div>
+                {{/if}}
+              {{/each}}
+            {{/schedule}}
+          </div>
+        </div>
+        {{!-- 15-е октября --}}
+        <!--<div class="schedule__list left-list">
           <div>
             <div class="double">
               <div class="schedule-card">
@@ -236,7 +314,7 @@
                   15 фишек по Telegram Ads, которые экономят время и снижают стоимость подписчика.
                 </div>
               </div>
-              <div class="schedule-card-empty">                
+              <div class="schedule-card-empty">
               </div>
 
               <div class="schedule-card">
@@ -263,10 +341,10 @@
                   Кейс Telegram-канала «Нескучные финансы»: контент, продвижение, монетизация и факапы
                 </div>
               </div>
-              <div class="schedule-card-empty">                
+              <div class="schedule-card-empty">
               </div>
 
-              <div class="schedule-card">       
+              <div class="schedule-card">
                 <div class="schedule-card__info">
                   <div class="time">
                     <span>11:20</span><p>Главная сцена</p>
@@ -281,10 +359,10 @@
                 </div>
                 <div class="schedule-card__text">Сильный оффер. Как окупать даже очень дорогой трафик</div>
               </div>
-              <div class="schedule-card-empty">                
+              <div class="schedule-card-empty">
               </div>
 
-              <div class="schedule-card">                
+              <div class="schedule-card">
                 <div class="schedule-card__info">
                   <div class="time">
                     <span>
@@ -384,7 +462,7 @@
                   Тема уточняется
                 </div>
               </div>
-              
+
               <div class="schedule-card">
                 <div class="schedule-card__info">
                   <div class="time">
@@ -459,7 +537,7 @@
                 <div class="schedule-card__text">
                   Будущее регулирования Telegram и других мессенджеров в России
                 </div>
-              </div>                
+              </div>
               <div class="schedule-card">
                 <div class="schedule-card__info">
                   <div class="time">
@@ -810,7 +888,7 @@
                   </div>
                 </div>
                 <div class="schedule-card__text">Как разогнать бюджеты в Telegram Ads до €17 000/день, удерживая KPI: бизнесы, для которых это реально</div>
-                
+
               </div>
 
               <div class="schedule-card">
@@ -919,10 +997,87 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
         {{!-- 16-е октября --}}
-        <div class="schedule__list">
+        <div class="schedule__list schedule__list-second">
           <div>
+            {{#schedule speakers "secondDay"}}
+              {{#each this}}
+                <div class="double">
+                  <div class="schedule-card {{#if @last}}no-border{{/if}}">
+                    <div class="schedule-card__info">
+                      <div class="time">
+                        <span>{{this.secondDay.start}}</span>
+                        <p>Главная сцена</p>
+                      </div>
+                      <div class="schedule-card__speaker">
+                        <div
+                          class="intro__center-people-item {{#unless this.image}}empty{{/unless}}">
+                          <img src="{{this.image}}"
+                               alt="{{this.name}}" />
+                        </div>
+                        <span>
+                          {{#if this.secondDay.speakerName}}
+                            {{this.secondDay.speakerName}}
+                          {{else}}
+                            {{this.name}}
+                          {{/if}}
+                        </span>
+                      </div>
+                    </div>
+                    <div class="schedule-card__text">{{this.secondDay.topic}}</div>
+                  </div>
+                  {{#if @first}}
+                    <div class="schedule-card-empty schedule-disclaimer">
+                      <div>
+                        <img src="./assets/images/clock.svg" alt="disclaimer" />
+                        <span>Выступления на малой сцене <br/> начинаются с 11:20</span>
+                      </div>
+                    </div>
+                  {{else}}
+                    {{#if this.smallStand}}
+                      <div class="schedule-card-ministand">
+                      {{#each this.smallStand}}
+                        <div class="schedule-card">
+                          <div class="schedule-card__info">
+                            <div class="time">
+                              <span>{{this.secondDay.start}}</span>
+                              <p>Малая сцена</p>
+                            </div>
+                            <div class="schedule-card__speaker">
+                              <div
+                                class="intro__center-people-item {{#unless this.image}}empty{{/unless}}">
+                                <img src="{{this.image}}"
+                                     alt="{{this.name}}" />
+                              </div>
+                              <span>
+                                {{#if this.secondDay.speakerName}}
+                                  {{this.secondDay.speakerName}}
+                                {{else}}
+                                  {{this.name}}
+                                {{/if}}
+                              </span>
+                            </div>
+                          </div>
+                          <div class="schedule-card__text">
+                            {{this.secondDay.topic}}
+                          </div>
+                        </div>
+                      {{/each}}
+                      </div>
+                    {{else}}
+                      <div class="schedule-card-empty"></div>
+                    {{/if}}
+
+                  {{/if}}
+                </div>
+                {{#if this.firstDay.lunchAfter}}
+                  <div class="lunch">Перерыв</div>
+                {{/if}}
+              {{/each}}
+            {{/schedule}}
+          </div>
+          <!--<div>
             <div class="double">
               <div class="schedule-card">
                 <div class="schedule-card__info">
@@ -1559,7 +1714,7 @@
               <div class="schedule-card-empty"></div>
 
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
       <div class="intro__center-buy-ticket open-schedule">
