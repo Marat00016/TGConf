@@ -1,0 +1,138 @@
+[
+  {
+    "id": "speaker-one",
+    "name": "Артемий Лебедев",
+    "position": "Дизайнер",
+    "image": "/assets/images/speakers/artem_lebedev.webp",
+    "color": "orange",
+    "logos": []
+  },
+  {
+    "id": "speaker-two",
+    "name": "Марат Шайхетдинов",
+    "position": "Основатель Clickise и TgConf",
+    "image": "/assets/images/speakers/marat_shahabutdinov.webp",
+    "color": "",
+    "logos": [
+      { "src": "/assets/images/logos/clickise.svg", "alt": "Clickise" }
+    ]
+  },
+  {
+    "id": "speaker-three",
+    "name": "Михаил Христосенко",
+    "position": "Основатель онлайн-школы SMM Академия",
+    "image": "/assets/images/speakers/kristosenko.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-four",
+    "name": "Феликс Зинатуллин",
+    "position": "Основатель \"Церебро\"",
+    "image": "/assets/images/speakers/zinatullin.webp",
+    "color": "",
+    "logos": [
+      { "src": "/assets/images/logos/cerebro.svg", "alt": "Церебро" }
+    ]
+  },
+  {
+    "id": "speaker-five",
+    "name": "Павел Калюканов",
+    "position": "Руководитель Академии TGStat",
+    "image": "/assets/images/speakers/kolukanov.webp",
+    "color": "",
+    "logos": [
+      { "src": "/assets/images/logos/tgstat.svg", "alt": "TGStat" }
+    ]
+  },
+  {
+    "id": "speaker-six",
+    "name": "Ирина Нумизматка",
+    "position": "Автор крупнейшего канала о Telegram Ads",
+    "image": "/assets/images/speakers/numizmatka.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-seven",
+    "name": "Денис Амирханян",
+    "position": "Серийный предприниматель, маркетолог",
+    "image": "/assets/images/speakers/amirchanan.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-eight",
+    "name": "Глеб Яскевич",
+    "position": "Основатель AX Family",
+    "image": "/assets/images/speakers/yaskevic.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-nine",
+    "name": "Анна Иванова",
+    "position": "Таргетолог и teamlead команды по трафику в Clickise",
+    "image": "/assets/images/speakers/ivanova.webp",
+    "color": "",
+    "logos": [
+      { "src": "/assets/images/logos/clickise.svg", "alt": "Clickise" }
+    ]
+  },
+  {
+    "id": "speaker-ten",
+    "name": "Алексей Пестов",
+    "position": "Маркетолог, основатель агентства ads-telegram.pro",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-eleven",
+    "name": "Любовь Мурзина",
+    "position": "SMM Lead в Авиасейлс",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-twelve",
+    "name": "Вячеслав Самохвалов",
+    "position": "Head of Performance Marketing. ЕГЭLAND",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-thirteen",
+    "name": "Ильяна Левина",
+    "position": "Международный эксперт по интернет-маркетингу. Маркетолог Яна Топлес. Бренд-директор международной школы кино Moshka.",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fourteen",
+    "name": "Егор Матита",
+    "position": "Основатель онлайн-школы рисования «Арт-Матита»",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-fifteen",
+    "name": "Екатерина Барухова",
+    "position": "Customer Success Lead / Tribute",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  },
+  {
+    "id": "speaker-sixteen",
+    "name": "Андрей Чорапов",
+    "position": "Group Head of Marketing Otus",
+    "image": "/assets/images/speakers/pestov.webp",
+    "color": "",
+    "logos": []
+  }
+]
