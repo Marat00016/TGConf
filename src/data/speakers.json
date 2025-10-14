@@ -760,13 +760,7 @@
         "alt": "Libre"
       }
     ],
-    "secondDay": {
-      "start": "13:30",
-      "end": "14:00",
-      "duration": "30",
-      "topic": "«Продвижение B2B: разбор кейсов»",
-      "bigStand": false
-    }
+    "show": false
   },
   {
     "id": "speaker-fourty-five",
@@ -976,7 +970,14 @@
     "name": "Роман Абдуллин",
     "position": "Основатель KROME Group — агентство системной перегрузки маркетинга и продаж. Создатель TopClub — сообщества из 500+ маркетологов, девелоперов и предпринимателей",
     "image": "/assets/images/speakers/abdullin.png",
-    "color": ""
+    "color": "",
+    "secondDay": {
+      "start": "13:30",
+      "end": "14:00",
+      "duration": "30",
+      "topic": "Тема уточняется",
+      "bigStand": false
+    }
   },
   {
     "id": "speaker-sixty-four",

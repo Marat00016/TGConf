@@ -321,6 +321,15 @@
   &-disclaimer {
     position: relative;
 
+    &.second-day {
+      div {
+        top: 0;
+      }
+      img {
+        height: 20rem;
+      }
+    }
+
     div {
       position: absolute;
       top: 30%;
