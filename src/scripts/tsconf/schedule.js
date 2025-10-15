@@ -9,30 +9,58 @@ export default function initScheduleAnimation() {
 
   if (!openButton) return;
 
+  let setMaxHeight = () => {
+    const id = getActiveListId();
+    const openedList = document.querySelector(id + ' > div');
+    console.log('SET MAX HEIGHT ' + id);
+    console.log(openedList);
+
+    if (openedList) {
+      const openedListHeight = openedList.scrollHeight;
+      lists.style.maxHeight = openedListHeight + 'px';
+      console.log(openedListHeight + 'px')
+    }
+  }
+
   firstDate.addEventListener('click', () => {
     firstDate.classList.add('active');
     secondDate.classList.remove('active');
     lists.classList.remove('active');
-    lists.style.maxHeight = '6000px';
+    setMaxHeight();
   })
-  
+
   secondDate.addEventListener('click', () => {
     secondDate.classList.add('active');
     firstDate.classList.remove('active');
     lists.classList.add('active');
-    lists.style.maxHeight = '4715px';
+    setMaxHeight();
   })
+
+  let getActiveListId = () => {
+    return firstDate.classList.contains('active') ?
+      '#schedule-first-day' : '#schedule-second-day'
+  }
 
   openButton.addEventListener('click', () => {
     if (!isOpenList) {
       scheduleList.forEach((item) => {
-        item.classList.add('opened-list');  
+        if (item.classList.contains('opened-list')) {
+          item.classList.remove('opened-list');
+        }
+        item.classList.add('opened-list');
       })
+
+      setMaxHeight();
+
       isOpenList = true;
     } else {
       scheduleList.forEach((item) => {
-        item.classList.remove('opened-list');  
+        item.classList.remove('opened-list');
       })
+
+      // Возвращаем исходную высоту при закрытии
+      lists.style.maxHeight = isOpenList ? '4715px' : '6000px';
+
       isOpenList = false;
       setTimeout(() => {
         scheduleList[0].scrollIntoView({

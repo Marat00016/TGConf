@@ -187,7 +187,7 @@
       </div>
       <div class="schedule__lists">
         {{!-- 15-е октября --}}
-        <div class="schedule__list left-list">
+        <div id="schedule-first-day" class="schedule__list left-list">
           <div>
             {{#schedule speakers "firstDay"}}
               {{#each this}}
@@ -265,7 +265,7 @@
           </div>
         </div>
         {{!-- 16-е октября --}}
-        <div class="schedule__list schedule__list-second">
+        <div id="schedule-second-day" class="schedule__list schedule__list-second">
           <div>
             {{#schedule speakers "secondDay"}}
               {{#each this}}

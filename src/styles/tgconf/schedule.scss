@@ -41,18 +41,18 @@
     }
   }
   &__list.opened-list {
-    max-height: 3000px;
+    max-height: 10000px;
 
     @include media.breakpoint(mobile) {
-      max-height: 6000px;
+      max-height: 10000px;
     }
   }
   &__list-second.opened-list {
-    max-height: 3000px;
+    /*max-height: 3000px;
 
     @include media.breakpoint(mobile) {
       max-height: 4715px;
-    }
+    }*/
   }
 
   &__lists {
