@@ -28,9 +28,9 @@ export default function initHeaderAnimation() {
       window.location.href = window.location.origin
     }
   })
-  attentionTicketButton.addEventListener('click', () => {
+  /*attentionTicketButton.addEventListener('click', () => {
     if (window.location.pathname.includes('awards')) {
       window.location.href = window.location.origin
     }
-  })
+  })*/
 }
